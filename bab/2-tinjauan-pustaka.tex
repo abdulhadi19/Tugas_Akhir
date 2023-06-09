@@ -1,0 +1,319 @@
+\chapter{TINJAUAN PUSTAKA DAN DASAR TEORI}
+\label{chap:tinjauanpustaka}
+
+% Ubah bagian-bagian berikut dengan isi dari tinjauan pustaka
+
+Demi mendukung penelitian ini, \lipsum[1][1-5]
+
+\section{Kerangka dan Rotor Helikopter}
+\label{sec:strukturheli}
+
+Helikopter merupakan bentuk aplikasi dari prinsip-prinsip dasar fundametal hukum fisika, dimulai dari hukum pertama, kedua dan ketiga Newton, prinsip Bernoulli, konservasi energi dan aerodinamika. Keempat hukum dasar tersebut adalah sedikit dari prinsip fisika yang menjadi teori fundamental dari helikopter. Kompleksitas dibalik mengapa helikopter bisa terbang dapat dimengerti oleh pilot pemula sekalipun melalui pemahaman yang mendalam terhadap teori fisika yang berada pada helikopter\cite{wagtendonk2006principles}.
+
+Helikopter memiliki banyak komponen, dimulai dari sistem transmisi yang dilakukan oleh mesin menuju rotor utama, rotor pada ekor, dan komponen lain yang bergantung pada propulsi mesin. Bagian dari transmisi pada helikopter terdiri dari gigi rotor utama, poros penggerak, unit \textit{freewheeling}, rem rotor dan roda gigi rotor pada ekor  \cite{wagtendonk2006principles}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{gambar/komponenheli.png}
+	\caption{Komponen helikopter secara umum \cite{handbook}.}
+	\label{fig:komponenheli}
+\end{figure}
+
+\textit{Fuselage} badan helikopter merupakan bagian inti luar dari rangka yang menampung kabin berisi kru, penumpang, dan kargo. Kabin helikopter memiliki susunan tempat duduk yang berbeda-beda. Selain itu, badan helikopter juga berfungsi untuk memberikan ruang pada mesin, transmisi, avionik, kontrol penerbangan sumber power pada helikopter. Untuk sistem transmisi helikopter, mesin pada gigi rotor utama akan membuat poros rotor berputar. Ketika rotor berputar pada rpm mesin, kecepatan ujung rotor akan lebih cepat daripada kecepatan suara, kekuatan pada rotor harus ditingkatkan dan kelembaman dari giroskop akan menjadi sangat ekstrim. Terdapat bagian yang dinamakan \textit{clutch} (kopling) yaitu bagian yang terintegrasi dengan sistem transmisi. Bagian ini memungkinkan pilot untuk dapat mengatur kontak antara mesin dan poros penggerak \cite{wagtendonk2006principles}.
+
+\begin{figure}[H]
+	\begin{subfigure}{0.3\textwidth}
+	\centering
+	\includegraphics[width=\linewidth]{gambar/belt-driven_clutch.png}
+	\caption{}
+	\label{fig:belt-driven_clutch}
+	\end{subfigure}
+\centering
+	\begin{subfigure}{0.3\textwidth}
+	\centering
+	\includegraphics[width=\linewidth]{gambar/centrifugal_clutch.png}
+	\caption{}
+	\label{fig:centrifugal_clutch}
+\end{subfigure}
+	\caption{(a) Pengaturan kopling (\textit{clutch}) yang dihubungkan menggunakan sabuk. (b) Prinsip kopling sentrifugal \cite{handbook}.}
+	\label{fig:clutch}
+\end{figure}
+
+Untuk mengatur pergerakannya, terdapat bagian komponen yang disebut dengan \textit{swashplate}. Komponen ini dapat mengatur orientasi rotor utama dan jumlah gaya dorong rotor yang dihasilkan. Bearing (bola kecil) pada bagian \textit{swashplate} disesuaikan antara kedua piringan rotor yang bergerak. Sehingga gerakan piringan yang digerakkan oleh pilot akan berpindah ke rotor \cite{wagtendonk2006principles}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{gambar/swashplate.png}
+	\caption{Mekanisme kontrol pada gerakan rotor utama \cite{handbook}.}
+	\label{fig:swashplate}
+\end{figure}
+Sistem \textit{fully articulated rotor} mempunyai kemampuan pada rotornya untuk melakukan \textit{lead/lag} (gerakan kedepan dan belakang), \textit{flap} (gerakan atas dan bawah) dan \textit{feather} (berotasi pada sumbu radial) untuk merubah gaya angkat \cite{handbook}.
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.17\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{gambar/lead-lag.png}
+		\caption{}
+		\label{fig:lead/lag}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.4\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{gambar/feather_flap.png}
+		\caption{}
+		\label{fig:featherflap}
+	\end{subfigure}
+	\caption{(a) Komponen \textit{lead/lag} membuat rotor dapat bergerak kedepan dan belakang pada bidangnya. (b) Komponen \textit{feather} dan \textit{flap} untuk gerakan rotasi pada arah radial serta bergerak atas bawah \cite{handbook}.}
+	\label{fig:fullyarticulated}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{gambar/roll-pitch-yaw.png}
+	\caption{Orientasi arah helikopter \cite{Jhwang}.}
+	\label{fig:orientasiheli}
+\end{figure}
+
+Saat rotor berputar, bilah pada rotor merespon \textit{input} dari kontrol untuk mengendalikan helikopter. Pusat daya angkat pada rotor akan bergerak karena respon yang diberikan \textit{input}, sehingga dapat menghasilkan gerakan \textit{pitch}, \textit{roll}, dan \textit{yaw} seperti yang dapat dilihat pada gambar \ref{fig:orientasiheli}. Arah gaya angkat ini bergantung pada \textit{input pitch} dan \textit{roll} dari pilot. Oleh karena itu, sudut \textit{feathering} pada setiap bilah akan berbanding lurus dengan gaya angkatnya, yaitu berubah saat berputar dengan rotor, gerakan ini disebut dengan \textit{cyclic control} \cite{handbook}.
+
+Saat daya angkat meningkat, \textit{flapping hinge} akan mengayun ke arah atas tanpa kehilangan keseimbangan dengan gaya sentrifugal dari berat bilah rotor, dimana gaya tersebut akan tetap mempertahankan gerakannya untuk tetap pada bidang horizontal. Gaya sentrifugal pada dasarnya memiliki nilai yang konstan, namun gaya ayunan dipengaruhi oleh kecepatan naik, maju, dan berat helikopter. Sehingga saat bilah rotor berayun, pusat gravitasinya ikut berubah \cite{handbook}.
+
+\section{\textit{Ground Resonance}}
+\label{sec:groundresonance}
+
+\textit{Ground resonance} adalah getaran dengan amplitudo besar yang disebabkan oleh osilasi pada helikopter yang sedang berada di tanah. Tanda awal resonansi ditandai dengan gerakan perlahan pada badan helikopter. Jika dibiarkan secara terus menerus, makana intensitas getaran akan semakin besar dan meningkat dengan cepat, sehingga berpotensi menyebabkan kerusakan pada pesawat \cite{wagtendonk2006principles}.
+
+Fenomena \textit{ground resonance} merupakan getaran mekanis yang timbul secara otomatis dan terjadi pada sistem \textit{fully articulated rotor}. Engsel pada helikopter dengan sistem ini memberikan kebebasan pada masing-masing bilah rotor untuk bergerak dalam bidang rotasi rotor. Gerakan yang berlawanan dengan arah rotasi rotor disebut \textit{lagging}, sedangkan gerakan yang searah dengan rotasi disebut dengan \textit{leading}. Masing-masing bilah rotor memungkinkan untuk melakukan \textit{leading} atau \textit{lagging} untuk mengkompensasi perubahan drag yang terjadi ketika bilah rotor berayun karena adanya asimetri daya angkat dalam gerakan maju helikopter \cite{Eckert2007AnalyticalAA}.
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.4\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{gambar/gr_1.png}
+		\caption{}
+		\label{fig:gr_1}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.4\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{gambar/gr_2.png}
+		\caption{}
+		\label{fig:gr_2}
+	\end{subfigure}
+\\
+	\centering
+	\begin{subfigure}{0.4\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{gambar/gr_3.png}
+		\caption{}
+		\label{fig:gr_3}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.4\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{gambar/gr_4.png}
+		\caption{}
+		\label{fig:gr_4}
+	\end{subfigure}
+		\caption{(a) Kondisi saat helikopter stabil.(b) Sudah mulai terdapat getaran pada bagian kerangka helikopter (indikasi mulai terjadinya \textit{ground resonance}). (c) Terjadinya \textit{ground resonance} yang merusak bagian pada badan helikopter. (d) Pasca terjadinya \textit{ground resonance} pada helikopter.\\
+		\urlstyle{rm}
+		sumber: \url{https://www.youtube.com/watch?v=D2tHA7KmRME&t=3s}.}
+		\label{fig:gr}
+\end{figure}
+
+Pada gambar \ref{fig:gr} menunjukkan situasi saat gerakan stabil \textit{lead/lag} tidak dapat mengkompensasi gerakan berlebih dalam bidang helikopter terhadap bilah rotor. Pusat gravitasi dari bilah rotor juga tidak lagi sejajar dengan penghubung pada rotor. Sehingga hal ini sangat berbahaya ketika helikopter bersentuhan dengan tanah. Posisi pusat gravitasi rotor yang tidak sejajar dengan penghubung rotor menghasilkan gaya sentrifugal yang tidak seimbang pada frekuensi tertentu. Jika frekuensi ini sejajar dengan frekuensi natural badan helikopter (\textit{fuselage}), maka helikopter akan mulai bergoyang pada bagian pendaratannya \cite{Eckert2007AnalyticalAA}.
+
+\section{Analisis Matematis}
+
+Untuk dapat melakukan pendekatan secara analitik seperti yang telah diteliti oleh B.Bergeot et al \cite{BERGEOT201672}, diperlukan suatu model mekanik dari helikopter dengan derajat kebebasan minimum yang berpotensi mengalami fenomena \textit{ground resonance}. Oleh karena itu, dibutuhkan minimalnya sebanyak 5 derajat kebebasan (\textit{degree of freedom}/DOF). Helikopter terdiri atas \textit{fuselage} yang memiliki 4 bilah rotor dengan kecepatan konstan sebesar $\Omega$.
+
+\begin{figure}[H]
+	\centering 
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{gambar/rotor_fuselage.png}
+		\caption{}
+		\label{fig:rotorfuselage}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.35\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{gambar/rotor_fuselage_topview.png}
+		\caption{}
+		\label{fig:topviewrotorfuslage}
+	\end{subfigure}
+	\caption{(a) Skema sederhana helikopter dengan 4 bilah rotor. (b) Skema helikopter dilihat dari atas \cite{BERGEOT201672}.}
+	\label{fig:simplifiedmodel}
+\end{figure}
+
+Sistem koordinat kartesian digunakan dengan titik pusat di $O$. dengan $G_f$ merupakan pusat inersia \textit{fuselage} dan 3 sumbu kartesian pada sumbu-$x_0$, sumbu-$y_0$ dan sumbu-$z_0$ seperti yang terdapat pada gambar \ref{fig:rotorfuselage}. Kemudian terdapat $G_r$ yang merupakan pusat inersia rotor yang terletak di sumbu-$z_0$. Pada bagian \textit{fuselage} disederhanakan dengan representasi pemodelan yang tersusun seperti pada gambar \ref{fig:topviewrotorfuslage}, yaitu terdiri dari pegas, redaman dan massa dengan 1 arah translasi di sumbu-$y_0$. Selanjut pada arah translasi tersebut akan didefinisikan dalam domain waktu dengan koordinat $y(t)$. Pada masing-masing bilah rotor memiliki massa poin $G_i$ dengan [$i=1,2,3,4$], terletak pada jarak L dari sumbu-$z_0$. Sedangkan posisi pada bilah rotor ke-$i$ pada bidang-$x_0y_0$ sebagaimana persamaan berikut ini:
+
+\begin{equation}
+\begin{cases}
+x_{G_i} = L cos(\xi_i(t)+\delta_i(t))&(a) \\ 
+y_{G_i} = y(t) + L sin(\xi_i(t)+\delta_i(t))&(b)
+\end{cases}
+\label{eq:posisixy}
+\end{equation}
+
+Dimana $\delta_i$ merupakan sudut \textit{lead/lag} pada bilah rotor ke-$i$. Sudut \textit{lead/lag} adalah perbedaan posisi bilah rotor saat waktu tertentu dengan posisi bilah rotor saat setimbangnya, yaitu $\xi_i(t)=\Omega t-(\pi/2)(i-1)$ sesuai pada gambar \ref{fig:topviewrotorfuslage}.
+
+Persamaan gerak memiliki fungsi waktu untuk sistem 5 DOF pada helikopter, yaitu perpindahan \textit{fuselage} $y(t)$ dan 4 sudut \textit{lead/lag} $\delta_i(t)$. Kemudian pada tahap berikutnya adalah menurunkan persamaan gerak tersebut menggunakan metode Lagrange dengan variabel yang berkaitan ($T$=energi kinetik, $V$=energi potensial, dan $D$=disipasi energi Rayleigh) sebagaimana berikut:
+
+\begin{align}
+T &= \frac{1}{2}m_y\dot{y}^2 + \sum_{i=1}^{4}\frac{1}{2} m_{\delta} v^2_{\delta,i}\\
+V &= \frac{1}{2}k_yy^2+\sum_{i=1}^{4}\frac{1}{2}k_\delta \delta_i^2\\
+D &= \frac{1}{2}c_y\dot{y}^2+\sum_{i=1}^{4}\frac{1}{2}c_\delta \dot{\delta}^2
+\end{align}
+
+Dengan bentuk umum persamaan dalam Lagrange adalah sebagai berikut:
+
+\begin{align}
+	\frac{d}{dt}\left(\frac{\partial T}{\partial \dot{q}_i}\right) - \frac{\partial T}{\partial q_i} + \frac{\partial D}{\partial \dot{q}_i} + \frac{\partial V}{\partial q_i} &= 0
+	\label{eq:lagrange_eq}
+\end{align}
+
+Sehingga didapatkan:
+
+\begin{equation}
+	\begin{cases}
+		(m_y+4m_\delta)\ddot{y}+c_y\dot{y}+k_yy+M_\delta\mathlarger{\sum}_{i=1}^{4}\left(\ddot{\delta_i}\cos(\xi_i+\delta_i)-(\Omega+\dot{\delta_i})^2\sin(\xi_i+\delta_i)\right) = 0 & (a) \\
+		I_\delta\ddot{\delta_i}+c_\delta\dot{\delta_i}+k_\delta\delta_i+M_\delta \ddot{y}\cos(\xi_i+\delta_i)=0, \quad i=1,4 & (b)
+	\end{cases}
+	\label{eq:hasilmetodelagrang}
+\end{equation}
+
+Dengan ( $\dot{}$ ) merupakan tanda bahwa variabel tersebut telah diturunkan terhadap waktu $t$, $m_y$ merupakan massa \textit{fuselage}, $m_\delta$ adalah massa dari masing-masing bilah rotor. $M_\delta = m_\delta L$ dan $I_\delta = m_\delta L^2$ berturut-turut adalah momen statik dan momen inersia dari 1 bilah rotor. Subskrip $y$ adalah bagian dari \textit{fuselage} dan $\delta$ adalah bagian dari 1 buah bilah rotor. sehingga $c_y$ dan $c_\delta$ merupakan koefisien redaman dari \textit{fuselage} dan bilah rotor, $k_y$ dan $k_\delta$ adalah koefisien kekakuan linier dari \textit{fuselage} dan bilah rotor.
+
+Untuk mendapatkan persamaan sistem yang \textit{time-invariant} (fungsi yang tidak bergantung mutlak pada waktu), maka persamaan \ref{eq:hasilmetodelagrang} harus dilinierisasi. Untuk itu, dilakukan asumsi bahwa sudut \textit{lead/lag} merupakan sudut yang sangat kecil ($\delta_i(t)<1$) kemudian menggunakan deret Taylor untuk mendapatkan sistem liniernya. Sehingga persamaan \ref{eq:hasilmetodelagrang} akan menjadi seperti persamaan berikut:
+
+\begin{equation}
+	\begin{cases}
+		(m_y+4m_\delta)\ddot{y}+c_y\dot{y}+k_yy+M_\delta\mathlarger{\sum}_{i=1}^{4}\left((\ddot{\delta}_i-\Omega^2\delta_i)\cos(\xi_i)-2\Omega \dot{\delta}_i\sin(\xi_i)\right) = 0 & (a) \\
+		I_\delta\ddot{\delta}_i+c_\delta\dot{\delta}_i+k_\delta\delta_i+M_\delta \ddot{y}\cos(\xi_i)=0, \quad i=1,4 & (b)
+	\end{cases}
+\label{eq:linearisasi_sudutkecil}
+\end{equation}
+
+Transformasi Coleman melibatkan variabel yang mengubah gerakan masing-masing bilah rotor menjadi variabel gerakan kolektif. Untuk 4 bilah rotor akan terdapat 4 koordinat Coleman, diantaranya adalah $\delta_0$, $\delta_{1c}$, $\delta_{1s}$, dan $\delta_{cp}$ yang didefinisikan pada persamaan berikut:
+
+\begin{equation}
+\begin{aligned}
+	\delta_0(t) &= \frac{1}{4}\mathlarger{\sum}_{i=1}^{4}\delta_i(t) && \text{(a)} \\
+	\delta_{1c}(t) &= \frac{1}{2}\mathlarger{\sum}_{i=1}^{4}\delta_i(t) \cos(\xi_i(t)) && \text{(b)}\\
+	\delta_{1s}(t) &= \frac{1}{2}\mathlarger{\sum}_{i=1}^{4}\delta_i(t) \sin(\xi_i(t)) && \text{(c)}\\
+	\delta_{cp}(t) &= \frac{1}{4}\mathlarger{\sum}_{i=1}^{4}(-1)^i\delta_i(t) && \text{(d)}
+\end{aligned}
+\label{eq:colemantrans}
+\end{equation}
+
+Sebagaimana pada gambar \ref{fig:topviewrotorfuslage}, $\delta_i$ merupakan derajat kebebasan pada bilah rotor yang terlambat (\textit{lagging}), maka $\delta_0$ adalah \textit{lag} kolektif yang dimiliki rotor, sedangkan $\delta_{1c}$ dan $\delta_{1s}$ saling berhubungan dan merepresentasikan perpindahan dari pusat massa rotor $G_r$ pada bidangnya masing-masing di sumbu $x_0$ dan $y_0$ \cite{inproceedings}, sehingga:
+
+\begin{equation}
+	\begin{cases}
+		x_{G_r}(t) = -\mathlarger{\frac{L}{2}}\delta_{1s}(t)&(a) \\ 
+		y_{G_r}(t) = \mathlarger{\frac{L}{2}}\delta_{1c}(t)&(b)
+	\end{cases}
+	\label{eq:pusatmassarotor}
+\end{equation}
+
+Dengan memasukkan variabel pada persamaan \ref{eq:colemantrans} ke persamaan \ref{eq:linearisasi_sudutkecil}, persamaan \ref{eq:linearisasi_sudutkecil}a dan \ref{eq:linearisasi_sudutkecil}b masing-masing akan menjadi:
+
+\begin{equation}
+	\begin{cases}
+	(m_y+4m_{\delta})\ddot{y}+c_y\dot{y}+k_yy+2M_{\delta}\ddot{\delta}_{1c}=0, &(a)\\
+	I_{\delta}\ddot{\delta}_0+c_{\delta}\dot{\delta}_0+k_{\delta}\dot{\delta}_0=0&(b)\\
+	I_{\delta}\ddot{\delta}_{1c}+c_{\delta}\dot{\delta}_{1c}+2I_{\delta}\Omega\dot{\delta}_{1s}+(k_{\delta}-I_{\delta}\Omega^2)\delta_{1c}+c_{\delta}\Omega\delta_{1s}+M_{\delta}\ddot{y}=0&(c)\\	I_{\delta}\ddot{\delta}_{1s}+c_{\delta}\dot{\delta}_{1s}-2I_{\delta}\Omega\dot{\delta}_{1c}+(k_{\delta}-I_{\delta}\Omega^2)\delta_{1s}-c_{\delta}\Omega\delta_{1c}=0&(d)\\
+	I_{\delta}\ddot{\delta}_{cp}+c_{\delta}\dot{\delta}_{cp}+k_{\delta}\dot{\delta}_{cp}=0&(e)\\
+	\end{cases}
+	\label{eq:linearisasi}
+\end{equation}
+
+Pada persamaan \ref{eq:colemantrans} diatas, mode pada rotor hanya bergantung pada $\delta_{1c}$ dan $\delta_{1s}$, hal tersebut dikarenakan $\delta_{1c}$ dan $\delta_{1s}$ memengaruhi gaya dari rotor menuju ke \textit{fuselage}. Disisi lain, dari persamaan \ref{eq:linearisasi}, variabel $\delta_0$ dan $\delta_{cp}$ tidak saling berhubungan (\textit{uncoupled}) dan dapat diabaikan. Sehingga, hanya terdapat 3 derajat kebebasan dari pemodelan sederhana yang telah dilakukan diatas, yaitu $y$, $\delta_{1c}$, dan $\delta_{1s}$.
+
+Persamaan gerak sederhana sesuai pada gambar \ref{fig:topviewrotorfuslage} dapat dituliskan dalam bentuk matriks berikut ini:
+
+\begin{equation}
+	\label{eq:EOM}
+	\mathbf{M\ddot{X}}+(\mathbf{C}+\mathbf{G})\mathbf{\dot{X}}+\mathbf{KX}=\mathbf{0}
+\end{equation}
+
+Persamaan \ref{eq:linearisasi} dimuat dalam bentuk matriks dalam persamaan \ref{eq:EOM}. Dimana matriks $\mathbf{X}$, $\mathbf{M}$, $\mathbf{K}$, $\mathbf{C}$, dan $\mathbf{G}$ berturut-turut merupakan matriks derajat kebebasan, massa, kekakuan, redaman dan matriks giroskop dari sistem gerak. Masing-masing matriks tersebut didefinisikan pada persamaan berikut:
+
+\begin{equation}
+	\label{eq:DOF}
+	\mathbf{X}=[y \; \delta_{1c} \; \delta_{1s}]^t
+\end{equation}
+
+\begin{equation}
+\begin{gathered}
+	\mathbf{M}=\begin{bmatrix}
+		1& \tilde{S}_d& 0\\
+		\tilde{S}_c& 1& 0\\
+		0& 0& 1
+	\end{bmatrix}, \quad
+	\mathbf{C}=\begin{bmatrix}
+		\tilde{\lambda}_y& 0& 0\\
+		0& \tilde{\lambda}_{\delta}& 0\\
+		0& 0& \tilde{\lambda}_{\delta} 
+	\end{bmatrix}, \\
+	\mathbf{G}=\begin{bmatrix}
+		0& 0& 0\\
+		0& 0& 2\Omega\\
+		0& -2\Omega& 0
+	\end{bmatrix}, \
+	\mathbf{K}=\begin{bmatrix}
+		\omega^2_y& 0& 0\\
+		0& \omega^2_{\delta}-\Omega^2& \tilde{\lambda}_{\delta}\Omega\\
+		0& -\tilde{\lambda}_{\delta}\Omega& \omega^2_{\delta}-\Omega^2
+	\end{bmatrix}
+\end{gathered}
+\end{equation}
+
+Dengan,
+
+\begin{equation}
+	\begin{gathered}
+	\omega^2_y = \mathlarger{\frac{k_y}{(m_y+4m_{\delta})}},
+	\quad 
+	\omega^2_{\delta} = \mathlarger{\frac{k_{\delta}}{I_{\delta}}}, 
+	\\
+	\tilde{\lambda}_y = \mathlarger{\frac{c_y}{(m_y+4m_{\delta})}}, 
+	\quad
+	\tilde{\lambda}_{\delta} = \mathlarger{\frac{c_{\delta}}{I_{\delta}}}, 
+	\\ 
+	\tilde{S}_d = \mathlarger{\frac{2M_{\delta}}{(m_y+4m_{\delta})}}, 
+	\quad 
+	\tilde{S}_c = \mathlarger{\frac{M_{\delta}}{I_{\delta}}},
+	\\
+	I_{\delta} = m_{\delta}L^2, \quad M_{\delta}=m_{\delta}L
+	\end{gathered}
+\end{equation}
+
+\textit{Ground resonance} berkaitan dengan analisis stabilitas pada persamaan \ref{eq:EOM}. Sehingga dapat didefinisikan dalam bentuk \textit{state-space}. Bentuk \textit{state-space} secara umum difenisikan sebagai berikut:
+
+\begin{equation}
+	\label{eq:AdanQ}
+	\mathbf{\dot{Q}}=\mathbf{AQ}+\mathbf{BU}
+\end{equation}
+
+Dimana $\mathbf{\dot{Q}}$ adalah \textit{state vector} sebagai fungsi dari waktu, $\mathbf{A}$ dan $\mathbf{B}$ masing-masing adalah \textit{state matrix} dan \textit{input matrix} yang bernilai konstan. Sedangkan $\mathbf{U}$ adalah \textit{input} sebagai fungsi dari waktu. Karena pada persamaan \ref{eq:DOF} tidak memiliki \textit{input} maka persamaan dalam bentuk \textit{state-space} menjadi:
+
+\begin{equation}
+	\label{eq:state-space_simplified}
+	\mathbf{\dot{Q}}=\mathbf{AQ}
+\end{equation}
+
+Dimana,
+
+\begin{equation}
+	\label{eq:state-space}
+	\mathbf{Q}=[y \; \delta_{1c} \; \delta_{1s} \; \dot{y} \; \dot{\delta}_{1c} \; \dot{\delta}_{1s}]^t, \quad
+	\mathbf{A}=\begin{bmatrix}
+		\mathbf{0}& \mathbf{I}\\
+		\mathbf{-M}^{-1}\mathbf{K}& \mathbf{-M}^{-1}(\mathbf{C}+\mathbf{G})
+	\end{bmatrix}	
+\end{equation}
+
+Dengan $\mathbf{0}$ dan $\mathbf{I}$ masing-masing merupakan matriks bernilai $0$ dan matriks identitas berukuran 3x3. Solusi nilai eigen dan vektor eigen dari matriks $\mathbf{A}$ akan merepresentasikan fenomena dari \textit{ground resonance} melalui grafik imajiner terhadap kecepatan rotor $\Omega$ dan bagian riil terhadap kecepatan rotor $\Omega$.

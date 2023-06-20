@@ -5,10 +5,7 @@
 
 Pada penelitian ini dilakukan 3 aspek pengerjaan dalam menjawab tujuannya, diantaranya adalah data eksperimen yang telah didapatkan dari PTDI. Kemudian validasi matematis menggunakan landasan teori yang telah disesuaikan dengan kondisi pengerjaan penelitian ini, yaitu \textit{ground resonance} helikopter. Kemudian yang terakhir adalah simulasi untuk mendukung hasil data pengukuran dan perhitungan. 
 
-\section{Hasil Data Pengukuran dan Perhitungan}
-\label{sec:hasilpengukuran}
-
-\subsection{Hasil pengukuran getaran pada FTIS}
+\section{Hasil pengukuran getaran pada FTIS}
 
 Hasil pengukuran data \textit{ground test} dibagi menjadi 2 bagian, seperti yang telah dijelaskan pada bagian metodologi penelitian, bahwa data yang didapatkan merupakan data pengukuran getaran pada FTIS untuk mencari \textit{damping ratio} dan pengukuran data getaran pada akseleromter untuk mendapatkan respon frekuensi dominan oleh helikopter akibat \textit{input} yang diberikan. Berikut ini merupakan grafik yang didapatkan dari masing-masing kondisi yang mengacu pada tabel \ref{tb:variasilanding}.
 
@@ -208,20 +205,20 @@ Gambar dari \ref{fig:plot_ROR} hingga \ref{fig:plot_Acc_Y} merupakan plot nilai 
 
 Saat pengujian, helikopter memberikan respon getaran yang normal, namun kuantifikasi terhadap kondisi tersebut belum menjelaskan seberapa aman helikopter tersebut dari fenomena \textit{ground resonance}. Perhitungan \textit{damping ratio} setidaknya menjelaskan respon yang dimiliki oleh helikopter terhadap orientasi gerakannya di tanah. Meskipun secara visual, respon helikopter secara jelas tidak menunjukkan adanya potensi terjadinya \textit{ground resonance}. Sehingga identifikasi akan dilanjutkan melalui data hasil pengukuran menggunakan akselerometer.
 
-\subsection{Hasil pengukuran getaran pada Akselerometer}
+\section{Hasil pengukuran getaran pada Akselerometer}
 
 Data yang didapatkan dari hasil sensor akselerometer ditunjukkan pada gambar dibawah ini:
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
-	\fbox{\includegraphics[width=0.8\linewidth]{gambar/raw_config2_ch1.png}}
+	\fbox{\includegraphics[width=0.7\linewidth]{gambar/raw_config2_ch1.png}}
 	\caption{Grafik data pengukuran pada variasi FILO kondisi-2 \textit{channel} 1.}
 	\label{fig:raw_config2_FILO}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=0.8\linewidth]{gambar/fft_config2_ch1.png}}
+	\fbox{\includegraphics[width=0.7\linewidth]{gambar/fft_config2_ch1.png}}
 	\caption{Grafik data hasil FFT pada variasi FILO kondisi-2.}
 	\label{fig:fft_config2_FILO}
 \end{figure}
@@ -230,7 +227,7 @@ Grafik pada gambar \ref{fig:raw_config2_FILO} merupakan grafik data hasil penguk
 
 \begin{figure}[h]
 	\centering
-	\fbox{\includegraphics[width=0.8\linewidth]{gambar/Oscillation_cycle_limit.jpg}}
+	\fbox{\includegraphics[width=0.55\linewidth]{gambar/Oscillation_cycle_limit.jpg}}
 	\caption{Grafik batas siklus osilasi dari acuan MIL-STD-810H-Method-514.8 (vibrasi).}
 	\label{fig:batas_siklus}
 \end{figure}
@@ -257,16 +254,101 @@ Untuk mendapatkan grafik pada gambar \ref{fig:batas_siklus} diperlukan informasi
 
 \begin{figure}[h]
 	\centering
-	\fbox{\includegraphics[width=0.8\linewidth]{gambar/Helicopter_response_GVT_image/Config_11/5_Config_11_FLLO.jpg}}
+	\fbox{\includegraphics[width=0.55\linewidth]{gambar/Helicopter_response_GVT_image/Config_11/5_Config_11_FLLO.jpg}}
 	\caption{Hasil pengukuran respon frekuensi kondisi-11 pada variasi FLLO pada detik 1800-1850.}
 	\label{fig:11_FLLO}
 \end{figure}
 
-Grafik pada gambar \ref{fig:11_FLLO} merupakan contoh grafik dengan nilai respon terbesar dibandingkan respon-respon dari kondisi dan variasi lainnya, yaitu dengan amplitudo sebesar 0.143 g-peak pada frekuensi 23.74Hz. Nilai respon yang diberikan pada grafik tersebut merupakan nilai yang didapatkan dari \textit{channel} 1 hingga 6. Data respon yang diberi tanda 'x' merupakan nilai tertinggi dari grafik FFT yang telah didapatkan.
+Grafik pada gambar \ref{fig:11_FLLO} merupakan contoh grafik dengan nilai respon terbesar dibandingkan respon-respon dari kondisi dan variasi lainnya, yaitu dengan amplitudo sebesar 0.143 g-peak pada frekuensi 23.74Hz. Nilai respon yang diberikan pada grafik tersebut merupakan nilai yang didapatkan dari \textit{channel} 1 hingga 6. Data respon yang diberi tanda 'x' merupakan nilai tertinggi dari grafik FFT yang telah didapatkan. Selanjutnya akan coba diidentifikasi bagaimana respon helikopter pada masing-masing \textit{channel} dari kondisi 1 hingga 11.
 
-\subsection{Hasil Perhitungan}
+\begin{figure}[h]
+	\centering
+	\fbox{\includegraphics[width=0.55\linewidth]{gambar/Plot_per_channel_FTIS/all_channel_1.jpg}}
+	\caption{Hasil pengukuran respon frekuensi pada \textit{channel} 1 untuk semua kondisi.}
+	\label{fig:channel_1}
+\end{figure}
 
-Berdasarkan matriks yang telah didapatkan pada persamaan \ref{eq:linearisasi} kemudian disubtitusi pada persamaan \ref{eq:EOM} dan diubah menjadi bentuk \textit{state-space} pada persamaan \ref{eq:state-space_simplified}, akan dihitung nilai eigen dari matriks A berikut.
+\begin{figure}[h]
+	\centering
+	\fbox{\includegraphics[width=0.55\linewidth]{gambar/Plot_per_channel_FTIS/all_channel_2.jpg}}
+	\caption{Hasil pengukuran respon frekuensi pada \textit{channel} 2 untuk semua kondisi.}
+	\label{fig:channel_2}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\fbox{\includegraphics[width=0.55\linewidth]{gambar/Plot_per_channel_FTIS/all_channel_3.jpg}}
+	\caption{Hasil pengukuran respon frekuensi pada \textit{channel} 3 untuk semua kondisi.}
+	\label{fig:channel_3}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=0.55\linewidth]{gambar/Plot_per_channel_FTIS/all_channel_4.jpg}}
+	\caption{Hasil pengukuran respon frekuensi pada \textit{channel} 4 untuk semua kondisi.}
+	\label{fig:channel_4}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=0.55\linewidth]{gambar/Plot_per_channel_FTIS/all_channel_5.jpg}}
+	\caption{Hasil pengukuran respon frekuensi pada \textit{channel} 5 untuk semua kondisi.}
+	\label{fig:channel_5}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=0.55\linewidth]{gambar/Plot_per_channel_FTIS/all_channel_6.jpg}}
+	\caption{Hasil pengukuran respon frekuensi pada \textit{channel} 6 untuk semua kondisi.}
+	\label{fig:channel_6}
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\caption{Kuantifikasi banyaknya respon oleh Helikopter pada batas siklus osilasi.}
+	\label{tb:identifikasi_pada_batas_siklus}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			Batas siklus & Banyaknya respon (n) & Banyaknya respon (\%) & Total Respon dari (0-80Hz) \\ \hline
+			$f_1$ & 0 & 0 & \multirow{4}{*}{2412} \\ \cline{1-3}
+			$f_2$ & 383 & 15.87893864 &  \\ \cline{1-3}
+			$f_3$ & 103 & 4.270315091 &  \\ \cline{1-3}
+			$f_4$ & 15 & 0.621890547 &  \\ \hline
+		\end{tabular}%
+	}
+\end{table}
+
+Grafik pada gambar \ref{fig:channel_1} hingga \ref{fig:channel_6} memberikan informasi terkait respon helikopter dari \textit{channel} 1 hingga 6 untuk semua kondisi. Respon helikopter bertanda 'x' dan diberi warna hijau. Respon tersebut lebih banyak terdapat pada sekitar batas siklus di $f_1$ dan $f_2$. Akan tetapi bila ditinjau secara matematis, tidak terdapat respon helikopter yang berada pada batas siklus $f_1$ hal ini dibuktikan dengan identifikasi nilai kuantitatif respon pada interval $f_1$ seperti yang terdapat pada tabel \ref{tb:identifikasi_pada_batas_siklus}. Dari tabel tersebut, terdapat sebanyak 15.87$\%$ respon helikopter pada batas siklus $f_2$, 4.27$\%$ pada batas siklus $f_3$ dan 0.621$\%$ pada batas siklus $f_4$. Nilai terdekat pada batas siklus $f_1$ berada pada nilai respon frekuensi 5.9166 dan berada pada g-peak 0.0067. Informasi tersebut didapatkan dari data excel yang berjumlah 4539 respon data oleh helikopter seperti yang dapat dilihat pada potongan tabel \ref{tb:list_all_data_sort}. Data yang ditampilkan dan dimasukkan pada batas siklus osilasi hanya merupakan data yang berada pada interval 0 hingga 80Hz. Meskipun pada dasarnya apabila mengacu pada nilai puncak FFT seperti pada gambar \ref{fig:fft_config2_FILO}, didapatkan nilai puncak tertinggi pada rentang frekuensi 700-800Hz.
+
+Identifikasi pada respon frekuensi yang berada di batas siklus osilasi $f_1$ memiliki korelasi yang sangat berkaitan erat dengan fenomena \textit{ground resonance}. Batas siklus osilasi $f_1$ merupakan batas siklus osilasi paling rendah yang berada pada rentang \textit{low frequency}. Berdasarkan penelitian yang telah dikerjakan oleh \cite{Eckert2007AnalyticalAA}, terdapat satu frekuensi pada \textit{lag mode} berupa \textit{low frequency} (frekuensi rendah) yang dapat menyebabkan terjadinya \textit{ground resonance}. Pada rentang frekuensi rendah ini akan dilakukan identifikasi secara matematis sebagai bentuk validasi dari pengukuran data yang telah dilakukan.
+
+\begin{table}[h]
+	\centering
+	\caption{Tabel respon helikopter pada semua channel dan semua kondisi (potongan).}
+	\label{tb:list_all_data_sort}
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			No & Frekuensi & g-Peak & Channel \\ \hline
+			1 & 1.930925 & 0.00063 & ch1 \\ \hline
+			2 & 4.869472 & 0.000965 & ch1 \\ \hline
+			3 & 7.466667 & 0.000198 & ch1 \\ \hline
+			4 & 10.461628 & 0.000213 & ch1 \\ \hline
+			5 & 13.358655 & 0.000102 & ch1 \\ \hline
+			... & ... & ... & ... \\ \hline
+			671 & 5.916678 & 0.006792 & ch2 \\ \hline
+			... & ... & ... & ... \\ \hline
+			4535 & 1.7132 & 0.01659 & ch6 \\ \hline
+			4536 & 1.7683 & 0.01962 & ch6 \\ \hline
+			4537 & 1.82582 & 0.02096 & ch6 \\ \hline
+			4538 & 23.7427 & 0.02117 & ch6 \\ \hline
+			4539 & 746.644 & 0.01644 & ch6 \\ \hline
+		\end{tabular}%
+\end{table}
+
+\section{Hasil Perhitungan Matematis}
+
+Perhitungan matematis yang dilakukan berdasarkan pada apa yang telah dikerjakan pada \cite{BERGEOT201672}, frekuensi \textit{ground resonance} akan terjadi pada \textit{regressive rotor mode}, yaitu mode yang terjadi pada bilah rotor. Dalam perhitungan tersebut, digunakan matriks dari persamaan \ref{eq:state-space}. Berdasarkan matriks yang telah didapatkan pada persamaan \ref{eq:linearisasi} kemudian disubtitusi pada persamaan \ref{eq:EOM} dan diubah menjadi bentuk \textit{state-space} pada persamaan \ref{eq:state-space_simplified}, maka akan dihitung nilai eigen dari matriks A berikut.
 
 \begin{equation}
 	\mathbf{A}=\begin{bmatrix}
@@ -275,7 +357,7 @@ Berdasarkan matriks yang telah didapatkan pada persamaan \ref{eq:linearisasi} ke
 	\end{bmatrix}
 \end{equation}
 
-Akan tetapi, informasi material helikopter belum diketahui, sehingga dilakukan pendekatan untuk nilai propertis persamaan diatas, dimana untuk masing-masing propertis adalah sebagai berikut:
+Nilai eigen pada matriks A merupakan solusi yang menampilkan besarnya frekuensi pada \textit{fuselage} dan \textit{rotor}. Informasi material pada helikopter akan disubtitusi pada matriks tersebut. Akan tetapi dalam penelitian ini, didapatkan keterbatasan pada spesifikasi propertis helikopter. Sehingga dilakukan pendekatan untuk nilai propertis persamaan diatas menggunakan data kecepatan bilah rotor helikopter, dimana untuk masing-masing propertis adalah sebagai berikut:
 
 \begin{table}[h]
 	\centering
@@ -294,43 +376,97 @@ Akan tetapi, informasi material helikopter belum diketahui, sehingga dilakukan p
 	\end{tabular}
 \end{table}
 
-Nilai eigen dapat diperhitungkan dari matriks $\mathbf{A}$. Dari hasil tersebut, didapatkan 6 solusi nilai eigen saat kondisi natural, yaitu saat $\tilde{S}_c = \tilde{S}_d = 0$ (tidak saling berhubungan / \textit{uncoupled}). Sehingga dari kondisi tersebut didapatkan grafik bagian imajiner terhadap kecepatan rotor $\Omega$ dan didapatkan pula bagian rill terhadap kecepatan rotor $\Omega$.
+Nilai eigen dapat diperhitungkan dari matriks $\mathbf{A}$. Dari hasil tersebut, didapatkan 6 solusi nilai eigen saat kondisi tanpa sistem kopling (interkoneksi antara \textit{input} dan \textit{output}), yaitu saat $\tilde{S}_c = \tilde{S}_d = 0$ (tidak saling berhubungan / \textit{uncoupled}). Sehingga dari kondisi tersebut didapatkan grafik bagian imajiner terhadap kecepatan rotor $\Omega$ dan didapatkan pula bagian rill terhadap kecepatan rotor $\Omega$.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=0.7\linewidth]{gambar/Imag(uncoupled).jpg}}
+	\fbox{\includegraphics[width=0.65\linewidth]{gambar/imag_(uncoupled).png}}
 	\caption{Plot grafik imajiner terhadap kecepatan rotor $\Omega$ pada kondisi \textit{uncoupled}.}
 	\label{fig:imag(uncoupled)}
 \end{figure}
 
-\begin{figure}[H]
-	\centering
-	\fbox{\includegraphics[width=0.7\linewidth]{gambar/Real(uncoupled).jpg}}
-	\caption{Plot grafik real terhadap kecepatan rotor $\Omega$ pada kondisi \textit{uncoupled}.}
-	\label{fig:real(uncoupled)}
-\end{figure}
-
-Kemudian, berikut ini adalah grafik plot untuk bagian imajiner dan riil saat sistem \textit{coupled}.
+Pada grafik \ref{fig:imag(uncoupled)} garis putus-putus berwarna biru merupakan nilai eigen untuk \textit{fuselage} helikopter, sehingga pada bagian imajiner tersebut memberikan besarnya mode dari \textit{fuselage}. Sedangkan garis yang berwarna merah merupakan nilai eigen dari mode rotor helikopter, dimana pada grafik tersebut merepresentasikan \textit{regressive rotor mode} dan \textit{progressive rotor mode}. 
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=0.7\linewidth]{gambar/Imag(coupled).jpg}}
+	\fbox{\includegraphics[width=0.65\linewidth]{gambar/Imag(coupled).jpg}}
 	\caption{Plot grafik imajiner terhadap kecepatan rotor $\Omega$ pada kondisi \textit{coupled}.}
 	\label{fig:imag(coupled)}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	\fbox{\includegraphics[width=0.7\linewidth]{gambar/Real(coupled).jpg}}
+	\fbox{\includegraphics[width=0.65\linewidth]{gambar/Real(coupled).jpg}}
 	\caption{Plot grafik real terhadap kecepatan rotor $\Omega$ pada kondisi \textit{coupled}.}
 	\label{fig:real(coupled)}
 \end{figure}
 
-$\alpha_f$ merupakan nilai eigen dari \textit{fuselage} (berwarna biru dengan garis putus-putus) dan $\alpha_r$ merupakan nilai eigen dari rotor helikopter (berwarna merah). Sedangkan $\alpha$ merupakan nilai eigen dari sistem \textit{coupled}.
+Gambar pada grafik \ref{fig:imag(coupled)} merupakan grafik saat sistem helikopter yang memiliki interkoneksi pada bagian \textit{input} dan \textit{output} nya (\textit{coupled}). $\alpha$ merupakan nilai eigen dari sistem \textit{coupled}. Kondisi saat nilai eigen \textit{coupled} berpotongan dengan garis dari nilai eigennya pada nilai eigen di mode \textit{fuselage} nya akan mengakibatkan terjadinya \textit{ground resonance}. Gambar pada grafik \ref{fig:real(coupled)} memberikan informasi, bahwa pada bagian riil dari nilai eigen sistem \textit{coupled} berada pada nilai positif. Dalam sistem kestabilan, kondisi ini merupakan kondisi yang tidak stabil, sehingga pada kondisi tersebut helikopter akan mengalami getaran yang dapat menyebabkan \textit{ground resonance}. 
 
-\section{Pembahasan}
-\label{sec:pembahasan}
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=0.65\linewidth]{gambar/find_range_10-11,89.png}}
+	\caption{Plot grafik real terhadap kecepatan rotor $\Omega$ pada kondisi \textit{coupled}.}
+	\label{fig:resonance_range}
+\end{figure}
 
+Gambar \ref{fig:resonance_range} merupakan langkah yang dilakukan untuk mencari respon helikopter yang terdapat pada interval 10.5-11.89Hz (asumsi interval nilai yang berada disekitar frekuensi 11.16). Data respon helikopter berada pada A2 hingga A4540. Langkah ini dilakukan untuk mengonfirmasi apakah dari perhitungan matematis, helikopter memiliki potensi mengalami fenomena \textit{ground resonance} atau tidak. Namun dari hasil tersebut dapat diperhatikan bahwa tidak terdapat respon frekuensi helikopter yang berada pada interval tersebut. Sehingga, secara matematis helikopter juga tidak memiliki potensi terjadinya \textit{ground resonance}.
 
+\section{Potensi \textit{Ground Resonance} pada bentuk Modifikasi Penambahan Massa}
 
-Identifikasi 
+Jika terus dilakukan modifikasi pada helikopter dengan variasi penambahan massa, atau dengan kata lain terjadi perubahan massa pada helikopter. Maka selanjutnya akan dilakukan proses perhitungan untuk memprediksi potensi tersebut terhadap helikopter hasil modifikasi. Asumsikan bahwa pada $m_y$ terdapat penambahan massa baru sebesar $m_m$. Sehingga pada persamaan yang mengandung $m_y$ pada matriks A \ref{eq:state-space} akan menjadi $m'_y$. dengan:
+
+\begin{equation}
+	\label{eq:modified}
+	m'_y=m_y+m_m
+\end{equation}
+
+Sehingga akan dilakukan perhitungan, saat $m_m = 0$ hingga penambahan sampai pada $m_m = 300$ yang menandakan bahwa perubahan pada massanya akan bertambah sebesar 300kg. Selanjutnya akan coba dilihat melalui grafik seperti pada gambar grafik \ref{fig:imag(coupled)} dan \ref{fig:real(coupled)}. Maka akan didapatkan grafik berikut:
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=0.65\linewidth]{gambar/imag(modified)_1.jpg}}
+	\caption{Plot grafik imajiner terhadap kecepatan rotor $\Omega$ pada kondisi \textit{coupled} sebelum (hitam) dan setelah penambahan massa 300kg (hijau).}
+	\label{fig:imag(modified)_1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=0.65\linewidth]{gambar/real(modified)_1.jpg}}
+	\caption{Plot grafik riil terhadap kecepatan rotor $\Omega$ pada kondisi \textit{coupled} sebelum (hitam) dan setelah penambahan massa 300kg (hijau).}
+	\label{fig:real(modified)_1}
+\end{figure}
+
+Dari kedua grafik diatas, tidak terdapat perbedaan pada bagian imajiner dan riilnya terhadap sebelum dan sesudah penambahan massa sebesar 300kg. Oleh karena itu selanjutnya akan dicoba penambahan yang lebih berat, yaitu sebesar 1000kg. Sehingga akan didapatkan grafik sebagaimana berikut ini:
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=0.65\linewidth]{gambar/imag(modified)_2.jpg}}
+	\caption{Plot grafik imajiner terhadap kecepatan rotor $\Omega$ pada kondisi \textit{coupled} sebelum (hitam) dan setelah penambahan massa 1000kg (hijau).}
+	\label{fig:imag(modified)_2}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=0.65\linewidth]{gambar/real(modified)_2.jpg}}
+	\caption{Plot grafik riil terhadap kecepatan rotor $\Omega$ pada kondisi \textit{coupled} sebelum (hitam) dan setelah penambahan massa 1000kg (hijau).}
+	\label{fig:real(modified)_2}
+\end{figure}
+
+Pada grafik diatas, masih tidak terdapat perbedaan bentuk grafik antara sebelum dan sesudah penambahan massa. Kemudian selanjutnya akan dilakukan penambahan massa pada modifikasi sebesar 5000 kg. 
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=0.65\linewidth]{gambar/imag(modified)_3.jpg}}
+	\caption{Plot grafik imajiner terhadap kecepatan rotor $\Omega$ pada kondisi \textit{coupled} sebelum (hitam) dan setelah penambahan massa 2000kg (hijau).}
+	\label{fig:imag(modified)_3}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=0.65\linewidth]{gambar/real(modified)_3.jpg}}
+	\caption{Plot grafik riil terhadap kecepatan rotor $\Omega$ pada kondisi \textit{coupled} sebelum (hitam) dan setelah penambahan massa 2000kg (hijau).}
+	\label{fig:real(modified)_3}
+\end{figure}
+
+Dari grafik \ref{fig:imag(modified)_3} dan \ref{fig:real(modified)_3} tidak menunjukkan adanya perbedaan yang signifikan sebagai fungsi pada rotor. Kecuali hanya penurunan frekuensi terjadinya fenomena \textit{ground resonance}, yang semula dari 11.16Hz menjadi 11.14Hz. Penambahan ini merupakan penambahan massa yang cukup besar. Pada tabel \ref{tb:propertis} diketahui massa $m_y$ adalah 4500kg, maka penambahan sebesar 2000kg hampir setengah dari massa awal. Dari penambahan tersebut, hanya terjadi penurunan frekuensi \textit{ground resonance} sebesar 0.02Hz. Sehingga dalam hal ini, penambahan massa atau modifikasi pada massa untuk rentang 0 hingga 2000kg pada helikopter maksimal hanya mengalami penurunan frekuensi \textit{ground resonance} sebesar 0.02Hz.

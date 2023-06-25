@@ -11,7 +11,7 @@ Hasil pengukuran data \textit{ground test} dibagi menjadi 2 bagian, seperti yang
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=0.7\linewidth]{gambar/FTIS_image/All-plot/All_config_1.jpg}}
+	\fbox{\includegraphics[width=\linewidth]{gambar/FTIS_image/All-plot/All_config_1.jpg}}
 	\caption{Grafik data hasil pengukuran kondisi 1.}
 	\label{fig:condition_1}
 \end{figure}
@@ -142,7 +142,9 @@ Posisi dari masing-masing keterangan berkorelasi dengan posisi pada grafik yang 
 	}
 \end{table}
 
-Pada grafik diatas dibagi menjadi beberapa segmen yang sesuai dengan variasi \textit{input} yang telah diberikan pada tabel \ref{tb:variasi_input} sehingga selanjutnya akan dihitung nilai \textit{damping ratio} dari masing-masing orientasi respon helikopter. \textit{Damping ratio} pada respon helikopter akan dihitung setelah helikopter berhenti memberikan \textit{input}. Sehingga didapatkan tabel \ref{tb:damp_ratio_table} yang memberikan informasi hasil perhitungan \textit{damping ratio} pada helikopter.
+Pada grafik diatas dibagi menjadi beberapa segmen yang sesuai dengan variasi \textit{input} yang telah diberikan pada tabel \ref{tb:variasi_input} sehingga selanjutnya akan dihitung nilai \textit{damping ratio} dari masing-masing orientasi respon helikopter. Hasil perhitungan \textit{damping ratio} pada tabel \ref{tb:damp_ratio_table} didapatkan dengan cara melakukan identifikasi melalui data yang telah di-plot seperti pada gambar \ref{fig:NLLO-4} secara visual, yaitu dengan memberikan tanda pada puncak amplitudo hingga amplitudo terendah, kemudian menghitung besarnya \textit{logarithmic decrement} untuk mendapatkan \textit{damping ratio}. Disisi lain terdapat respon yang langsung teredam setelah \textit{input} berhenti, kondisi ini dapat dilihat pada gambar \ref{fig:FLLO-3_mark10}. \textit{Damping ratio} pada respon helikopter akan dihitung setelah helikopter berhenti memberikan \textit{input}.
+
+Dari data yang telah didapatkan, diperlukan sebuah tahap untuk memvalidasi bahwa \textit{input} yang diberikan memiliki korelasi dengan \textit{output} yang terdapat pada helikopter. Korelasi tersebut ditunjukkan oleh grafik pada gambar \ref{fig:koheren-4_NLLO-4} dan \ref{fig:koheren-3_FLLO}. Grafik tersebut berisi \textit{bode plot} dan \textit{phase lag} yang merepresentasikan perbandingan respon dari \textit{output} terhadap \textit{input} yang telah diberikan. Kompleksitas pada helikopter membuat grafik \textit{bode plot} dan \textit{phase lag} nya menjadi tidak halus. Akan tetapi nilai koherensinya bernilai 1, hal tersebut berarti \textit{input} dan \textit{output} memiliki konsistensi dan hubungan yang erat. Hal tersebut juga memiliki interpretasi bahwa \textit{output} memiliki susunan yang sejajar dengan \textit{input} yang diberikan. Sehingga terbukti bahwa \textit{input} dan \textit{output} pada helikopter memiliki korelasi yang erat dan dapat dilakukan analisis untuk mencari parameter yang diinginkan.
 
 Data pengukuran getaran yang didapatkan dari FTIS merupakan data yang diidentifikasi untuk melihat potensi terjadinya \textit{ground resonance} secara visual. Apabila terdapat respon yang meningkat setelah \textit{input} berhenti, maka berdasarkan teori yang telah dijelaskan pada fenomena \textit{ground resonance}. Kondisi tersebut merupakan kondisi awal mula terjadinya \textit{self-excited} yang membuat kerangka helikopter bergetar dengan amplitudo yang semakin besar, sehingga helikopter mengalami kerusakan. Dari variasi \textit{input} yang telah dijelaskan, \textit{input} hanya berasal dari \textit{longitudinal cyclic displacement} dan \textit{lateral cyclic displacement}. Pada gambar \ref{fig:condition_1} hingga \ref{fig:condition_11} dapat dilihat bahwa setiap \textit{input} memiliki respon pada setiap orientasi helikopter, dimulai dari \textit{roll, pitch, heading, rate of roll, rate of pitch, rate of yaw,} percepatan pada arah-X,Y, dan Z. 
 
@@ -157,14 +159,28 @@ Nilai rata-rata \textit{damping ratio} terbesar diberikan oleh \textit{rate of r
 	\label{fig:NLLO-4}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=0.5\linewidth]{gambar/koheren-config_4_NLLO.jpg}}
+	\caption{Grafik respon \textit{output rate of roll} terhadap \textit{input} (longitudinal) pada \textit{bode plot, phase lag} dan koherensinya (kondisi-4 NLLO).}
+	\label{fig:koheren-4_NLLO-4}
+\end{figure}
+
+\begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[width=0.7\linewidth]{gambar/Contoh_TC_Config_3_mark10_FLLO.jpg}}
 	\caption{Grafik data pengukuran saat respon teredam dengan cepat pada FLLO kondisi-3.}
 	\label{fig:FLLO-3_mark10}
 \end{figure}
 
-Hasil perhitungan \textit{damping ratio} pada tabel \ref{tb:damp_ratio_table} didapatkan dengan cara melakukan identifikasi melalui data yang telah di-plot seperti pada gambar \ref{fig:NLLO-4} secara visual, yaitu dengan memberikan tanda pada puncak amplitudo hingga amplitudo terendah, kemudian menghitung besarnya \textit{logarithmic decrement} untuk mendapatkan \textit{damping ratio}. Disisi lain terdapat respon yang langsung teredam setelah \textit{input} berhenti, kondisi ini dapat dilihat pada gambar \ref{fig:FLLO-3_mark10}.
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=0.5\linewidth]{gambar/koheren-config_3_FLLO.jpg}}
+	\caption{Grafik respon \textit{output} percepatan sumbu-y terhadap \textit{input} (longitudinal) pada \textit{bode plot, phase lag} dan koherensinya (kondisi-3 FLLO).}
+	\label{fig:koheren-3_FLLO}
+\end{figure}
+
+
 
 \begin{figure}[h]
 	\centering
@@ -201,7 +217,7 @@ Hasil perhitungan \textit{damping ratio} pada tabel \ref{tb:damp_ratio_table} di
 	\label{fig:plot_All}
 \end{figure}
 
-Gambar dari \ref{fig:plot_ROR} hingga \ref{fig:plot_Acc_Y} merupakan plot nilai \textit{damping ratio} berdasarkan masing-masing kondisi untuk orientasi \textit{rate of roll, rate of pitch, rate of yaw,} dan percepatan dalam arah sumbu-Y. Sumbu-x pada gambar tersebut merupakan keterangan pada kondisi ke-berapa terdapat \textit{damping ratio} dengan nilai-nilai yang didapatkan dari perhitungan. Pada gambar \ref{fig:plot_ROR} \textit{damping ratio} tertinggi pada respon \textit{rate of roll} berada pada nilai 0.0912 di kondisi-5 dan terendah pada nilai 0.0291 di kondisi-6. Sedangkan pada gambar \ref{fig:plot_ROP} memberikan informasi nilai \textit{damping ratio} pada \textit{rate of pitch} terbesar pada nilai 0.0572 yang terjadi pada kondisi-8 dan terkecil pada nilai 0.0367 yang terjadi di kondisi-1. Selanjutnya pada gambar \ref{fig:plot_ROY} didapatkan nilai \textit{damping ratio} terbesar pada nilai 0.0478 di kondisi-7 dan terkecil pada nilai 0.0367 di kondisi-4. Kemudian pada arah sumbu-Y, didapatkan nilai \textit{damping ratio} terbesar pada nilai 0.0647 di kondisi-7 dan terkecil pada 0.0352 di kondisi-5.  
+Gambar dari \ref{fig:plot_ROR} hingga \ref{fig:plot_Acc_Y} merupakan plot nilai \textit{damping ratio} berdasarkan masing-masing kondisi untuk orientasi \textit{rate of roll, rate of pitch, rate of yaw,} dan percepatan dalam arah sumbu-y. Sumbu-x pada gambar tersebut merupakan keterangan pada kondisi ke-berapa terdapat \textit{damping ratio} dengan nilai-nilai yang didapatkan dari perhitungan. Pada gambar \ref{fig:plot_ROR} \textit{damping ratio} tertinggi pada respon \textit{rate of roll} berada pada nilai 0.0912 di kondisi-5 dan terendah pada nilai 0.0291 di kondisi-6. Sedangkan pada gambar \ref{fig:plot_ROP} memberikan informasi nilai \textit{damping ratio} pada \textit{rate of pitch} terbesar pada nilai 0.0572 yang terjadi pada kondisi-8 dan terkecil pada nilai 0.0367 yang terjadi di kondisi-1. Selanjutnya pada gambar \ref{fig:plot_ROY} didapatkan nilai \textit{damping ratio} terbesar pada nilai 0.0478 di kondisi-7 dan terkecil pada nilai 0.0367 di kondisi-4. Kemudian pada arah sumbu-Y, didapatkan nilai \textit{damping ratio} terbesar pada nilai 0.0647 di kondisi-7 dan terkecil pada 0.0352 di kondisi-5.  
 
 Saat pengujian, helikopter memberikan respon getaran yang normal, namun kuantifikasi terhadap kondisi tersebut belum menjelaskan seberapa aman helikopter tersebut dari fenomena \textit{ground resonance}. Perhitungan \textit{damping ratio} setidaknya menjelaskan respon yang dimiliki oleh helikopter terhadap orientasi gerakannya di tanah. Meskipun secara visual, respon helikopter secara jelas tidak menunjukkan adanya potensi terjadinya \textit{ground resonance}. Sehingga identifikasi akan dilanjutkan melalui data hasil pengukuran menggunakan akselerometer.
 
@@ -227,81 +243,95 @@ Grafik pada gambar \ref{fig:raw_config2_FILO} merupakan grafik data hasil penguk
 
 \begin{figure}[h]
 	\centering
-	\fbox{\includegraphics[width=0.55\linewidth]{gambar/Oscillation_cycle_limit.jpg}}
+	\fbox{\includegraphics[width=0.5\linewidth]{gambar/Oscillation_cycle_limit.jpg}}
 	\caption{Grafik batas siklus osilasi dari acuan MIL-STD-810H-Method-514.8 (vibrasi).}
 	\label{fig:batas_siklus}
 \end{figure}
 
-\begin{table}[H]
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% \usepackage{graphicx}
+\begin{table}[]
+	\centering
 	\caption{Tabel perhitungan batas siklus osilasi.}
 	\label{tb:batas_siklus}
-	\centering
-	\begin{tabular}{|ccc|cc|}
-		\hline
-		\multicolumn{3}{|c|}{Frekuensi (Hz)}                                                       & \multicolumn{2}{c|}{Peak (g)}             \\ \hline
-		\multicolumn{1}{|c|}{$f_1$ lower} & \multicolumn{1}{c|}{5.92}  & \multirow{2}{*}{$1p$}       & \multicolumn{1}{c|}{$A_1$ lower} & 0.1464 \\ \cline{1-2} \cline{4-5} 
-		\multicolumn{1}{|c|}{$f_1$ upper} & \multicolumn{1}{c|}{6.08}  &                           & \multicolumn{1}{c|}{$A_1$ upper} & 0.1515 \\ \hline
-		\multicolumn{1}{|c|}{$f_2$ lower} & \multicolumn{1}{c|}{23.68} & \multirow{2}{*}{$1p*n$}   & \multicolumn{1}{c|}{$A_2$ lower} & 2.368  \\ \cline{1-2} \cline{4-5} 
-		\multicolumn{1}{|c|}{$f_2$ upper} & \multicolumn{1}{c|}{24.32} &                           & \multicolumn{1}{c|}{$A_2$ upper} & 2.432  \\ \hline
-		\multicolumn{1}{|c|}{$f_3$ lower} & \multicolumn{1}{c|}{47.36} & \multirow{2}{*}{$1p*n*2$} & \multicolumn{1}{c|}{$A_3$ lower} & 1.764 \\ \cline{1-2} \cline{4-5} 
-		\multicolumn{1}{|c|}{$f_3$ upper} & \multicolumn{1}{c|}{48.64} &                           & \multicolumn{1}{c|}{$A_3$ upper} & 1.636  \\ \hline
-		\multicolumn{1}{|c|}{$f_4$ lower} & \multicolumn{1}{c|}{71.04} & \multirow{2}{*}{$1p*n*3$} & \multicolumn{1}{c|}{$A_4$ lower} & 1.5    \\ \cline{1-2} \cline{4-5} 
-		\multicolumn{1}{|c|}{$f_4$ upper} & \multicolumn{1}{c|}{72.96} &                           & \multicolumn{1}{c|}{$A_4$ upper} & 1.5    \\ \hline
-	\end{tabular}
+	\resizebox{0.8\textwidth}{!}{%
+		\begin{tabular}{|ccc|c|ccc|}
+			\hline
+			\multicolumn{3}{|c|}{Frequency (Hz)} & Frekuensi harmonik & \multicolumn{3}{c|}{Peak (g)} \\ \hline
+			\multicolumn{1}{|c|}{\multirow{2}{*}{$f_1$}} & \multicolumn{1}{c|}{lower} & 5.92 & \multirow{2}{*}{1p} & \multicolumn{1}{c|}{\multirow{2}{*}{$A_1$}} & \multicolumn{1}{c|}{lower} & 0.146443515 \\ \cline{2-3} \cline{6-7} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{upper} & 6.08 &  & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{upper} & 0.151515152 \\ \hline
+			\multicolumn{1}{|c|}{\multirow{2}{*}{$f_2$}} & \multicolumn{1}{c|}{lower} & 23.68 & \multirow{2}{*}{1p*n} & \multicolumn{1}{c|}{\multirow{2}{*}{$A_2$}} & \multicolumn{1}{c|}{lower} & 2.368 \\ \cline{2-3} \cline{6-7} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{upper} & 24.32 &  & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{upper} & 2.432 \\ \hline
+			\multicolumn{1}{|c|}{\multirow{2}{*}{$f_3$}} & \multicolumn{1}{c|}{lower} & 47.36 & \multirow{2}{*}{1p*n*2} & \multicolumn{1}{c|}{\multirow{2}{*}{$A_3$}} & \multicolumn{1}{c|}{lower} & 1.764 \\ \cline{2-3} \cline{6-7} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{upper} & 48.64 &  & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{upper} & 1.636 \\ \hline
+			\multicolumn{1}{|c|}{\multirow{2}{*}{$f_4$}} & \multicolumn{1}{c|}{lower} & 71.04 & \multirow{2}{*}{1p*n*3} & \multicolumn{1}{c|}{\multirow{2}{*}{$A_4$}} & \multicolumn{1}{c|}{lower} & 1.5 \\ \cline{2-3} \cline{6-7} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{upper} & 72.96 &  & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{upper} & 1.5 \\ \hline
+		\end{tabular}%
+	}
 \end{table}
 
 Untuk mendapatkan grafik pada gambar \ref{fig:batas_siklus} diperlukan informasi kecepatan rotor helikopter. Diketahui (informasi \textit{flight manual} dari PTDI) nilai kecepatan maksimum dan minimum dari rotor berturut-turut adalah sebesar $365 rpm$ dan $355 rpm$, sehingga didapatkan frekuensi ($f_1$) nya dimulai dari 5.92Hz (minimum) hingga 6.08Hz (maksimum). Perhitungan nilai $f_2$, $f_3$, dan $f_4$ dapat dilihat pada tabel \ref{tb:batas_siklus}. Nilai peak pada tabel tersebut dihitung menggunakan formulasi pada gambar \ref{fig:MIL_STD} yang terletak pada kolom "\textbf{PEAK ACCELERATION ($A_x$) at $f_x$ (GRAVITY UNITS (g))}". Apabila respon sensor akselerometer memiliki nilai frekuensi yang berada diantara batas siklus osilasi dengan amplitudo yang tinggi, maka helikopter memiliki potensi mengalami fenomena \textit{ground resonance} pada frekuensi tersebut. Namun, dari respon yang diberikan oleh helikopter pada semua variasi kondisi dan \textit{input} nilai puncak tertinggi yang dimiliki oleh respon helikopter hanya berada pada nilai 0.143 pada frekuensi 23.68 hingga 24.32 Hz. Sehingga, dari grafik pada gambar \ref{fig:11_FLLO} (kondisi-11 variasi FLLO) tidak ditemukan potensi adanya \textit{ground resonance} pada helikopter. Adapun respon pada kondisi yang lain dengan variasi \textit{input} yang telah ditentukan, responnya memiliki nilai yang lebih kecil dari kondisi pada gambar \ref{fig:11_FLLO}, meskipun respon tersebut berada pada batas siklus osilasi helikopter.
 
 \begin{figure}[h]
 	\centering
-	\fbox{\includegraphics[width=0.55\linewidth]{gambar/Helicopter_response_GVT_image/Config_11/5_Config_11_FLLO.jpg}}
+	\fbox{\includegraphics[width=0.5\linewidth]{gambar/Helicopter_response_GVT_image/Config_11/5_Config_11_FLLO.jpg}}
 	\caption{Hasil pengukuran respon frekuensi kondisi-11 pada variasi FLLO pada detik 1800-1850.}
 	\label{fig:11_FLLO}
 \end{figure}
 
-Grafik pada gambar \ref{fig:11_FLLO} merupakan contoh grafik dengan nilai respon terbesar dibandingkan respon-respon dari kondisi dan variasi lainnya, yaitu dengan amplitudo sebesar 0.143 g-peak pada frekuensi 23.74Hz. Nilai respon yang diberikan pada grafik tersebut merupakan nilai yang didapatkan dari \textit{channel} 1 hingga 6. Data respon yang diberi tanda 'x' merupakan nilai tertinggi dari grafik FFT yang telah didapatkan. Selanjutnya akan coba diidentifikasi bagaimana respon helikopter pada masing-masing \textit{channel} dari kondisi 1 hingga 11.
+Grafik pada gambar \ref{fig:11_FLLO} merupakan contoh grafik dengan nilai respon terbesar dibandingkan respon-respon dari kondisi dan variasi lainnya, yaitu dengan amplitudo sebesar 0.143 g-peak pada frekuensi 23.74Hz. Nilai respon yang diberikan pada grafik tersebut merupakan nilai yang didapatkan dari \textit{channel} 1 hingga 6. Data respon yang diberi tanda 'x' merupakan nilai tertinggi dari grafik FFT yang telah didapatkan. Selanjutnya akan coba diidentifikasi bagaimana respon helikopter pada masing-masing \textit{channel} yang dimulai dari \textit{channel}-1 hingga 6 untuk semua kondisi.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=0.55\linewidth]{gambar/Plot_per_channel_FTIS/all_channel_1.jpg}}
-	\caption{Hasil pengukuran respon frekuensi pada \textit{channel} 1 untuk semua kondisi.}
+	\fbox{\includegraphics[width=0.5\linewidth]{gambar/Plot_per_channel_FTIS/all_channel_1.jpg}}
+	\caption{Hasil pengukuran respon frekuensi pada \textit{channel} 1 (arah sumbu-z) untuk semua kondisi.}
 	\label{fig:channel_1}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	\fbox{\includegraphics[width=0.55\linewidth]{gambar/Plot_per_channel_FTIS/all_channel_2.jpg}}
-	\caption{Hasil pengukuran respon frekuensi pada \textit{channel} 2 untuk semua kondisi.}
+	\fbox{\includegraphics[width=0.5\linewidth]{gambar/Plot_per_channel_FTIS/all_channel_2.jpg}}
+	\caption{Hasil pengukuran respon frekuensi pada \textit{channel} 2 (arah sumbu-z) untuk semua kondisi.}
 	\label{fig:channel_2}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[]
 	\centering
-	\fbox{\includegraphics[width=0.55\linewidth]{gambar/Plot_per_channel_FTIS/all_channel_3.jpg}}
-	\caption{Hasil pengukuran respon frekuensi pada \textit{channel} 3 untuk semua kondisi.}
+	\fbox{\includegraphics[width=0.5\linewidth]{gambar/Plot_per_channel_FTIS/all_channel_3.jpg}}
+	\caption{Hasil pengukuran respon frekuensi pada \textit{channel} 3 (arah sumbu-y) untuk semua kondisi.}
 	\label{fig:channel_3}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=0.55\linewidth]{gambar/Plot_per_channel_FTIS/all_channel_4.jpg}}
-	\caption{Hasil pengukuran respon frekuensi pada \textit{channel} 4 untuk semua kondisi.}
+	\fbox{\includegraphics[width=0.5\linewidth]{gambar/Plot_per_channel_FTIS/all_channel_4.jpg}}
+	\caption{Hasil pengukuran respon frekuensi pada \textit{channel} 4 (arah sumbu-z) untuk semua kondisi.}
 	\label{fig:channel_4}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
-	\fbox{\includegraphics[width=0.55\linewidth]{gambar/Plot_per_channel_FTIS/all_channel_5.jpg}}
-	\caption{Hasil pengukuran respon frekuensi pada \textit{channel} 5 untuk semua kondisi.}
+	\fbox{\includegraphics[width=0.5\linewidth]{gambar/Plot_per_channel_FTIS/all_channel_5.jpg}}
+	\caption{Hasil pengukuran respon frekuensi pada \textit{channel} 5 (arah sumbu-x) untuk semua kondisi.}
 	\label{fig:channel_5}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=0.55\linewidth]{gambar/Plot_per_channel_FTIS/all_channel_6.jpg}}
-	\caption{Hasil pengukuran respon frekuensi pada \textit{channel} 6 untuk semua kondisi.}
+	\fbox{\includegraphics[width=0.5\linewidth]{gambar/Plot_per_channel_FTIS/all_channel_6.jpg}}
+	\caption{Hasil pengukuran respon frekuensi pada \textit{channel} 6 (arah sumbu-y) untuk semua kondisi.}
 	\label{fig:channel_6}
 \end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.72\linewidth]{gambar/respon_tampak_atas.png}
+	\caption{Proporsi respon frekuensi pada helikopter untuk masing-masing \textit{channel} beserta arah orientasi akselerometer.}
+	\label{fig:respon_tampak_atas}
+\end{figure}
+
+Gambar \ref{fig:respon_tampak_atas} memberikan informasi terkait proporsi getaran yang diberikan oleh helikopter terhadap input yang diberikan oleh masing-masing \textit{channel}. \textit{Channel} 1,2, dan 3 tidak memberikan informasi terhadap pergerakan sumbu-x. Akan tetapi, didapatkan bahwa pada \textit{channel} tersebut, helikopter lebih sering memberikan respon dibandingkan dengan \textit{channel} 4,5, dan 6. Hal tersebut dapat dilihat pada jumlah proporsi yang dimiliki oleh masing-masing \textit{channel}. Hal ini membuktikan bahwa helikopter memiliki respon getaran yang berada pada siklus osilasi pada bagian depan.
 
 \begin{table}[H]
 	\centering
@@ -319,9 +349,40 @@ Grafik pada gambar \ref{fig:11_FLLO} merupakan contoh grafik dengan nilai respon
 	}
 \end{table}
 
-Grafik pada gambar \ref{fig:channel_1} hingga \ref{fig:channel_6} memberikan informasi terkait respon helikopter dari \textit{channel} 1 hingga 6 untuk semua kondisi. Respon helikopter bertanda 'x' dan diberi warna hijau. Respon tersebut lebih banyak terdapat pada sekitar batas siklus di $f_1$ dan $f_2$. Akan tetapi bila ditinjau secara matematis, tidak terdapat respon helikopter yang berada pada batas siklus $f_1$ hal ini dibuktikan dengan identifikasi nilai kuantitatif respon pada interval $f_1$ seperti yang terdapat pada tabel \ref{tb:identifikasi_pada_batas_siklus}. Dari tabel tersebut, terdapat sebanyak 15.87$\%$ respon helikopter pada batas siklus $f_2$, 4.27$\%$ pada batas siklus $f_3$ dan 0.621$\%$ pada batas siklus $f_4$. Nilai terdekat pada batas siklus $f_1$ berada pada nilai respon frekuensi 5.9166 dan berada pada g-peak 0.0067. Informasi tersebut didapatkan dari data excel yang berjumlah 4539 respon data oleh helikopter seperti yang dapat dilihat pada potongan tabel \ref{tb:list_all_data_sort}. Data yang ditampilkan dan dimasukkan pada batas siklus osilasi hanya merupakan data yang berada pada interval 0 hingga 80Hz. Meskipun pada dasarnya apabila mengacu pada nilai puncak FFT seperti pada gambar \ref{fig:fft_config2_FILO}, didapatkan nilai puncak tertinggi pada rentang frekuensi 700-800Hz.
+\begin{table}[H]
+	\centering
+	\caption{Jumlah dan proporsi respon frekuensi helikopter pada batas siklus osilasi berdasarkan masing-masing channel.}
+	\label{tab:jumlah_proporsi_respon_frekuensi}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|c|c|c|c|c|
+				>{\columncolor[HTML]{FFCE93}}c |
+				>{\columncolor[HTML]{FFCB2F}}c 
+				>{\columncolor[HTML]{FFCB2F}}l |}
+			\hline
+			\textit{Channel} & $f_1$ (n) & $f_2$ (n) & $f_3$ (n) & $f_4$ (n) & Total per \textit{channel} & \multicolumn{2}{c|}{\cellcolor[HTML]{FFCB2F}Proporsi masing-masing \textit{channel} (\%)} \\ \hline
+			ch1 & 0 & 97 & 25 & 4 & 126 & \multicolumn{2}{c|}{\cellcolor[HTML]{FFCB2F}25.15} \\ \hline
+			ch2 & 0 & 93 & 18 & 2 & 113 & \multicolumn{2}{c|}{\cellcolor[HTML]{FFCB2F}22.55} \\ \hline
+			ch3 & 0 & 20 & 20 & 2 & 42 & \multicolumn{2}{c|}{\cellcolor[HTML]{FFCB2F}8.38} \\ \hline
+			ch4 & 0 & 114 & 3 & 6 & 123 & \multicolumn{2}{c|}{\cellcolor[HTML]{FFCB2F}24.55} \\ \hline
+			ch5 & 0 & 6 & 0 & 0 & 6 & \multicolumn{2}{c|}{\cellcolor[HTML]{FFCB2F}1.20} \\ \hline
+			ch6 & 0 & 53 & 37 & 1 & 91 & \multicolumn{2}{c|}{\cellcolor[HTML]{FFCB2F}18.16} \\ \hline
+			Total per batas siklus frekuensi & \cellcolor[HTML]{FFFE65}0 & \cellcolor[HTML]{FFFE65}383 & \cellcolor[HTML]{FFFE65}103 & \cellcolor[HTML]{FFFE65}15 & 501 & \multicolumn{2}{c|}{\cellcolor[HTML]{FFCB2F}100} \\ \hline
+		\end{tabular}%
+	}
+\end{table}
 
-Identifikasi pada respon frekuensi yang berada di batas siklus osilasi $f_1$ memiliki korelasi yang sangat berkaitan erat dengan fenomena \textit{ground resonance}. Batas siklus osilasi $f_1$ merupakan batas siklus osilasi paling rendah yang berada pada rentang \textit{low frequency}. Berdasarkan penelitian yang telah dikerjakan oleh \cite{Eckert2007AnalyticalAA}, terdapat satu frekuensi pada \textit{lag mode} berupa \textit{low frequency} (frekuensi rendah) yang dapat menyebabkan terjadinya \textit{ground resonance}. Pada rentang frekuensi rendah ini akan dilakukan identifikasi secara matematis sebagai bentuk validasi dari pengukuran data yang telah dilakukan.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{gambar/jumlah-respon_masing2_channel.png}
+	\caption{Grafik heksagon respon frekuensi helikopter pada masing-masing \textit{channel} yang berada di dalam batas siklus osilasi.}
+	\label{fig:grafik_heksagon}
+\end{figure}
+
+Grafik pada gambar \ref{fig:channel_1} hingga \ref{fig:channel_6} memberikan informasi terkait respon helikopter dari \textit{channel} 1 hingga 6 untuk semua kondisi. Respon helikopter bertanda 'x' dan diberi warna hijau. Respon tersebut lebih banyak terdapat pada sekitar batas siklus di $f_1$ dan $f_2$. Akan tetapi berdasarkan data yang telah diolah, tidak terdapat respon helikopter yang berada pada batas siklus $f_1$ hal ini dibuktikan dengan identifikasi nilai kuantitatif respon pada interval $f_1$ seperti yang terdapat pada tabel \ref{tb:identifikasi_pada_batas_siklus} dan tabel \ref{tab:jumlah_proporsi_respon_frekuensi}. Dari tabel tersebut, terdapat sebanyak 15.87$\%$ respon helikopter pada batas siklus $f_2$, 4.27$\%$ pada batas siklus $f_3$ dan 0.621$\%$ pada batas siklus $f_4$. Nilai terdekat pada batas siklus $f_1$ berada pada nilai respon frekuensi 5.9166 dan berada pada g-peak 0.0067. Informasi tersebut didapatkan dari data excel yang berjumlah 4539 respon data oleh helikopter seperti yang dapat dilihat pada potongan tabel \ref{tb:list_all_data_sort}. Data yang ditampilkan dan dimasukkan pada batas siklus osilasi hanya merupakan data yang berada pada interval 0 hingga 80Hz. Meskipun pada dasarnya apabila mengacu pada nilai puncak FFT seperti pada gambar \ref{fig:fft_config2_FILO}, didapatkan nilai puncak tertinggi pada rentang frekuensi 700-800Hz.
+
+Pada tabel \ref{tab:jumlah_proporsi_respon_frekuensi}, respon frekuensi yang berada pada batas siklus osilasi terbanyak ditemukan pada \textit{channel} 1, yaitu 25.15$\%$ kemudian pada \textit{channel} 4 sebesar 24.55$\%$, selanjutnya dari \textit{channel} 2 sebesar 22.55$\%$. Sisanya, yaitu dari \textit{channel} 6 dan 3 berturut-turut sebesar 18.16$\%$ dan 8.38$\%$. Adapun \textit{channel} yang paling sedikit memberikan respon frekuensi adalah pada \textit{channel} 5 yang memiliki orientasi pada arah sumbu-x yaitu sebesar 1.2$\%$. Hal ini menunjukkan bahwa pada helikopter lebih sedikit terjadi getaran yang bergerak ke-arah depan dan belakang helikopter. Informasi serupa juga dapat dilihat sesuai dengan grafik yang berada pada gambar \ref{fig:grafik_heksagon}, pada grafik tersebut menunjukkan banyaknya respon yang dimiliki oleh masing-masing batas siklus osilasi pada masing-masing \textit{channel}. Sebagai catatan untuk siklus osilasi $f_1$ tidak ditampilkan karena tidak memiliki respon frekuensi pada rentang tersebut. 
+
+Identifikasi pada respon frekuensi yang berada di batas siklus osilasi $f_1$ memiliki korelasi yang sangat berkaitan erat dengan fenomena \textit{ground resonance}. Berdasarkan penelitian yang telah dikerjakan pada \cite{Eckert2007AnalyticalAA}, terdapat satu frekuensi pada \textit{lag mode} berupa \textit{low frequency} (frekuensi rendah) yang dapat menyebabkan terjadinya \textit{ground resonance}. Pada rentang frekuensi rendah ini akan dilakukan identifikasi secara matematis sebagai bentuk validasi dari pengukuran data yang telah dilakukan.
 
 \begin{table}[h]
 	\centering
@@ -346,6 +407,8 @@ Identifikasi pada respon frekuensi yang berada di batas siklus osilasi $f_1$ mem
 		\end{tabular}%
 \end{table}
 
+Pada tabel \ref{tb:list_all_data_sort}, di data ke-671, didapatkan respon frekuensi yang berada pada rentang mendekati $f_1$ dengan puncak yang berada pada nilai 0.0067 g-peak. Akan tetapi nilai ini secara kuantitas masih berada pada wilayah aman terhadap batas siklus osilasi $f_1$, yaitu berada pada rentang 5.92-6.08Hz yang berasal dari \textit{channel} 2 (arah getaran sumbu-Z). Batas siklus osilasi tersebut pada dasarnya memang berkorelasi dengan \textit{ground resonance} karena rentang tersebut merupakan batas kecepatan minimum dan maksimum kecepatan pada rotor helikopter. Akan tetapi sekali lagi, bahwa pada rentang tersebut tidak ditemukan adanya respon frekuensi helikopter, walaupun selisih antara frekuensi tersebut dengan batas siklus osilasi pada $f_1$ hanya sebesar 0.0033. Batas siklus osilasi pada $f_1$ menjadi fokusan yang penting dikarenakan batas g-peak pada $f_1$ sangat kecil. Dengan kata lain, apabila terdapat respon yang berada pada batas siklusi $f_1$ dengan nilai g-peak 0.14 saja, maka helikopter akan mengalami \textit{ground resonance}. 
+
 \section{Hasil Perhitungan Matematis}
 
 Perhitungan matematis yang dilakukan berdasarkan pada apa yang telah dikerjakan pada \cite{BERGEOT201672}, frekuensi \textit{ground resonance} akan terjadi pada \textit{regressive rotor mode}, yaitu mode yang terjadi pada bilah rotor. Dalam perhitungan tersebut, digunakan matriks dari persamaan \ref{eq:state-space}. Berdasarkan matriks yang telah didapatkan pada persamaan \ref{eq:linearisasi} kemudian disubtitusi pada persamaan \ref{eq:EOM} dan diubah menjadi bentuk \textit{state-space} pada persamaan \ref{eq:state-space_simplified}, maka akan dihitung nilai eigen dari matriks A berikut.
@@ -365,7 +428,7 @@ Nilai eigen pada matriks A merupakan solusi yang menampilkan besarnya frekuensi 
 	\label{tb:propertis}
 	\begin{tabular}{|c|c|c|}
 		\hline
-		Variabel     & Nilai  	& Besaran \\ \hline
+		Variabel     & Nilai  	& Besaran \\ \hline 
 		$L$          & 5.97  	& $m$     \\ \hline
 		$k_y$        & 44.100  	& $N/m$   \\ \hline
 		$m_y$        & 4.500   	& kg      \\ \hline
@@ -376,7 +439,7 @@ Nilai eigen pada matriks A merupakan solusi yang menampilkan besarnya frekuensi 
 	\end{tabular}
 \end{table}
 
-Nilai eigen dapat diperhitungkan dari matriks $\mathbf{A}$. Dari hasil tersebut, didapatkan 6 solusi nilai eigen saat kondisi tanpa sistem kopling (interkoneksi antara \textit{input} dan \textit{output}), yaitu saat $\tilde{S}_c = \tilde{S}_d = 0$ (tidak saling berhubungan / \textit{uncoupled}). Sehingga dari kondisi tersebut didapatkan grafik bagian imajiner terhadap kecepatan rotor $\Omega$ dan didapatkan pula bagian rill terhadap kecepatan rotor $\Omega$.
+Nilai eigen dapat diperhitungkan dari matriks $\mathbf{A}$. Dari hasil tersebut, didapatkan 6 solusi nilai eigen saat kondisi tanpa sistem kopling (interkoneksi antara \textit{input} dan \textit{output}), yaitu saat $\tilde{S}_c = \tilde{S}_d = 0$ (tidak saling berhubungan / \textit{uncoupled}). Sehingga dari kondisi tersebut didapatkan grafik bagian imajiner terhadap kecepatan rotor $\Omega$ dan didapatkan pula bagian riil terhadap kecepatan rotor $\Omega$.
 
 \begin{figure}[H]
 	\centering

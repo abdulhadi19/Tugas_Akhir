@@ -337,14 +337,15 @@ Gambar \ref{fig:respon_tampak_atas} memberikan informasi terkait proporsi getara
 	\centering
 	\caption{Kuantifikasi banyaknya respon oleh Helikopter pada batas siklus osilasi.}
 	\label{tb:identifikasi_pada_batas_siklus}
-	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|c|c|c|c|}
+	\resizebox{0.5\textwidth}{!}{%
+		\begin{tabular}{|cc|c|}
 			\hline
-			Batas siklus & Banyaknya respon (n) & Banyaknya respon (\%) & Total Respon dari (0-80Hz) \\ \hline
-			$f_1$ & 0 & 0 & \multirow{4}{*}{2412} \\ \cline{1-3}
-			$f_2$ & 383 & 15.87893864 &  \\ \cline{1-3}
-			$f_3$ & 103 & 4.270315091 &  \\ \cline{1-3}
-			$f_4$ & 15 & 0.621890547 &  \\ \hline
+			\multicolumn{1}{|c|}{Batas Siklus} & Banyak respon (n) & Proporsi respon (\%) \\ \hline
+			\multicolumn{1}{|c|}{$f_1$} & 0 & 0.00 \\ \hline
+			\multicolumn{1}{|c|}{$f_2$} & 383 & 15.88 \\ \hline
+			\multicolumn{1}{|c|}{$f_3$} & 103 & 4.27 \\ \hline
+			\multicolumn{1}{|c|}{$f_4$} & 15 & 0.62 \\ \hline
+			\multicolumn{2}{|c|}{Total proporsi respon (\%)} & 20.77 \\ \hline
 		\end{tabular}%
 	}
 \end{table}
@@ -378,19 +379,18 @@ Gambar \ref{fig:respon_tampak_atas} memberikan informasi terkait proporsi getara
 	\label{fig:grafik_heksagon}
 \end{figure}
 
-Grafik pada gambar \ref{fig:channel_1} hingga \ref{fig:channel_6} memberikan informasi terkait respon helikopter dari \textit{channel} 1 hingga 6 untuk semua kondisi. Respon helikopter bertanda 'x' dan diberi warna hijau. Respon tersebut lebih banyak terdapat pada sekitar batas siklus di $f_1$ dan $f_2$. Akan tetapi berdasarkan data yang telah diolah, tidak terdapat respon helikopter yang berada pada batas siklus $f_1$ hal ini dibuktikan dengan identifikasi nilai kuantitatif respon pada interval $f_1$ seperti yang terdapat pada tabel \ref{tb:identifikasi_pada_batas_siklus} dan tabel \ref{tab:jumlah_proporsi_respon_frekuensi}. Dari tabel tersebut, terdapat sebanyak 15.87$\%$ respon helikopter pada batas siklus $f_2$, 4.27$\%$ pada batas siklus $f_3$ dan 0.621$\%$ pada batas siklus $f_4$. Nilai terdekat pada batas siklus $f_1$ berada pada nilai respon frekuensi 5.9166 dan berada pada g-peak 0.0067. Informasi tersebut didapatkan dari data excel yang berjumlah 4539 respon data oleh helikopter seperti yang dapat dilihat pada potongan tabel \ref{tb:list_all_data_sort}. Data yang ditampilkan dan dimasukkan pada batas siklus osilasi hanya merupakan data yang berada pada interval 0 hingga 80Hz. Meskipun pada dasarnya apabila mengacu pada nilai puncak FFT seperti pada gambar \ref{fig:fft_config2_FILO}, didapatkan nilai puncak tertinggi pada rentang frekuensi 700-800Hz.
+Grafik pada gambar \ref{fig:channel_1} hingga \ref{fig:channel_6} memberikan informasi terkait respon helikopter dari \textit{channel} 1 hingga 6 untuk semua kondisi. Respon helikopter bertanda 'x' dan diberi warna hijau. Respon tersebut lebih banyak terdapat pada sekitar batas siklus di $f_1$ dan $f_2$. Akan tetapi berdasarkan data yang telah diolah, tidak terdapat respon helikopter yang berada pada batas siklus $f_1$ hal ini dibuktikan dengan identifikasi nilai kuantitatif respon pada interval $f_1$ seperti yang terdapat pada tabel \ref{tb:identifikasi_pada_batas_siklus} dan tabel \ref{tab:jumlah_proporsi_respon_frekuensi}. Dari tabel tersebut, terdapat sebanyak 15.87$\%$ respon helikopter pada batas siklus $f_2$, 4.27$\%$ pada batas siklus $f_3$ dan 0.621$\%$ pada batas siklus $f_4$, sedangkan didapatkan total respon yang berada pada batas siklus hanya sebesar 20.77$\%$ dari total respon yang berada pada rentang 0-80Hz. Nilai terdekat pada batas siklus $f_1$ berada pada nilai respon frekuensi 5.916Hz dan berada pada g-peak 0.0067. Informasi tersebut didapatkan dari data excel yang berjumlah 4539 respon data oleh helikopter seperti yang dapat dilihat pada potongan tabel \ref{tb:list_all_data_sort}. Data yang ditampilkan dan dimasukkan pada batas siklus osilasi hanya merupakan data yang berada pada interval 0 hingga 80Hz. Meskipun pada dasarnya apabila mengacu pada nilai puncak FFT seperti pada gambar \ref{fig:fft_config2_FILO}, didapatkan nilai puncak tertinggi pada rentang frekuensi 700-800Hz.
 
 Pada tabel \ref{tab:jumlah_proporsi_respon_frekuensi}, respon frekuensi yang berada pada batas siklus osilasi terbanyak ditemukan pada \textit{channel} 1, yaitu 25.15$\%$ kemudian pada \textit{channel} 4 sebesar 24.55$\%$, selanjutnya dari \textit{channel} 2 sebesar 22.55$\%$. Sisanya, yaitu dari \textit{channel} 6 dan 3 berturut-turut sebesar 18.16$\%$ dan 8.38$\%$. Adapun \textit{channel} yang paling sedikit memberikan respon frekuensi adalah pada \textit{channel} 5 yang memiliki orientasi pada arah sumbu-x yaitu sebesar 1.2$\%$. Hal ini menunjukkan bahwa pada helikopter lebih sedikit terjadi getaran yang bergerak ke-arah depan dan belakang helikopter. Informasi serupa juga dapat dilihat sesuai dengan grafik yang berada pada gambar \ref{fig:grafik_heksagon}, pada grafik tersebut menunjukkan banyaknya respon yang dimiliki oleh masing-masing batas siklus osilasi pada masing-masing \textit{channel}. Sebagai catatan untuk siklus osilasi $f_1$ tidak ditampilkan karena tidak memiliki respon frekuensi pada rentang tersebut. 
 
-Identifikasi pada respon frekuensi yang berada di batas siklus osilasi $f_1$ memiliki korelasi yang sangat berkaitan erat dengan fenomena \textit{ground resonance}. Berdasarkan penelitian yang telah dikerjakan pada \cite{Eckert2007AnalyticalAA}, terdapat satu frekuensi pada \textit{lag mode} berupa \textit{low frequency} (frekuensi rendah) yang dapat menyebabkan terjadinya \textit{ground resonance}. Pada rentang frekuensi rendah ini akan dilakukan identifikasi secara matematis sebagai bentuk validasi dari pengukuran data yang telah dilakukan.
-
-\begin{table}[h]
+\begin{table}[H]
 	\centering
 	\caption{Tabel respon helikopter pada semua channel dan semua kondisi (potongan).}
 	\label{tb:list_all_data_sort}
+	\resizebox{0.45\textwidth}{!}{%
 		\begin{tabular}{|c|c|c|c|}
 			\hline
-			No & Frekuensi & g-Peak & Channel \\ \hline
+			No & Frekuensi (Hz) & g-Peak & Channel \\ \hline
 			1 & 1.930925 & 0.00063 & ch1 \\ \hline
 			2 & 4.869472 & 0.000965 & ch1 \\ \hline
 			3 & 7.466667 & 0.000198 & ch1 \\ \hline
@@ -405,9 +405,12 @@ Identifikasi pada respon frekuensi yang berada di batas siklus osilasi $f_1$ mem
 			4538 & 23.7427 & 0.02117 & ch6 \\ \hline
 			4539 & 746.644 & 0.01644 & ch6 \\ \hline
 		\end{tabular}%
+	}
 \end{table}
 
-Pada tabel \ref{tb:list_all_data_sort}, di data ke-671, didapatkan respon frekuensi yang berada pada rentang mendekati $f_1$ dengan puncak yang berada pada nilai 0.0067 g-peak. Akan tetapi nilai ini secara kuantitas masih berada pada wilayah aman terhadap batas siklus osilasi $f_1$, yaitu berada pada rentang 5.92-6.08Hz yang berasal dari \textit{channel} 2 (arah getaran sumbu-Z). Batas siklus osilasi tersebut pada dasarnya memang berkorelasi dengan \textit{ground resonance} karena rentang tersebut merupakan batas kecepatan minimum dan maksimum kecepatan pada rotor helikopter. Akan tetapi sekali lagi, bahwa pada rentang tersebut tidak ditemukan adanya respon frekuensi helikopter, walaupun selisih antara frekuensi tersebut dengan batas siklus osilasi pada $f_1$ hanya sebesar 0.0033. Batas siklus osilasi pada $f_1$ menjadi fokusan yang penting dikarenakan batas g-peak pada $f_1$ sangat kecil. Dengan kata lain, apabila terdapat respon yang berada pada batas siklusi $f_1$ dengan nilai g-peak 0.14 saja, maka helikopter akan mengalami \textit{ground resonance}. 
+Identifikasi pada respon frekuensi yang berada di batas siklus osilasi $f_1$ memiliki korelasi yang sangat berkaitan erat dengan fenomena \textit{ground resonance}. Berdasarkan penelitian yang telah dikerjakan pada \cite{Eckert2007AnalyticalAA}, terdapat satu frekuensi pada \textit{lag mode} yang dapat menyebabkan terjadinya \textit{ground resonance}. Pada rentang frekuensi rendah ini akan dilakukan identifikasi secara matematis sebagai bentuk validasi dari pengukuran data yang telah dilakukan.
+
+Pada tabel \ref{tb:list_all_data_sort}, di data ke-671, didapatkan respon frekuensi yang berada pada rentang mendekati $f_1$ dengan puncak yang berada pada nilai 0.0067 g-peak. Akan tetapi nilai ini secara kuantitas masih berada pada wilayah aman terhadap batas siklus osilasi $f_1$, yaitu berada pada rentang 5.92-6.08Hz yang berasal dari \textit{channel} 2 (arah getaran sumbu-z). Batas siklus osilasi tersebut pada dasarnya memang berkorelasi dengan \textit{ground resonance} karena rentang tersebut merupakan batas kecepatan minimum dan maksimum kecepatan pada rotor helikopter. Akan tetapi sekali lagi, bahwa pada rentang tersebut tidak ditemukan adanya respon frekuensi helikopter, walaupun selisih antara frekuensi tersebut dengan batas siklus osilasi pada $f_1$ hanya sebesar 0.0033. Batas siklus osilasi pada $f_1$ menjadi fokusan yang penting dikarenakan batas g-peak pada $f_1$ sangat kecil. Dengan kata lain, apabila terdapat respon yang berada pada batas siklusi $f_1$ dengan nilai g-peak 0.14 saja, maka helikopter akan mengalami \textit{ground resonance}. 
 
 \section{Hasil Perhitungan Matematis}
 
@@ -426,25 +429,27 @@ Nilai eigen pada matriks A merupakan solusi yang menampilkan besarnya frekuensi 
 	\centering
 	\caption{Pendekatan nilai propertis helikopter.}
 	\label{tb:propertis}
+	\resizebox{0.35\textwidth}{!}{%
 	\begin{tabular}{|c|c|c|}
 		\hline
 		Variabel     & Nilai  	& Besaran \\ \hline 
 		$L$          & 5.97  	& $m$     \\ \hline
-		$k_y$        & 44.100  	& $N/m$   \\ \hline
-		$m_y$        & 4.500   	& kg      \\ \hline
-		$c_y$        & 441    	& $Ns/m$  \\ \hline
+		$k_y$        & 397440  	& $N/m$   \\ \hline
+		$m_y$        & 2406  	& kg      \\ \hline
+		$c_y$        & 0.6424  	& $Ns/m$  \\ \hline
 		$m_{\delta}$ & 100.5  	& kg      \\ \hline
-		$k_{\delta}$ & 89.028  	& $N/m$   \\ \hline
-		$c_{\delta}$ & 106.92 	& $Ns/m$  \\ \hline
+		$k_{\delta}$ & 397440  	& $N/m$   \\ \hline
+		$c_{\delta}$ & 0.5267 	& $Ns/m$  \\ \hline
 	\end{tabular}
+}
 \end{table}
 
 Nilai eigen dapat diperhitungkan dari matriks $\mathbf{A}$. Dari hasil tersebut, didapatkan 6 solusi nilai eigen saat kondisi tanpa sistem kopling (interkoneksi antara \textit{input} dan \textit{output}), yaitu saat $\tilde{S}_c = \tilde{S}_d = 0$ (tidak saling berhubungan / \textit{uncoupled}). Sehingga dari kondisi tersebut didapatkan grafik bagian imajiner terhadap kecepatan rotor $\Omega$ dan didapatkan pula bagian riil terhadap kecepatan rotor $\Omega$.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=0.65\linewidth]{gambar/imag_(uncoupled).png}}
-	\caption{Plot grafik imajiner terhadap kecepatan rotor $\Omega$ pada kondisi \textit{uncoupled}.}
+	\fbox{\includegraphics[width=0.7\linewidth]{gambar/Imag(uncoupled).jpg}}
+	\caption{Plot grafik imajiner terhadap kecepatan rotor $\Omega$ pada kondisi sebelum dimasukkan kondisi \textit{coupled} pada sistem.}
 	\label{fig:imag(uncoupled)}
 \end{figure}
 
@@ -452,19 +457,19 @@ Pada grafik \ref{fig:imag(uncoupled)} garis putus-putus berwarna biru merupakan 
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=0.65\linewidth]{gambar/Imag(coupled).jpg}}
-	\caption{Plot grafik imajiner terhadap kecepatan rotor $\Omega$ pada kondisi \textit{coupled}.}
+	\fbox{\includegraphics[width=0.7\linewidth]{gambar/Imag(coupled)_mark.jpg}}
+	\caption{Plot grafik imajiner terhadap kecepatan rotor $\Omega$ pada kondisi setelah dimasukkan kondisi \textit{coupled} pada sistem.}
 	\label{fig:imag(coupled)}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=0.65\linewidth]{gambar/Real(coupled).jpg}}
-	\caption{Plot grafik real terhadap kecepatan rotor $\Omega$ pada kondisi \textit{coupled}.}
+	\fbox{\includegraphics[width=0.7\linewidth]{gambar/Real(coupled).jpg}}
+	\caption{Plot grafik riil terhadap kecepatan rotor $\Omega$ pada kondisi setelah dimasukkan kondisi \textit{coupled} pada sistem.}
 	\label{fig:real(coupled)}
 \end{figure}
 
-Gambar pada grafik \ref{fig:imag(coupled)} merupakan grafik saat sistem helikopter yang memiliki interkoneksi pada bagian \textit{input} dan \textit{output} nya (\textit{coupled}). $\alpha$ merupakan nilai eigen dari sistem \textit{coupled}. Kondisi saat nilai eigen \textit{coupled} berpotongan dengan garis dari nilai eigennya pada nilai eigen di mode \textit{fuselage} nya akan mengakibatkan terjadinya \textit{ground resonance}. Gambar pada grafik \ref{fig:real(coupled)} memberikan informasi, bahwa pada bagian riil dari nilai eigen sistem \textit{coupled} berada pada nilai positif. Dalam sistem kestabilan, kondisi ini merupakan kondisi yang tidak stabil, sehingga pada kondisi tersebut helikopter akan mengalami getaran yang dapat menyebabkan \textit{ground resonance}. 
+Grafik pada gambar \ref{fig:imag(coupled)} merupakan grafik saat sistem helikopter yang memiliki interkoneksi pada bagian \textit{input} dan \textit{output} nya (\textit{coupled}). $\alpha$ merupakan nilai eigen dari sistem \textit{coupled}. Kondisi saat nilai eigen \textit{coupled} berpotongan dengan garis dari nilai eigennya pada nilai eigen di mode \textit{fuselage} nya akan mengakibatkan terjadinya \textit{ground resonance}. Gambar pada grafik \ref{fig:real(coupled)} memberikan informasi, bahwa pada bagian riil dari nilai eigen sistem \textit{coupled} berada pada nilai positif pada rentang 20.97-26.79Hz. Berdasarkan pada apa yang telah dikerjakan pada \cite{BERGEOT201672}, \cite{Eckert2007AnalyticalAA},\cite{Bergeot_passive}, dan banyak literatur mengenai fenomena \textit{ground resonance} maka pada kondisi tersebut helikopter akan mengalami getaran yang dapat menyebabkan \textit{ground resonance}. 
 
 \begin{figure}[H]
 	\centering
@@ -473,18 +478,18 @@ Gambar pada grafik \ref{fig:imag(coupled)} merupakan grafik saat sistem helikopt
 	\label{fig:resonance_range}
 \end{figure}
 
-Gambar \ref{fig:resonance_range} merupakan langkah yang dilakukan untuk mencari respon helikopter yang terdapat pada interval 10.5-11.89Hz (asumsi interval nilai yang berada disekitar frekuensi 11.16). Data respon helikopter berada pada A2 hingga A4540. Langkah ini dilakukan untuk mengonfirmasi apakah dari perhitungan matematis, helikopter memiliki potensi mengalami fenomena \textit{ground resonance} atau tidak. Namun dari hasil tersebut dapat diperhatikan bahwa tidak terdapat respon frekuensi helikopter yang berada pada interval tersebut. Sehingga, secara matematis helikopter juga tidak memiliki potensi terjadinya \textit{ground resonance}.
+Gambar \ref{fig:resonance_range} merupakan langkah yang dilakukan untuk mencari respon helikopter yang terdapat pada interval 20.76-27Hz. Data respon helikopter berada pada A2 hingga A4540. Langkah ini dilakukan untuk mengonfirmasi apakah dari perhitungan matematis, helikopter memiliki potensi mengalami fenomena \textit{ground resonance} atau tidak. Namun dari hasil tersebut dapat diperhatikan bahwa memang terdapat respon yang berada pada rentang 20.76-27Hz akan tetapi dikarenakan besarnya amplitudo pada respon frekuensi tersebut tidak begitu besar, maka pada kondisi di lapangan helikopter tidak mengalami fenomena \textit{ground resonance}. Adanya batas siklus osilasi ini setidaknya memberikan informasi, bahwa pada rentang frekuensi tersebut memiliki potensi untuk mengalami fenomena \textit{ground resonance}. Disisi lain, adanya respon setelah \textit{input} yang diberikan berhenti pada helikopter pada dasarnya merupakan kompensasi dari adanya respon frekuensi yang berada pada rentang frekuensi resonansi helikopter.
 
 \section{Potensi \textit{Ground Resonance} pada bentuk Modifikasi Penambahan Massa}
 
-Jika terus dilakukan modifikasi pada helikopter dengan variasi penambahan massa, atau dengan kata lain terjadi perubahan massa pada helikopter. Maka selanjutnya akan dilakukan proses perhitungan untuk memprediksi potensi tersebut terhadap helikopter hasil modifikasi. Asumsikan bahwa pada $m_y$ terdapat penambahan massa baru sebesar $m_m$. Sehingga pada persamaan yang mengandung $m_y$ pada matriks A \ref{eq:state-space} akan menjadi $m'_y$. dengan:
+Diasumsikan bahwa pada $m_y$ terdapat penambahan massa baru sebesar $m_m$. Sehingga pada persamaan yang mengandung $m_y$ pada matriks A \ref{eq:state-space} akan menjadi $m'_y$. dengan:
 
-\begin{equation}
+\begin{align}
 	\label{eq:modified}
 	m'_y=m_y+m_m
-\end{equation}
+\end{align}
 
-Sehingga akan dilakukan perhitungan, saat $m_m = 0$ hingga penambahan sampai pada $m_m = 300$ yang menandakan bahwa perubahan pada massanya akan bertambah sebesar 300kg. Selanjutnya akan coba dilihat melalui grafik seperti pada gambar grafik \ref{fig:imag(coupled)} dan \ref{fig:real(coupled)}. Maka akan didapatkan grafik berikut:
+Sehingga akan dilakukan perhitungan, saat $m_m = 0$ hingga penambahan sampai pada $m_m = 300$ yang menandakan bahwa perubahan pada massanya akan bertambah sebesar 300kg. Akan tetapi dalam perhitungan terhadap potensi fenomena \textit{ground resonance} ini memiliki batas penambahan maksimum, yaitu sebesar 4500kg. Sehingga nilai pertambahan maksimum pada modifikasi helikopter adalah sebesar 2094 kg. Selanjutnya akan coba dilihat melalui grafik seperti pada gambar grafik \ref{fig:imag(coupled)} dan \ref{fig:real(coupled)} untuk kondisi modifikasi penambahan massa pertama, yaitu sebesar 300kg. Maka akan didapatkan grafik berikut:
 
 \begin{figure}[H]
 	\centering
@@ -500,7 +505,7 @@ Sehingga akan dilakukan perhitungan, saat $m_m = 0$ hingga penambahan sampai pad
 	\label{fig:real(modified)_1}
 \end{figure}
 
-Dari kedua grafik diatas, tidak terdapat perbedaan pada bagian imajiner dan riilnya terhadap sebelum dan sesudah penambahan massa sebesar 300kg. Oleh karena itu selanjutnya akan dicoba penambahan yang lebih berat, yaitu sebesar 1000kg. Sehingga akan didapatkan grafik sebagaimana berikut ini:
+Dari kedua grafik diatas, tidak terdapat perbedaan pada bagian imajiner dan riilnya terhadap sebelum dan sesudah penambahan massa sebesar 300kg. Oleh karena itu selanjutnya akan dicoba penambahan yang lebih berat, yaitu sebesar 1000kg atau sebesar 1 ton. Sehingga akan didapatkan grafik sebagaimana berikut ini:
 
 \begin{figure}[H]
 	\centering
@@ -516,7 +521,7 @@ Dari kedua grafik diatas, tidak terdapat perbedaan pada bagian imajiner dan riil
 	\label{fig:real(modified)_2}
 \end{figure}
 
-Pada grafik diatas, masih tidak terdapat perbedaan bentuk grafik antara sebelum dan sesudah penambahan massa. Kemudian selanjutnya akan dilakukan penambahan massa pada modifikasi sebesar 5000 kg. 
+Pada grafik diatas, sudah mulai terdapat perbedaan rentang frekuensi resonansi pada helikopter hasil modifikasi. Untuk frekuensi resonansi pada hasil modifikasi memiliki rentang frekuensi 21.3-26.17Hz. Hal ini berarti pada penambahan 1000kg menggeser batas siklus osilasi sebesar 0.33Hz dari batas terendah dan 0.62Hz dari batas tertinggi. Kemudian selanjutnya akan dilakukan penambahan massa pada modifikasi sebesar 2000kg, dengan pertimbangan bahwa sisa 94kg lainnya merupakan seorang pilot yang bermassa dibawah 94kg. 
 
 \begin{figure}[H]
 	\centering
@@ -532,4 +537,218 @@ Pada grafik diatas, masih tidak terdapat perbedaan bentuk grafik antara sebelum 
 	\label{fig:real(modified)_3}
 \end{figure}
 
-Dari grafik \ref{fig:imag(modified)_3} dan \ref{fig:real(modified)_3} tidak menunjukkan adanya perbedaan yang signifikan sebagai fungsi pada rotor. Kecuali hanya penurunan frekuensi terjadinya fenomena \textit{ground resonance}, yang semula dari 11.16Hz menjadi 11.14Hz. Penambahan ini merupakan penambahan massa yang cukup besar. Pada tabel \ref{tb:propertis} diketahui massa $m_y$ adalah 4500kg, maka penambahan sebesar 2000kg hampir setengah dari massa awal. Dari penambahan tersebut, hanya terjadi penurunan frekuensi \textit{ground resonance} sebesar 0.02Hz. Sehingga dalam hal ini, penambahan massa atau modifikasi pada massa untuk rentang 0 hingga 2000kg pada helikopter maksimal hanya mengalami penurunan frekuensi \textit{ground resonance} sebesar 0.02Hz.
+Dari grafik \ref{fig:real(modified)_3} menunjukkan perubahan yang cukup siginifikan untuk batas terendah dan tertinggi pada frekuensi resonansi helikopter. Untuk batas terendah yang dimiliki helikopter berkurang sebesar 0.54Hz dan dari batas tertinggi berkurang sebesar 0.99Hz. Dari hasil perhitungan potensi fenomena \textit{ground resonance} pada helikopter modifikasi justru membuat batas siklus osilasi pada helikopter menjadi semakin kecil. Seperti yang telah ditunjukkan pada grafik gambar \ref{fig:real(modified)_2} dan \ref{fig:imag(modified)_3} maka di dapatkan informasi bahwa seiring dengan pertambahan massa, rentang batas siklus osilasi pada helikopter akan semakin kecil pula. Akan tetapi asumsi penambahan massa modifikasi pada helikopter ini didasarkan pada penambahan yang merata pada setiap titik helikopter. Oleh karena itu diperlukan analisis dari aspek geometri jika penambahan massa pada helikopter melibatkan modifikasi bentuk yang tidak merata pada helikopter. Hal tersebut dikarenakan penambahan massa yang tidak merata pada helikopter akan menyebabkan pusat massa helikopter berpindah dari pusat massa awalnya. Dengan penambahan maksimal pada massa sebesar 2000kg, didapatkan batas siklus osilasinya sebesar 21.51-25.8Hz. Sehingga bila dibandingkan dengan batas siklus osilasi $f_2$ pada standar didapatkan error sebesar 7.62$\%$.
+
+\section{Hasil Simulasi FEMAP}
+
+Hasil simulasi pada FEMAP menggunakan beberapa kondisi pendekatan dengan keadaan sebenarnya dari helikopter. Dalam hal ini, diberikan \textit{constraint} pada beberapa titik di helikopter. Titik tersebut terletak pada bagian depan dan tengah diposisi kanan-kiri kerangka helikopter. \textit{Constraint} tersebut merepresentasikan posisi pendaratan helikopter pada darat, yaitu ban dan oleo. Dari titik yang telah ditentukan pada tabel \ref{tb:koordinat}, yaitu terletak pada ID 9, 10, 15, dan 16 atau jika dilihat menggunakan skema pada gambar \ref{fig:skema_model} terletak pada mark 1s, 1s', 3s dan 3s'. \textit{Constraint} yang diberikan merupakan batasan yang hanya berada pada arah sumbu-x. Sehingga pada titik tersebut tidak terdapat perindahan secara translasi.
+
+Helikopter dimodelkan berdasarkan model stik atau batang. Pada masing-masing penghubung stiknya merupakan \textit{node}. Digunakan material berbahan dasar titanium untuk elemen pada stik pemodelan helikopter. Pendekatan propertis material titanium menggunakan informasi yang terdapat pada \cite{ASTM}.
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=0.6\linewidth]{gambar/simulasi_tampak_atas.jpg}}
+	\caption{Gambar hasil pemodelan stik helikopter tampak dari atas.}
+	\label{fig:simulasi_tampak_atas}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=0.6\linewidth]{gambar/simulasi_tampak_depan.jpg}}
+	\caption{Gambar hasil pemodelan stik helikopter tampak dari depan.}
+	\label{fig:simulasi_tampak_depan}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=0.6\linewidth]{gambar/simulasi_tampak_samping.jpg}}
+	\caption{Gambar hasil pemodelan stik helikopter tampak dari samping.}
+	\label{fig:simulasi_tampak_samping}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=0.6\linewidth]{gambar/simulasi_tampak_normal.jpg}}
+	\caption{Gambar hasil pemodelan stik helikopter tampak dari normal.}
+	\label{fig:simulasi_tampak_normal}
+\end{figure}
+
+Dari pemodelan yang telah dibuat pada FEMAP, selanjutnya telah digunakan analisis pada fitur FEMAP untuk mencari \textit{mode shape} pada helikopter. Secara matematis, pada dasarnya untuk mencari \textit{mode shape} pada helikopter adalah dengan mencari nilai eigen dari sistem pemodelannya. Kemudian dari nilai eigen tersebut didapatkan vektor eigen untuk selanjutnya dapat merepresentasikan gerakan dari n-mode yang dimilki oleh helikopter. Dalam hal ini telah didapatkan 10 mode pada helikopter.
+
+Pada gambar \ref{fig:mode1} hingga \ref{fig:mode10} merupakan deformasi mode 1 hingga mode 10. Setiap mode memiliki bentuk deformasi dan frekuensi yang berbeda-beda. Mode 1 hingga 3 memiliki frekuensi yang sangat kecil, dari ketiga \textit{mode shape} tersebut memiliki gerakan yang hampir sama. Kemudian pada mode 4 hingga 10 memiliki frekuensi dan \textit{mode shape} yang berbeda-beda pula. Bila dikembalikan pada pemahaman teoritis, fenomena \textit{ground resonance} dapat terjadi apabila peredam pada bilah rotor tidak dapat mengkompensasi gerakan tertinggal bilahnya (\textit{lead/lag motion}) maka pusat massa helikopter tidak akan segaris lagi dengan rotor. Hal tersebut dapat menyebabkan ketidakstabilan oleh gaya sentrifugal pada frekuensi tertentu yang menyebabkan badan helikopter mengalami getaran dan saat frekuensi dari rotor memiliki nilai yang mendekati frekuensi natural helikopter maka terjadilah \textit{ground resonance}. Hal ini seperti yang ditunjukkan pada gambar \ref{fig:simulasiGR}.
+
+\begin{figure}[H]
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode1.jpg}}
+		\caption{}
+		\label{fig:mode1}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode2.jpg}}
+		\caption{}
+		\label{fig:mode2}
+	\end{subfigure}
+	\caption{Deformasi pada: (a) mode 1 di frekuensi 3.55*$10^-7$Hz (b) mode 2 di frekuensi 3.56*$10^-6$Hz.}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode3.jpg}}
+		\caption{}
+		\label{fig:mode3}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode4.jpg}}
+		\caption{}
+		\label{fig:mode4}
+	\end{subfigure}
+	\caption{Deformasi: (a) mode 3 pada frekuensi $3.85*10^-7$Hz (b) mode 4 pada frekuensi 2.57Hz.}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode5.jpg}}
+		\caption{}
+		\label{fig:mode5}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode6.jpg}}
+		\caption{}
+		\label{fig:mode6}
+	\end{subfigure}
+	\caption{Deformasi: (a) mode 5 pada frekuensi 2.58Hz (b) mode 6 pada frekuensi 4.06Hz.}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode7.jpg}}
+		\caption{}
+		\label{fig:mode7}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode8.jpg}}
+		\caption{}
+		\label{fig:mode8}
+	\end{subfigure}
+	\caption{Deformasi: (a) mode 7 pada frekuensi 5.81Hz (b) mode 8 pada frekuensi 6.88Hz.}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode9.jpg}}
+		\caption{}
+		\label{fig:mode9}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode10.jpg}}
+		\caption{}
+		\label{fig:mode10}
+	\end{subfigure}
+	\caption{Deformasi: (a) mode 9 pada frekuensi 9.52Hz (b) mode 10 pada frekuensi 10.0Hz.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{gambar/simulasiGR.png}
+	\caption{Gaya sentrifugal dan ketidakstabilan helikopter saat \textit{ground resonance}.}
+	\label{fig:simulasiGR}
+\end{figure}
+
+Dari beberapa \textit{mode shape} yang telah didapatkan, terdapat salah satu gerakan pada \textit{mode shape} yang memiliki bentuk yang serupa dengan fenomena pada gambar \ref{fig:simulasiGR}, yaitu pada mode ke-6. Pada mode tersebut, \textit{fuselage} memiliki getaran yang bergerak pada sumbu-y (kanan-kiri).
+
+\begin{figure}[H]
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode6_frame_1.PNG}}
+		\caption{}
+		\label{fig:mode6_frame_1}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode6_frame_2.PNG}}
+		\caption{}
+		\label{fig:mode6_frame_2}
+	\end{subfigure}
+	\caption{Gerakan pada mode ke-6 saat: (a) animasi frame ke-1 (b) animasi frame ke-2.}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode6_frame_3.PNG}}
+		\caption{}
+		\label{fig:mode6_frame_3}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode6_frame_4.PNG}}
+		\caption{}
+		\label{fig:mode6_frame_4}
+	\end{subfigure}
+	\caption{Gerakan pada mode ke-6 saat: (a) animasi frame ke-3 (b) animasi frame ke-4.}
+\end{figure}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[h]
+	\centering
+	\caption{Deformasi posisi \textit{node} pada mode ke-6 berdasarkan sumbu-x, y, dan z.}
+	\label{tb:deform_mode6}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			\textbf{Results   Set ID} & \textbf{Nodes} & \textbf{Translasi total (m)} & \textbf{Translasi sumbu-x (m)} & \textbf{Translasi sumbu-y (m)} & \textbf{Translasi sumbu-z (m)} \\ \hline
+			6 & 1 & 0.031166758 & 0.0041047 & -0.03088175 & -0.00091425 \\ \hline
+			6 & 2 & 0.031226918 & 0.00410521 & -0.03094131 & -0.00095025 \\ \hline
+			6 & 3 & 0.010508383 & 0.00194159 & -0.01027656 & -0.00102403 \\ \hline
+			6 & 4 & 0.030034335 & -0.02786271 & -0.01121261 & -9.0664E-05 \\ \hline
+			6 & 5 & 0.093941227 & -0.09145697 & 0.02139585 & 0.00167185 \\ \hline
+			6 & 6 & 0.014890737 & -0.00358556 & 0.01442101 & -0.00095518 \\ \hline
+			6 & 7 & 0.015888741 & 0.01209325 & 0.01029411 & 0.00048645 \\ \hline
+			6 & 8 & 0.015742892 & 0.0118489 & 0.01035368 & 0.00049345 \\ \hline
+			6 & 9 & 0.031194627 & 0 & 0.03116187 & 0.00142914 \\ \hline
+			6 & 10 & 0.031447977 & 0 & 0.03141167 & 0.00151069 \\ \hline
+			6 & 11 & 0.016951818 & 0.01189636 & -0.01207376 & -0.00025508 \\ \hline
+			6 & 12 & 0.017044749 & 0.01207032 & -0.01203184 & -0.00025618 \\ \hline
+			6 & 13 & 0.026711104 & -0.00049977 & 0.02667112 & 0.00137277 \\ \hline
+			6 & 14 & 0.026702074 & -0.00040783 & 0.02667187 & 0.00120235 \\ \hline
+			6 & 15 & 0.013104029 & 0 & 0.01309668 & 0.00043871 \\ \hline
+			6 & 16 & 0.012999032 & 0 & 0.0129918 & 0.00043346 \\ \hline
+			6 & 17 & 0.004834764 & -6.1188E-05 & -0.00477169 & -0.00077599 \\ \hline
+			6 & 18 & 0.004876604 & -4.0964E-05 & -0.00481559 & -0.0007679 \\ \hline
+			6 & 19 & 0.023838466 & 0.00590968 & 0.02308512 & 0.0006523 \\ \hline
+			6 & 20 & 0.023781126 & 0.00619057 & 0.02295198 & 0.0006521 \\ \hline
+			6 & 21 & 0.023747081 & 0.00697248 & 0.0226476 & 0.00154746 \\ \hline
+			6 & 22 & 0.02347669 & 0.00732844 & 0.02230146 & -0.00030622 \\ \hline
+			6 & 23 & 0.015334978 & 0.00710014 & 0.0134533 & 0.00193862 \\ \hline
+			6 & 24 & 0.033077482 & 0.0044104 & -0.03276836 & -0.00095028 \\ \hline
+			6 & 25 & 0.031602003 & 0.00409287 & -0.03132143 & -0.00095028 \\ \hline
+			6 & 26 & 0.008696403 & 0.00727985 & -0.0047458 & -0.00032958 \\ \hline
+			6 & 27 & 0.016638447 & 0.01218675 & 0.01131974 & 0.00042928 \\ \hline
+			6 & 28 & 0.016724696 & 0.01256482 & 0.01102233 & 0.00059078 \\ \hline
+			6 & 29 & 0.014414827 & 0.01223738 & -0.0075899 & -0.00065363 \\ \hline
+			6 & 30 & 0.014725202 & 0.0125541 & -0.00768942 & 0.00031434 \\ \hline
+			6 & 31 & 0.015152109 & 0.00745834 & 0.01316307 & -0.00083249 \\ \hline
+			6 & 32 & 0.008928208 & 0.00751982 & -0.00480135 & -0.0003351 \\ \hline
+		\end{tabular}%
+	}
+\end{table}
+
+Hasil simulasi yang ditunjukkan pada mode ke-6. Berkorelasi dengan frekuensi respon pada helikopter yang didapatkan menggunakan sensor akselerometer. Untuk rentang 4 hingga 4.1Hz (dimana frekuensi mode ke-6 berada, yaitu 4.06Hz) terdapat sebanyak 16 frekuensi respon terdeteksi pada helikopter, yaitu hanya 0.66$\%$ dari total frekuensi yang berada pada rentang 0 hingga 80Hz. Hal ini memvalidasi, bahwa apabila ditinjau dari \textit{finite element analysis} menggunakan FEMAP, tidak terdapat potensi yang besar untuk terjadinya fenomena \textit{ground resonance} pada helikopter hasil modifikasi ini. Apabila ditinjau secara kuantitatif, perpindahan secara translasi pada masing-masing \textit{node} di helikopter ditampilkan pada tabel \ref{tb:deform_mode6}. Tabel tersebut didapatkan secara komputasi pada \textit{software} FEMAP. Adapun tabel deformasi pada mode yang lainnya akan ditampilkan pada lampiran.

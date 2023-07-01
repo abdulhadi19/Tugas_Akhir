@@ -3,7 +3,7 @@
 
 % Ubah bagian-bagian berikut dengan isi dari desain dan implementasi
 
-Untuk mencapai tujuan dalam tugas akhir ini, dilakukan beberapa tahap yang dimulai dengan memahami fenomena \textit{ground resonance} pada helikopter melalui studi pustaka serta teori pendukung. Berikutnya adalah melakukan perumusan terhadap permasalahan yang akan diselesaikan, dalam hal ini adalah terkait dengan fenomena \textit{ground resonance} helikopter modifikasi PTDI. Terdapat 3 pekerjaan yang dikerjaan secara paralel dan berurutan, yaitu pengukuran di tanah \textit{ground test} helikopter, perhitungan matematis secara teori dan komputasi Matlab serta simulasi menggunakan \textit{software} Femap. 
+Untuk mencapai tujuan dalam tugas akhir ini, dilakukan beberapa tahap yang dimulai dengan memahami fenomena \textit{ground resonance} pada helikopter melalui studi pustaka serta teori pendukung. Berikutnya adalah melakukan perumusan terhadap permasalahan yang akan diselesaikan, dalam hal ini adalah terkait dengan fenomena \textit{ground resonance} helikopter modifikasi PTDI. Terdapat 3 pekerjaan yang dikerjaan secara paralel dan berurutan, yaitu pengukuran di tanah \textit{ground test} helikopter, perhitungan matematis secara teori dan komputasi Matlab serta simulasi menggunakan \textit{software} FEMAP. 
 
 \begin{figure}[H]
 	\centering
@@ -29,15 +29,15 @@ Studi pustaka merupakan tahap untuk membaca dan memahami referensi solusi serta 
 
 Pengambilan data \textit{ground test} dilakukan dengan mengikuti mekanisme yang telah ditetapkan oleh PTDI. Terdapat 2 pengukuran yang dilakukan, pertama adalah pengukuran terhadap \textit{damping ratio} dari respon helikopter terhadap impuls yang diberikan oleh pilot. Kedua, adalah pengukuran yang didapatkan menggunakan sensor akselerometer yang dipasangkan di beberapa titik pada helikopter.
 
-\subsection{Pengukuran \textit{Damping Ratio}}
-Pengukuran \textit{damping ratio} didapatkan dari \textit{Flight Test Instrumentation System} (FTIS). Respon terhadap impuls lateral serta longitudinal oleh pilot digunakan untuk mengetahui redaman getaran pada struktur helikopter. Nilai \textit{logarithmic decrement} didapatkan dari hasil pengukuran oleh FTIS dengan melihat seberapa cepat amplitudo getaran helikopter teredam sepanjang waktu setelah diberi impuls oleh pilot, nilai ini nantinya akan digunakan untuk menghitung \textit{damping ratio} helikopter.
+\subsection{Pengukuran Data Vibrasi pada FTIS}
+Pengukuran yang didapatkan dari \textit{Flight Test Instrumentation System} (FTIS) merupakan pengukuran respon gerakan keseluruhan helikopter pada beberapa orientasi gerakan. Respon terhadap impuls lateral serta longitudinal oleh pilot digunakan untuk mengetahui redaman getaran pada struktur helikopter. Nilai \textit{logarithmic decrement} didapatkan dari hasil pengukuran oleh FTIS dengan melihat seberapa cepat amplitudo getaran helikopter teredam sepanjang waktu setelah diberi impuls oleh pilot, nilai ini nantinya akan digunakan untuk menghitung \textit{damping ratio} helikopter. FTIS terletak pada bagian pusat massa helikopter. Karena helikopter dianggap sebagai massa titik yang dapat bergerak pada orientasi 3 dimensi, baik secara getaran translasi ataupun getaran rotasi. Sehingga pada pengukuran ini, nantinya akan didapatkan \textit{output} getaran berupa \textit{roll, pitch, heading, rate of roll, rate of pitch, rate of yaw}, percepatan arah sumbu-x, y, dan z.
 
 \subsection{Pengukuran Data Vibrasi Akselerometer}
 Pengukuran vibrasi dengan menggunakan akselerometer dilakukan dibeberapa titik pada helikopter. Konfigurasi mengenai peletakan sensor akselerometer dapat dilihat pada gambar dan tabel dibawah ini.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\linewidth]{gambar/peletakan_sensor.png}
+	\includegraphics[width=0.6\linewidth]{gambar/peletakan_sensor.png}
 	\caption{Peletakan akseleromter pada Helikopter.}
 	\label{peletakan_sensor.png}
 \end{figure}
@@ -66,7 +66,7 @@ Kemudian berikut ini merupakan skema Helikopter AS 565 MBe Panther yang digunaka
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.78\linewidth]{gambar/tampak_samping.png}
+	\includegraphics[width=0.8\linewidth]{gambar/tampak_samping.png}
 	\caption{Skema penempatan \textit{channel} sensor dan dimensi helikopter AS 565 MBe Panther (tampak samping).}
 	\label{tampak_samping.png}
 \end{figure}
@@ -80,7 +80,7 @@ Kemudian berikut ini merupakan skema Helikopter AS 565 MBe Panther yang digunaka
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.77\linewidth]{gambar/tampak_atas.png}
+	\includegraphics[width=0.79\linewidth]{gambar/tampak_atas.png}
 	\caption{Skema penempatan \textit{channel} sensor dan dimensi helikopter AS 565 MBe Panther (tampak atas).}
 	\label{tampak_atas.png}
 \end{figure}
@@ -91,7 +91,7 @@ Tabel 3.2. merupakan variasi pada \textit{landing gear absorbers}. Variasi terse
 	\centering
 	\caption{Variasi \textit{Landing gear absorbers.}}
 	\label{tb:variasilanding}
-	\resizebox{\textwidth}{!}{%
+	\resizebox{0.8\textwidth}{!}{%
 		\begin{tabular}{|c|ccccc|}
 			\hline
 			\multirow{2}{*}{Kondisi ke-} & \multicolumn{5}{c|}{Kondisi Pengujian} \\ \cline{2-6} 
@@ -115,7 +115,7 @@ Tabel 3.2. merupakan variasi pada \textit{landing gear absorbers}. Variasi terse
 	\centering
 	\caption{Propertis kuantitatif variasi \textit{landing gear absorbers} pada ban dan oleo helikopter.}
 	\label{tb:propertiskuantitatif}
-	\resizebox{\textwidth}{!}{%
+	\resizebox{0.75\textwidth}{!}{%
 		\begin{tabular}{|c|c|c|l|}
 			\hline
 			\multirow{3}{*}{NLG} & \multirow{2}{*}{Oleo} & \multirow{2}{*}{Nominal} & Hydraulic: 10 bar (145 psi) \\ \cline{4-4} 
@@ -138,7 +138,7 @@ Tabel 3.2. merupakan variasi pada \textit{landing gear absorbers}. Variasi terse
 	\centering
 	\caption{Variasi \textit{input} pada ground test Helikopter.}
 	\label{tb:variasi_input}
-	\resizebox{\textwidth}{!}{%
+	\resizebox{0.75\textwidth}{!}{%
 		\begin{tabular}{|c|c|c|c|c|}
 			\hline
 			No & SAS & Power & Input Control & Name of Sequence \\ \hline
@@ -162,7 +162,7 @@ Semua data yang didapatkan pada hasil pengukuran \textit{damping ratio} dan vibr
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{gambar/MIL_STD.png}
+	\includegraphics[width=0.8\linewidth]{gambar/MIL_STD.png}
 	\caption{Gambar dari tabel acuan MIL-STD-810H-Method-514.8 untuk menghitung batas osilasi yang dimiliki oleh helikopter.}
 	\label{fig:MIL_STD}
 \end{figure}
@@ -170,4 +170,54 @@ Semua data yang didapatkan pada hasil pengukuran \textit{damping ratio} dan vibr
 
 \section{Pemodelan pada Femap}
 	\label{sec:femap}
-Dalam mencari solusi yang secara tepat merepresentasikan batas siklus osilasi pada perhitungan matematis. Berdasarkan referensi yang telah didapatkan, diperlukan langkah awal membuat skema pemodelan sederhana yang selanjutnya akan membantu untuk mendefinisikan posisi pusat massa dari masing-masing rotor pada helikopter. 
+\subsection{Skema Pemodelan}
+Dalam mencari solusi yang secara tepat merepresentasikan batas siklus osilasi pada perhitungan matematis. Berdasarkan referensi yang telah didapatkan, diperlukan langkah awal membuat skema pemodelan sederhana yang selanjutnya akan membantu untuk mendefinisikan posisi pusat massa dari masing-masing rotor pada helikopter. Skema pemodelan ini berdasarkan pada gambar \ref{tampak_atas.png} untuk menggambar bagian helikopter pada bagian tampak atas. Sedangkan gambar \ref{tampak_samping.png}. Skema gambar menggunakan bantuan \textit{software} desain Inkscape untuk memberikan bentuk \textit{node} pada kerangka yang helikopter yang ingin digambar. Berikut ini merupakan skema kerangka helikopter untuk memodelkan helikopter dengan bentuk yang sederhana agar nantinya dapat diolah menggunakan prinsip elemen hingga (\textit{finite element}) pada \textit{software} FEMAP.
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=\linewidth]{gambar/rancangan_skema.png}}
+	\caption{Skema pemodelan helikopter untuk bagian samping, atas, dan bawah.}
+	\label{fig:skema_model}
+\end{figure}
+
+Koordinat pada helikopter didapatkan dengan menggunakan dimensi yang mendekati ukuran sebenarnya dari helikopter. Oleh karena itu pada gambar \ref{fig:skema_model} digunakan bayangan kerangka helikopter yang sebenarnya dari AS 565 MBe Panther. Rasio yang dimiliki pada skema gambar tersebut adalah 0.0778m/mm, yang artinya dalam setiap panjang 1mm pada gambar, mewakili 0.0778 meter pada dimensi helikopter yang sebenarnya.
+
+\subsection{Penentuan Koordinat}
+
+Selanjutnya, pada gambar \ref{fig:skema_model} akan didefinisikan titik-titik yang nantinya akan menjadi \textit{node} pada kerangka helikopter. Titik-titik tersebut akan didefinisikan dalam koordinat kartesian dalam sumbu-x,y, dan z. Titik 2s', 2s dan 3s' akan menjadi titik diberikannya gaya luar untuk simulasi pada FEMAP. Hal ini dikarenakan pada titik tersebut terdapat sensor akselerometer.
+
+
+\begin{table}[h]
+	\centering
+	\caption{Koordinat masing-masing tanda pada titik dalam 3 dimensi.}
+	\label{tb:koordinat}
+	\resizebox{0.93\textwidth}{!}{%
+		\begin{tabular}{|
+				>{\columncolor[HTML]{FFCCC9}}c |
+				>{\columncolor[HTML]{FFCE93}}c |ccc|
+				>{\columncolor[HTML]{FFCCC9}}c |
+				>{\columncolor[HTML]{FFCE93}}c |ccc|}
+			\hline
+			\cellcolor[HTML]{FFCCC9} & \cellcolor[HTML]{FFCE93} & \multicolumn{3}{c|}{Koordinat (m)} & \cellcolor[HTML]{FFCCC9} & \cellcolor[HTML]{FFCE93} & \multicolumn{3}{c|}{Koordinat (m)} \\ \cline{3-5} \cline{8-10} 
+			\multirow{-2}{*}{\cellcolor[HTML]{FFCCC9}ID} & \multirow{-2}{*}{\cellcolor[HTML]{FFCE93}Mark} & \multicolumn{1}{c|}{x} & \multicolumn{1}{c|}{y} & z & \multirow{-2}{*}{\cellcolor[HTML]{FFCCC9}ID} & \multirow{-2}{*}{\cellcolor[HTML]{FFCE93}Mark} & \multicolumn{1}{c|}{x} & \multicolumn{1}{c|}{y} & z \\ \hline
+			1 & 10s & \multicolumn{1}{c|}{8.4295} & \multicolumn{1}{c|}{0.4676} & 0.3466 & 17 & 4s & \multicolumn{1}{c|}{4.3831} & \multicolumn{1}{c|}{-0.1945} & -0.4085 \\ \hline
+			2 & 11s & \multicolumn{1}{c|}{8.8695} & \multicolumn{1}{c|}{0.4806} & 0.3466 & 18 & 4s' & \multicolumn{1}{c|}{4.3831} & \multicolumn{1}{c|}{-0.1945} & 1.1987 \\ \hline
+			3 & 12s & \multicolumn{1}{c|}{10.2371} & \multicolumn{1}{c|}{0.6235} & 0.3466 & 19 & 5a & \multicolumn{1}{c|}{1.4013} & \multicolumn{1}{c|}{0.9972} & -0.0374 \\ \hline
+			4 & 13s & \multicolumn{1}{c|}{10.2087} & \multicolumn{1}{c|}{1.5276} & 0.3466 & 20 & 5a' & \multicolumn{1}{c|}{1.4013} & \multicolumn{1}{c|}{0.9972} & 0.7295 \\ \hline
+			5 & 14s & \multicolumn{1}{c|}{10.9654} & \multicolumn{1}{c|}{3.0033} & 0.3466 & 21 & 5s & \multicolumn{1}{c|}{1.6449} & \multicolumn{1}{c|}{0.9972} & -0.32144 \\ \hline
+			6 & 15s & \multicolumn{1}{c|}{11.1567} & \multicolumn{1}{c|}{0.8293} & 0.3466 & 22 & 5s' & \multicolumn{1}{c|}{1.6449} & \multicolumn{1}{c|}{0.9972} & 1.0146 \\ \hline
+			7 & 1a & \multicolumn{1}{c|}{3.0017} & \multicolumn{1}{c|}{1.739} & 0.7762 & 23 & 6s & \multicolumn{1}{c|}{2.5934} & \multicolumn{1}{c|}{0.9972} & -0.5704 \\ \hline
+			8 & 1a' & \multicolumn{1}{c|}{3.0017} & \multicolumn{1}{c|}{1.739} & -0.0801 & 24 & 7a & \multicolumn{1}{c|}{8.8695} & \multicolumn{1}{c|}{0.4806} & 1.6486 \\ \hline
+			9 & 1s & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} & 0 & 25 & 7a' & \multicolumn{1}{c|}{8.8695} & \multicolumn{1}{c|}{0.4806} & -0.9553 \\ \hline
+			10 & 1s' & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0} & 0.6932 & 26 & 7s & \multicolumn{1}{c|}{4.3831} & \multicolumn{1}{c|}{0.9972} & -0.4707 \\ \hline
+			11 & 2a' & \multicolumn{1}{c|}{5.3859} & \multicolumn{1}{c|}{1.739} & 0.681 & 27 & 8s & \multicolumn{1}{c|}{2.9028} & \multicolumn{1}{c|}{1.739} & -0.5704 \\ \hline
+			12 & 2a & \multicolumn{1}{c|}{5.3859} & \multicolumn{1}{c|}{1.739} & 0.0128 & 28 & 8s' & \multicolumn{1}{c|}{2.9028} & \multicolumn{1}{c|}{1.739} & 1.2081 \\ \hline
+			13 & 2s & \multicolumn{1}{c|}{1.019} & \multicolumn{1}{c|}{-0.1945} & -0.4085 & 29 & 9s & \multicolumn{1}{c|}{4.8087} & \multicolumn{1}{c|}{1.739} & -0.4707 \\ \hline
+			14 & 2s' & \multicolumn{1}{c|}{1.019} & \multicolumn{1}{c|}{-0.1945} & 1.1987 & 30 & 9s' & \multicolumn{1}{c|}{4.8087} & \multicolumn{1}{c|}{1.739} & 1.1639 \\ \hline
+			15 & 3s & \multicolumn{1}{c|}{2.6192} & \multicolumn{1}{c|}{-0.1945} & -0.4085 & 31 & 6s' & \multicolumn{1}{c|}{2.5934} & \multicolumn{1}{c|}{0.9972} & 1.2081 \\ \hline
+			16 & 3s' & \multicolumn{1}{c|}{2.6192} & \multicolumn{1}{c|}{-0.1945} & 1.1987 & 32 & 7s' & \multicolumn{1}{c|}{4.3831} & \multicolumn{1}{c|}{0.9972} & 1.1639 \\ \hline
+		\end{tabular}%
+	}
+\end{table}
+
+Tabel diatas merupakan koordinat yang didefinisikan dengan titik acuan berada pada 1s, sehingga titik 1s didefinsikan dengan koordinat x,y, dan z beruturut-turut, 0, 0, dan 0. Setelah koordinat ditentukan, maka pada tahap selanjutnya adalah melakukan pemodelan pada FEMAP untuk selanjutnya nanti akan dilakukan analisis menggunakan nilai eigen untuk mencari \textit{mode shape} pada helikopter. Informasi mengenai \textit{mode shape} ini nantinya akan digunakan untuk memberikan gambaran bahwa helikopter akan memiliki respon sedemikian rupa untuk dapat menjelaskan fenomena \textit{ground resonance} yang berpotensi terjadi pada helikopter.

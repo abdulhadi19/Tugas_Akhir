@@ -3,7 +3,7 @@
 
 % Ubah bagian-bagian berikut dengan isi dari tinjauan pustaka
 
-Demi mendukung penelitian ini, \lipsum[1][1-5]
+Untuk mendapatkan informasi secara teoritis. Dilakukan sebuah pencarian untuk memberikan pemahaman yang cukup dalam melakukan pengerjaan Tugas Akhir ini. Berikut ini merupakan tinjauan pustaka yang menjadi landasan pemahaman.
 
 \section{Kerangka dan Rotor Helikopter}
 \label{sec:strukturheli}
@@ -70,7 +70,7 @@ Sistem \textit{fully articulated rotor} mempunyai kemampuan pada rotornya untuk 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\linewidth]{gambar/roll-pitch-yaw.png}
+	\includegraphics[width=0.68\linewidth]{gambar/roll-pitch-yaw.png}
 	\caption{Orientasi arah helikopter \cite{Jhwang}.}
 	\label{fig:orientasiheli}
 \end{figure}
@@ -85,6 +85,8 @@ Saat daya angkat meningkat, \textit{flapping hinge} akan mengayun ke arah atas t
 \textit{Ground resonance} adalah getaran dengan amplitudo besar yang disebabkan oleh osilasi pada helikopter yang sedang berada di tanah. Tanda awal resonansi ditandai dengan gerakan perlahan pada badan helikopter. Jika dibiarkan secara terus menerus, makana intensitas getaran akan semakin besar dan meningkat dengan cepat, sehingga berpotensi menyebabkan kerusakan pada pesawat \cite{wagtendonk2006principles}.
 
 Fenomena \textit{ground resonance} merupakan getaran mekanis yang timbul secara otomatis dan terjadi pada sistem \textit{fully articulated rotor}. Engsel pada helikopter dengan sistem ini memberikan kebebasan pada masing-masing bilah rotor untuk bergerak dalam bidang rotasi rotor. Gerakan yang berlawanan dengan arah rotasi rotor disebut \textit{lagging}, sedangkan gerakan yang searah dengan rotasi disebut dengan \textit{leading}. Masing-masing bilah rotor memungkinkan untuk melakukan \textit{leading} atau \textit{lagging} untuk mengkompensasi perubahan drag yang terjadi ketika bilah rotor berayun karena adanya asimetri daya angkat dalam gerakan maju helikopter \cite{Eckert2007AnalyticalAA}.
+
+Parameter yang penting terkait fenomena \textit{ground resonance} adalah frekuensi dan redaman pada mode \textit{lag} rotor, frekuensi dan redaman pada \textit{fuselage}, dan \textit{mode shape} pada \textit{fuselage}. Sehingga, identifikasi terhadap beban aerodinamik tidaklah menjadi penting. Karena dalam kondisi di ruang vakum pun \textit{ground resonance} juga tetap dapat terjadi pada helikopter \cite{bramwell2001bramwell}.
 
 \begin{figure}[H]
 	\centering
@@ -122,9 +124,30 @@ Fenomena \textit{ground resonance} merupakan getaran mekanis yang timbul secara 
 		\label{fig:gr}
 \end{figure}
 
-Pada gambar \ref{fig:gr} menunjukkan situasi saat gerakan stabil \textit{lead/lag} tidak dapat mengkompensasi gerakan berlebih dalam bidang helikopter terhadap bilah rotor. Pusat gravitasi dari bilah rotor juga tidak lagi sejajar dengan penghubung pada rotor. Sehingga hal ini sangat berbahaya ketika helikopter bersentuhan dengan tanah. Posisi pusat gravitasi rotor yang tidak sejajar dengan penghubung rotor menghasilkan gaya sentrifugal yang tidak seimbang pada frekuensi tertentu. Jika frekuensi ini sejajar dengan frekuensi natural badan helikopter (\textit{fuselage}), maka helikopter akan mulai bergoyang pada bagian pendaratannya \cite{Eckert2007AnalyticalAA}.
+Pada gambar \ref{fig:gr} menunjukkan situasi saat gerakan stabil \textit{lead/lag} tidak dapat mengkompensasi gerakan berlebih dalam bidang helikopter terhadap bilah rotor. Pusat gravitasi dari bilah rotor juga tidak lagi sejajar dengan penghubung pada rotor. Sehingga hal ini sangat berbahaya ketika helikopter bersentuhan dengan tanah. Posisi pusat gravitasi rotor yang tidak sejajar dengan penghubung rotor menghasilkan gaya sentrifugal yang tidak seimbang pada frekuensi tertentu \cite{Eckert2007AnalyticalAA}. Gaya tersebut menghasilkan gaya inersia periodik yang membuat seluruh badan helikopter bergetar terutama pada bagian pendaratannya ('\textit{chassis}' \textit{mode}). Jika salah satu frekuensi gaya inersia tersebut bertepatan dengan frekuensi pada '\textit{chassis}' \textit{mode} maka potensi terjadinya \textit{ground resonance} akan semakin besar \cite{bramwell2001bramwell}.
 
-\section{Analisis Matematis}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{gambar/southwell_diagram.png}
+	\caption{Diagram frekuensi \textit{chassis} dan rotor pada sistem \textit{fully articulated rotor} dengan sistem \textit{uncoupled}\cite{bramwell2001bramwell}.}
+	\label{fig:southwell_diagram}
+\end{figure}
+
+Frekuensi yang dapat menyebabkan terjadinya fenomena \textit{ground resonance} dapat direpresentasikan dalam bentuk diagram seperti pada gambar \ref{fig:southwell_diagram}. Pada gambar tersebut, titik A merupakan frekuensi rotor saat \textit{hub} (penghubung) berada kondisi stasioner dan memiliki frekuensi yang lebih tinggi daripada frekuensi \textit{chassis mode} (garis putus-putus). 
+
+Saat sistem \textit{uncoupled} mengacu pada kondisi saat gerakan pada rotor dan \textit{fuselage} dapat diperlakukan secara independen, tanpa ada pengaruh timbal balik yang signifikan. Sedangkan pada kondisi sebenarnya, helikopter memiliki sistem yang saling berhubungan satu sama lain, terutama antara sistem mekanik dan aerodinamik terhadap rotor dan \textit{fuselage}. Kondisi saling terhubung ini diakibatkan oleh perpindahan beban, getaran, dan energi antara kedua komponen tersebut. Ketika rotor menghasilkan gaya angkat atau berada pada kondisi \textit{idle}, maka hal tersebut akan menginduksi getaran dan gaya yang ditransimisikan ke badan helikopter \textit{fuselage}. 
+
+Seiring dengan bertambahnya kecepatan pada rotor, frekuensi pada bilah rotor dan kecepatan pada rotor akan bertemu pada titik B dan C. Pada titik B, sistem masih dalam kondisi stabil. Sedangkan kondisi \textit{ground resonance} akan terjadi saat berada pada titik perpotongan di C. Pada kondisi sebenarnya (\textit{coupled}) memberikan visualisasi yang berbeda terhadap diagram pada gambar \ref{fig:southwell_diagram}. Saat kondisi ketidakstabilan terjadi, garis \textit{regressive mode} akan bertemu di sekitar titik C (gambar \ref{fig:southwell_coupled_diagram}), dan akan menyatu menjadi suatu rentang frekuensi yang mengindikasikan ketidakstabilan pada helikopter. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\linewidth]{gambar/southwell_coupled_diagram.png}
+	\caption{Diagram frekuensi \textit{chassis} dan rotor pada sistem \textit{fully articulated rotor} dengan sistem \textit{coupled}\cite{bramwell2001bramwell}.}
+	\label{fig:southwell_coupled_diagram}
+\end{figure}
+
+
+\section{Perhitungan Model Matematis}
 
 Untuk dapat melakukan pendekatan secara analitik seperti yang telah diteliti oleh B.Bergeot et al \cite{BERGEOT201672}, diperlukan suatu model mekanik dari helikopter dengan derajat kebebasan minimum yang berpotensi mengalami fenomena \textit{ground resonance}. Oleh karena itu, dibutuhkan minimalnya sebanyak 5 derajat kebebasan (\textit{degree of freedom}/DOF). Helikopter terdiri atas \textit{fuselage} yang memiliki 4 bilah rotor dengan kecepatan konstan sebesar $\Omega$.
 
@@ -317,3 +340,85 @@ Dimana,
 \end{equation}
 
 Dengan $\mathbf{0}$ dan $\mathbf{I}$ masing-masing merupakan matriks bernilai $0$ dan matriks identitas berukuran 3x3. Solusi nilai eigen dan vektor eigen dari matriks $\mathbf{A}$ akan merepresentasikan fenomena dari \textit{ground resonance} melalui grafik imajiner terhadap kecepatan rotor $\Omega$ dan bagian riil terhadap kecepatan rotor $\Omega$.
+
+\section{\textit{Logarithmic Decrement}}
+
+Dalam suatu sistem periodik yang memiliki peredam. Pergerakan sistem tersebut seiring berjalannya waktu akan mengalami reduksi dan pada suatu waktu tertentu akan berhenti bergerak. Hal ini disebabkan oleh keberadaan peredam pada sistem. Penurunan amplitudo pada pergerakan suatu sistem yang teredam memiliki beberapa bentuk penurunan. Terdapat penurunan amplitudo yang terjadi secara linier dan logaritmik. Untuk penurunan yang bersifat logaritmik, terdapat peredam histeresis dan peredam viskositas. Pada bagian helikopter, peredam terdapat di bagian peredam hidrolik. Oleh karena itu, untuk analisis \textit{logarithmic decrement} pada helikopter digunakan peredam viskositas.
+
+Dalam peredam viskositas, redaman terhadap penurunan amplitudo sistem terbagi menjadi 3 bentuk redaman, \textit{overdamped, critically damped,} dan \textit{underdamped}. Berikut ini merupakan grafik yang menunjukkan gerakan penurunan amplitudo pada peredam viskositas. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.65\linewidth]{gambar/damping_motion.png}
+	\caption{Gerakan pada sistem periodik pada peredam viskositas yang berbeda-beda \cite{rao2004mechanical}.}
+	\label{fig:damping_motion}
+\end{figure}
+
+Penurunan secara logaritmik atau \textit{logarithmic decrement} merupakan paremeter spesifik yang dimiliki saat kondisi peredam viskositas berupa \textit{underdamped}. \textit{Logarithmic decrement} pada dasarnya juga merupakan parameter spesifik yang digunakan untuk menghitung koefisien redaman dari sistem liner \cite{Lojewski2020InfluenceOC}. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{gambar/underdamped.png}
+	\caption{Grafik \textit{underdamped}.}
+	\label{fig:underdamped}
+\end{figure}
+
+Berikut ini merupakan formulasi \textit{logarithmic decrement} pada kondisi \textit{underdamped}:
+
+\begin{align}
+	\delta = \frac{1}{m}ln\frac{x_1}{x_{m+1}}
+	\label{eq:logdec}
+\end{align}
+
+Kemudian dari formulasi pada \ref{eq:logdec} dapat diformulasikan \textit{damping ratio} yang pada tahap berikutnya akan digunakan untuk pengolahan data pada helikopter.
+
+\begin{align}
+	\zeta=\frac{\delta}{\sqrt{\left( 2\pi \right)^2+\delta^2}}
+\end{align}
+
+
+\section{\textit{Finite Element Method}}
+
+Metode elemen berhingga atau \textit{finite element method} merupakan sebuah metode numerik yang digunakan untuk mencari solusi dari mekanika kompleks serta permasalahan getaran dari suatu struktur. Pada metode ini, struktur asli pada objek dibagi menjadi elemen yang lebih kecil. Pada masing-masing elemen diasumsikan memiliki perilaku seperti bagian kontinu dari struktur yang disebut dengan elemen hingga (\textit{finite element}). Pada masing-masing elemen dihubungkan dengan suatu penghubung yang disebut dengan \textit{nodes} \cite{Lojewski2020InfluenceOC}.
+
+Beberapa percobaan menggunakan analisis \textit{finite element} bertujuan untuk mendesain ulang dengan mengetahui terlebih dahulu deformasi yang terjadi pada suatu struktur, seperti yang dikejakan pada \cite{Gorecki2013}. Pada penelitian tersebut, dilakukan sebuah pemodelan pada helikopter menggunakan elemen stik model sebagai representasi bentuk simulasi pada pengujian resonansi sebenarnya dan langkah pertama untuk mengubah desain pada rotor helikopter. Berikut ini merupakan contoh luaran yang didapatkan pada \cite{Gorecki2013}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.65\linewidth]{gambar/ex_finite_element.png}
+	\caption{Salah satu contoh luaran pada \cite{Gorecki2013} untuk mencari deformasi dari simulasi pemodelan \textit{finite element}.}
+	\label{fig:ex_finite_element}
+\end{figure}
+
+Pada gambar \ref{fig:ex_finite_element} merupakan salah satu contoh analisis menggunakan elemen hingga. Secara matematis, deformasi atau perpindahan secara transversal pada suatu elemen tertentu dapat diekspresikan dalam persamaan matematis berikut:
+
+\begin{align}
+	w(x,y,t)=\sum_{i=1}^{n}N_i(x,y)w_i(t)
+\end{align}
+
+$N_i(x,y)$ merupakan \textit{shape function} yang berkorelasi dengan perpindahan pada \textit{nodes} $w_i(t)$ dan n merupakan penghubung ke-n. Jika diberikan gaya dari luar sebesar $f(x,y,t)$ pada elemennya. Maka gaya tersebut memiliki ekivalensi dengan bentuk $f_i(t)(i=1, 2, ...., n)$. Kemudian dapat didefinisikan dari energi kinetik serta potensial dari masing-masing elemen dalam bentuk matriks vektor ${\overrightarrow{\textbf{W}}}$. 
+
+\begin{align}
+	T=\frac{1}{2}\dot{\overrightarrow{\textbf{W}^T}}[m]\dot{\overrightarrow{\textbf{W}}}
+	\label{eq:kinetik_FEM}
+\end{align}
+
+\begin{align}
+	V=\frac{1}{2}\overrightarrow{\textbf{W}^T}[k]\overrightarrow{\textbf{W}}
+	\label{eq:potensial_FEM}
+\end{align}
+
+dengan,
+
+\begin{align*}
+\overrightarrow{\textbf{W}}=\left\{ \begin{matrix} w_1(t) \\ w_2(t) \\ w_3(t) \\ .\\ .\\ .\\ w_n(t) \end{matrix}\right\}, \dot{\overrightarrow{\textbf{W}}}=\left\{ \begin{matrix} \dot{w}_1(t) \\ \dot{w}_2(t) \\ \dot{w}_3(t) \\ .\\ .\\ .\\ \dot{w}_n(t) \end{matrix}\right\}=\left\{ \begin{matrix} dw_1/dt \\ dw_2/dt \\ dw_3/dt \\ .\\ .\\ .\\ dw_n/dt \end{matrix}\right\}
+\end{align*}
+
+Dimana [m] dan [k] merupakan matriks massa dan kekakuan dari elemen. Apabila pada persamaan \ref{eq:kinetik_FEM} dan \ref{eq:potensial_FEM} disubtitusikan dengan menggunakan persamaan Lagrange \ref{eq:lagrange_eq}. Maka persamaan tersebut akan menjadi:
+
+\begin{align}
+	[m]\ddot{\overrightarrow{\textbf{W}}}+[k]\overrightarrow{\textbf{W}}=\overrightarrow{f}
+	\label{eq:kinetik+potensial_lagrange}
+\end{align}
+
+$\overrightarrow{f}$ merupakan vektor gaya pada penghubung dan $\ddot{\overrightarrow{\textbf{W}}}$ merupakan percepatan pada \textit{nodes}. Dengan $\ddot{\overrightarrow{\textbf{W}}}$ merupakan turunan dari $\dot{\overrightarrow{\textbf{W}}}$ \cite{rao2004mechanical}. Semua proses matematis ini akan diproses menggunakan komputasi yang dimiliki oleh \textit{software} FEMAP dalam mencari penyelesaian serta memberikan representasi gerakan \textit{mode shape} pada helikopter yang akan dimodelkan.

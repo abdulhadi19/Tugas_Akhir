@@ -6,31 +6,31 @@
 \section{Kesimpulan}
 \label{sec:kesimpulan}
 
-Berikut merupakan hasil yang telah didapatkan:
+Berikut merupakan kesimpulan dari hasil yang telah didapatkan:
 
 \begin{enumerate}[nolistsep]
 
-  \item Berdasarkan pengambilan data di tanah saat pengujian pada FTIS dan menggunakan akselerometer dengan variasi kondisi tekanan pada ban serta oleo pesawat, kemudian dengan variasi \textit{input} pada helikopter. Didapatkan bahwa helikopter tidak berpotensi mengalami fenomena \textit{ground resonance} yang dibuktikan dengan grafik pada respon \textit{rate of roll, rate of pitch, rate of yaw} dan percepatan arah sumbu-Y. Selanjutnya berdasarkan data menggunakan akselerometer, tidak ditemukan adanya respon yang berada dalam batas siklus osilasi dengan amplitudo yang tinggi. Bahkan dari semua respon yang dimiliki oleh helikopter, tidak terdapat amplitudo pada frekuensi tertentu yang mencapai setengah dari tinggi puncak batas siklus osilasi.
+	\item Dari data FTIS, didapatkan bahwa helikopter tidak berpotensi mengalami fenomena \textit{ground resonance} yang dibuktikan dengan grafik pada respon \textit{rate of roll, rate of pitch, rate of yaw} dan percepatan arah sumbu-y (sebagai contoh pada gambar \ref{fig:NLLO-4} dan \ref{fig:FLLO-3_mark10}). Selanjutnya berdasarkan data menggunakan akselerometer, terdapat beberapa respon yang berada dalam batas siklus osilasi. Namun dari respon yang berada pada batas siklus osilasi tersebut tidak ditemukan respon frekuensi yang memiliki amplitudo tinggi, bahkan tidak ditemukan sampai pada separuh nilai batas amplitudo. 
 
-  \item Helikopter memiliki respon \textit{damping ratio} rata-rata terbesar pada \textit{rate of roll} sebesar 0.054 dan pada orientasi sumbu-Y sebesar 0.050. Hal ini memberikan informasi bahwa helikopter memiliki kecenderungan untuk goncangan kanan dan kiri pada tumpuan ban dan oleonya. Respon frekuensi helikopter tidak terdapat pada batas siklus osilasi $f_1$. Pada hasil perhitungan juga tidak ditemukan adanya respon frekunsi pada rentang 10.5-11.89Hz, yang mana pada perhitungan matematis, rentang tersebut merupakan rentang terjadinya frekunsi \textit{ground resonance}.
-
-  \item Berdasarkan standar MIL-STD-810H-Method-514.8 dan perhitungan matematis, didapatkan batas siklus osilasi pada helikopter berada pada rentang \textit{rmp} natural minimum (5.09Hz) hingga maksimum (6.08Hz) dengan batas puncak pada nilai 0.1464-0.1515 g-peak. Pada rentang tersebut tidak didapatkan satupun respon frekunsi pada helikopter. Namun pada rentang yang lain, yaitu pada rentang 23.68-24.32Hz didapatkan sebanyak 15.87$\%$ dari persentase respon frekuensi batas siklus. Sedangkan pada batas 47.36-48.64Hz didapatkan sebanyak 4.2$\%$ dan pada batas 71.04-72.96Hz sebanyak 0.62$\%$. Pada perhitungan matematis juga tidak ditemukan respon frekuensi pada rentang 10.5-11.89Hz, bahkan jika telah dilakukan modifikasi massa.
-  
-  \item 
+	\item Berdasarkan standar MIL-STD-810H-Method-514.8 dan perhitungan matematis, didapatkan batas siklus osilasi pada helikopter hasil modifikasi berada pada rentang ($f_1=$ 5.09-6.08Hz), dengan batas puncak pada nilai 0.1464-0.1515 g-peak. Kemudian pada ($f_2=$ 23.68-24.32Hz), ($f_3=$ 47.36-48.64Hz), dan ($f_4=$ 71.04-72.96Hz). Kemudian untuk pendekatan matematis didapatkan rentang batas siklus osilasi pada rentang (21.51-25.8Hz) untuk helikopter modifikasi. Sehingga dengan didapatkannya rentang pada perhitungan, memvalidasi bahwa frekuensi resonansi helikopter berada pada rentang $f_2$ dengan error hasil perhitungan terhadap pengukuran sebesar 7.62$\%$.
+     
+	\item Helikopter memiliki respon \textit{damping ratio} rata-rata terbesar pada \textit{rate of roll} sebesar 0.054 dan percepatan sumbu-y sebesar 0.050. Hal ini memberikan informasi bahwa helikopter memiliki kecenderungan mengalami goncangan kanan dan kiri pada tumpuan ban dan oleonya. Respon frekuensi helikopter tidak terdapat pada batas siklus osilasi $f_1$ (0$\%$). Akan tetapi pada rentang $f_2$ ditemukan sebanyak 313 jumlah respon frekuensi (15.88$\%$). Kemudian pada $f_3$ sebanyak 103 respon frekuensi (4.27$\%$) dan pada $f_4$ sebanyak 15 respon frekuensi (0.62$\%$). Hal ini menunjukkan bahwa pada dasarnya helikopter memiliki kecenderungan memberikan respon frekuensi pada rentang $f_2$. Akan tetapi di lapangan tidak terjadi \textit{ground resonance}. Hal itu dikarenakan amplitudo getaran pada helikopter tidak memiliki nilai g-peak yang cukup tinggi untuk menjadikan helikopter berada pada kondisi \textit{ground resonance}.
+ 
+	\item Dari hasil pemodelan yang telah dibuat pada FEMAP dengan menggunakan \textit{finite element} didapatkan 10 \textit{mode shape}. Terdapat satu \textit{mode shape} yang memiliki bentuk gerakan yang serupa dengan fenomena \textit{ground resonance}, \textit{mode shape} tersebut merupakan \textit{mode shape} ke-6 dengan frekuensi sebesar 4.06Hz. Gerakan tersebut merepresentasikan kondisi saat peredam pada bilah rotor tidak dapat mengkompensasi gerakan tertinggalnya (\textit{lead/lag motion}) yang mengakibatkan helikopter bergetar ke arah kanan dan kiri (sumbu-y). Terdapat sebanyak 16 frekuensi respon pada frekuensi ini, atau hanya sebesar 0.66$\%$ dari respon frekuensi total yang berada pada rentang 0 hingga 80Hz. Hal ini memvalidasi bahwa analisis menggunakan \textit{finite element} menggunakan simulasi pada FEMAP, tidak terdapat potensi terjadinya \textit{ground resonance} pada helikopter AS 565 MBe Panther hasil modifikasi.
 
 \end{enumerate}
 
 \section{Saran}
 \label{chap:saran}
 
-Untuk pengembangan lebih lanjut pada \lipsum[1][1-3] antara lain:
+Untuk pengembangan lebih lanjut dengan tujuan yang lebih spesifik pada fenomena \textit{ground resonance} yang terjadi pada helikopter. Berikut ini merupakan beberapa saran yang dapat membangun tujuan yang lebih spesifik tersebut.
 
 \begin{enumerate}[nolistsep]
 
-  \item Memperbaiki \lipsum[2][1-3]
+  \item Diperlukan pengujian pada kerangka helikopter secara langsung dengan menggunakan sensor yang lebih banyak pada titik-titik kerangka helikopter. Hal tersebut untuk mendapatkan informasi yang lebih luas terkait titik-titik yang dapat menyebabkan terjadinya \textit{ground resonance}. Pengujian tersebut seharusnya menggunakan uji tekan dan uji getar menggunakan \textit{shaker} pada kerangka helikopter.
 
-  \item \lipsum[2][4-6]
+  \item Informasi terkait propertis mekanik pada helikopter sangat dibutuhkan untuk mendapatkan hasil simulasi yang mendekati dengan kondisi eksisting pada helikopter. Sehingga simulasi tersebut dapat lebih dipercaya untuk keperluan pengembangan atau prediksi kondisi pada helikopter yang tidak dimungkinkan untuk dilakukan pengujian langsung.
 
-  \item \lipsum[2][7-10]
+  \item Pendekatan matematis terhadap pemodelan sederhana helikopter perlu ditinjau kembali secara formulasi, agar ekspresi matematika yang diberikan dapat menjadi acuan validitas terhadap pengujian dan hasil simulasi. Masih terdapat banyak sekali metode yang membangun persamaan matematis pada helikopter, diantaranya adalah kedalaman pemahaman mengenai transformasi \textit{coleman} atau transformasi \textit{multi-blade}, penurunan menggunakan metode \textit{Lagrange}, transformasi binormal, analisis stabilitas linier, dan masih banyak metode matematika yang menjadi dasaran untuk melakukan pendekatan pada helikopter.
 
 \end{enumerate}

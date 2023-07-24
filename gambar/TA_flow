@@ -1,132 +1,132 @@
-<mxfile host="app.diagrams.net" modified="2023-06-02T10:17:24.580Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="xCW8fEu-VVVMNMvUS2-u" version="21.3.7" type="device" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-07-20T10:30:19.047Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36" etag="FRMY2pI1X4UVGdUBT6Lf" version="21.6.2" type="device" pages="2">
   <diagram name="Page-1" id="gp4ZGpM61f5PpkWLD3_4">
-    <mxGraphModel dx="1760" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1120" dy="442" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GC0HjPIbsxf7flNnC4rC-1" target="GC0HjPIbsxf7flNnC4rC-2">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-1" value="Mulai" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;arcSize=50;" vertex="1" parent="1">
-          <mxGeometry x="329" y="150" width="170" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GC0HjPIbsxf7flNnC4rC-2" target="GC0HjPIbsxf7flNnC4rC-3">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-2" value="Studi pustaka mengenai fenomena &lt;i&gt;ground resonance&lt;/i&gt;&amp;nbsp;pada helikopter" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
-          <mxGeometry x="329" y="200" width="170" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GC0HjPIbsxf7flNnC4rC-3" target="GC0HjPIbsxf7flNnC4rC-4">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-3" value="Perumusan masalah pada fenomena &lt;i&gt;ground resonance&lt;/i&gt;&amp;nbsp;terhadap helikopter modifikasi PTDI" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
-          <mxGeometry x="329" y="280" width="170" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GC0HjPIbsxf7flNnC4rC-4" target="GC0HjPIbsxf7flNnC4rC-11">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GC0HjPIbsxf7flNnC4rC-4" target="GC0HjPIbsxf7flNnC4rC-12">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GC0HjPIbsxf7flNnC4rC-4" target="GC0HjPIbsxf7flNnC4rC-13">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-4" value="Tujuan tugas akhir" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
-          <mxGeometry x="329" y="380" width="170" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GC0HjPIbsxf7flNnC4rC-11" target="GC0HjPIbsxf7flNnC4rC-15">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-11" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Perhitungan matematis secara teoritis dan komputasi pada Matlab&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" vertex="1" parent="1">
-          <mxGeometry x="319" y="430" width="190" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GC0HjPIbsxf7flNnC4rC-12" target="GC0HjPIbsxf7flNnC4rC-24">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-12" value="Simulasi menggunakan Femap" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" vertex="1" parent="1">
-          <mxGeometry x="529" y="430" width="190" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GC0HjPIbsxf7flNnC4rC-13" target="GC0HjPIbsxf7flNnC4rC-14">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-13" value="Pengukuran (&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;ground test&lt;/i&gt;) di PTDI" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" vertex="1" parent="1">
-          <mxGeometry x="109" y="430" width="190" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GC0HjPIbsxf7flNnC4rC-14" target="GC0HjPIbsxf7flNnC4rC-39">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-14" value="&lt;i&gt;Set up &lt;/i&gt;pengambilan data menggunakan sensor di beberapa titik helikopter" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-14" value="&lt;i&gt;Set up &lt;/i&gt;pengambilan data menggunakan sensor di beberapa titik helikopter" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="109" y="510" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GC0HjPIbsxf7flNnC4rC-15" target="GC0HjPIbsxf7flNnC4rC-38">
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="GC0HjPIbsxf7flNnC4rC-1" target="GC0HjPIbsxf7flNnC4rC-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-15" value="Persamaan gerak pusat massa dari masing-masing rotor" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-1" value="Mulai" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="329" y="150" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GC0HjPIbsxf7flNnC4rC-2" target="GC0HjPIbsxf7flNnC4rC-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-2" value="Studi pustaka mengenai fenomena &lt;i&gt;ground resonance&lt;/i&gt;&amp;nbsp;pada helikopter" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="329" y="200" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="GC0HjPIbsxf7flNnC4rC-3" target="GC0HjPIbsxf7flNnC4rC-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-3" value="Perumusan masalah pada fenomena &lt;i&gt;ground resonance&lt;/i&gt;&amp;nbsp;terhadap helikopter modifikasi PTDI" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="329" y="280" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="GC0HjPIbsxf7flNnC4rC-4" target="GC0HjPIbsxf7flNnC4rC-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="GC0HjPIbsxf7flNnC4rC-4" target="GC0HjPIbsxf7flNnC4rC-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GC0HjPIbsxf7flNnC4rC-4" target="GC0HjPIbsxf7flNnC4rC-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-4" value="Tujuan tugas akhir" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="329" y="380" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GC0HjPIbsxf7flNnC4rC-11" target="GC0HjPIbsxf7flNnC4rC-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-11" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Perhitungan matematis secara teoritis dan komputasi pada Matlab&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="319" y="430" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GC0HjPIbsxf7flNnC4rC-12" target="GC0HjPIbsxf7flNnC4rC-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-12" value="Simulasi menggunakan Femap" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;size=21;" parent="1" vertex="1">
+          <mxGeometry x="529" y="430" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GC0HjPIbsxf7flNnC4rC-13" target="GC0HjPIbsxf7flNnC4rC-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-13" value="Pengukuran (&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;ground test&lt;/i&gt;) di PTDI" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" parent="1" vertex="1">
+          <mxGeometry x="109" y="430" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GC0HjPIbsxf7flNnC4rC-14" target="GC0HjPIbsxf7flNnC4rC-39" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GC0HjPIbsxf7flNnC4rC-15" target="GC0HjPIbsxf7flNnC4rC-38" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-15" value="Persamaan gerak pusat massa dari masing-masing rotor" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="319" y="510" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GC0HjPIbsxf7flNnC4rC-24" target="GC0HjPIbsxf7flNnC4rC-40">
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GC0HjPIbsxf7flNnC4rC-24" target="GC0HjPIbsxf7flNnC4rC-40" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-24" value="Pemodelan menggunakan &lt;i&gt;stick model&lt;/i&gt;&amp;nbsp;helikopter" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-24" value="Pemodelan menggunakan stik model&amp;nbsp;helikopter" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="529" y="510" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-38" value="B" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-38" value="B" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="374" y="600" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-39" value="A" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-39" value="A" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="164" y="600" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="GC0HjPIbsxf7flNnC4rC-40" value="C" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="GC0HjPIbsxf7flNnC4rC-40" value="C" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="584" y="600" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="Ga6pc4cf-pR_rMwtK-b7" name="Page-2">
-    <mxGraphModel dx="1600" dy="687" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1120" dy="442" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6hTrddqR4h9kxPeOX5hT-2" target="6hTrddqR4h9kxPeOX5hT-7">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="6hTrddqR4h9kxPeOX5hT-2" target="6hTrddqR4h9kxPeOX5hT-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-2" value="Penurunan menggunakan metode lagrang dan transformasi &lt;i&gt;multi-blade&lt;/i&gt;&amp;nbsp;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-2" value="Penurunan menggunakan metode lagrang dan transformasi &lt;i&gt;multi-blade&lt;/i&gt;&amp;nbsp;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="310" y="500" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6hTrddqR4h9kxPeOX5hT-4" target="6hTrddqR4h9kxPeOX5hT-5">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6hTrddqR4h9kxPeOX5hT-4" target="6hTrddqR4h9kxPeOX5hT-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-4" value="Mencari solusi dari matriks persamaan gerak berupa &lt;i&gt;eigenvalue &lt;/i&gt;dan &lt;i&gt;eigenvector&lt;/i&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-4" value="Mencari solusi dari matriks persamaan gerak berupa &lt;i&gt;eigenvalue &lt;/i&gt;dan &lt;i&gt;eigenvector&lt;/i&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="310" y="660" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-5" value="Grafik imajiner dan riil dari solusi matriks persamaan gerak helikopter" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-5" value="Grafik imajiner dan riil dari solusi matriks persamaan gerak helikopter" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="310" y="740" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6hTrddqR4h9kxPeOX5hT-7" target="6hTrddqR4h9kxPeOX5hT-4">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6hTrddqR4h9kxPeOX5hT-7" target="6hTrddqR4h9kxPeOX5hT-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-7" value="Input parameter vibrasi melalui pendekatan propertis pada material helikopter" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-7" value="Input parameter vibrasi melalui pendekatan propertis pada material helikopter" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="310" y="580" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6hTrddqR4h9kxPeOX5hT-9" target="6hTrddqR4h9kxPeOX5hT-11">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6hTrddqR4h9kxPeOX5hT-9" target="6hTrddqR4h9kxPeOX5hT-11" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-9" value="Membuat data batas siklus osilasi menggunakan&amp;nbsp;MIL-STD-810H-Method-514.8 (vibrasi)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-9" value="Membuat data batas siklus osilasi menggunakan&amp;nbsp;MIL-STD-810H-Method-514.8 (vibrasi)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="100" y="500" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6hTrddqR4h9kxPeOX5hT-11" target="6hTrddqR4h9kxPeOX5hT-15">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6hTrddqR4h9kxPeOX5hT-11" target="6hTrddqR4h9kxPeOX5hT-15" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-11" value="Identifikasi respon frekuensi helikopter terhadap batas siklus osilasi helikopter AS 565 MBe Panther" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-11" value="Identifikasi respon frekuensi helikopter terhadap batas siklus osilasi helikopter AS 565 MBe Panther" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="100" y="580" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6hTrddqR4h9kxPeOX5hT-13" target="6hTrddqR4h9kxPeOX5hT-27">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6hTrddqR4h9kxPeOX5hT-13" target="6hTrddqR4h9kxPeOX5hT-27" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-13" value="Batas siklus potensi &lt;i&gt;ground resonance&lt;/i&gt;&amp;nbsp;pada kondisi helikopter hasil modifikasi" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-13" value="Batas siklus potensi &lt;i&gt;ground resonance&lt;/i&gt;&amp;nbsp;pada kondisi helikopter hasil modifikasi" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="310" y="820" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="6hTrddqR4h9kxPeOX5hT-15" target="6hTrddqR4h9kxPeOX5hT-13">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="6hTrddqR4h9kxPeOX5hT-15" target="6hTrddqR4h9kxPeOX5hT-13" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="194.9999999999999" y="850" as="targetPoint" />
             <Array as="points">
@@ -134,16 +134,16 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-15" value="Validasi hasil data yang telah diolah menggunakan solusi matematis" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-15" value="Validasi input hasil data yang telah diolah menggunakan solusi matematis" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="100" y="660" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6hTrddqR4h9kxPeOX5hT-17" target="6hTrddqR4h9kxPeOX5hT-19">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="6hTrddqR4h9kxPeOX5hT-17" target="6hTrddqR4h9kxPeOX5hT-19" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-17" value="Mencari frekuensi natural dari &lt;i&gt;stick model &lt;/i&gt;helikopter" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-17" value="Mencari &lt;i&gt;mode shape &lt;/i&gt;hasil stik model helikopter" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="520" y="500" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="6hTrddqR4h9kxPeOX5hT-19" target="6hTrddqR4h9kxPeOX5hT-13">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="6hTrddqR4h9kxPeOX5hT-19" target="6hTrddqR4h9kxPeOX5hT-13" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="615" y="850" as="targetPoint" />
             <Array as="points">
@@ -151,40 +151,40 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-19" value="Validasi hasil simulasi dengan batas siklus osilasi yang didapat dari perhitungan matematis" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-19" value="Identifikasi hasil simulasi dengan respon frekuensi data akselerometer" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="520" y="580" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6hTrddqR4h9kxPeOX5hT-21" target="6hTrddqR4h9kxPeOX5hT-17">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6hTrddqR4h9kxPeOX5hT-21" target="6hTrddqR4h9kxPeOX5hT-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-21" value="C" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-21" value="C" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="575" y="390" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6hTrddqR4h9kxPeOX5hT-23" target="6hTrddqR4h9kxPeOX5hT-2">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6hTrddqR4h9kxPeOX5hT-23" target="6hTrddqR4h9kxPeOX5hT-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-23" value="B" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-23" value="B" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="365" y="390" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6hTrddqR4h9kxPeOX5hT-25" target="6hTrddqR4h9kxPeOX5hT-9">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6hTrddqR4h9kxPeOX5hT-25" target="6hTrddqR4h9kxPeOX5hT-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-25" value="A" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-25" value="A" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="155" y="390" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6hTrddqR4h9kxPeOX5hT-27" target="6hTrddqR4h9kxPeOX5hT-29">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6hTrddqR4h9kxPeOX5hT-27" target="6hTrddqR4h9kxPeOX5hT-29" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-27" value="Analisis hasil dan pembahasan" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-27" value="Analisis hasil dan pembahasan" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="320" y="910" width="170" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6hTrddqR4h9kxPeOX5hT-29" target="6hTrddqR4h9kxPeOX5hT-30">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6hTrddqR4h9kxPeOX5hT-29" target="6hTrddqR4h9kxPeOX5hT-30" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-29" value="Kesimpulan dan saran" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-29" value="Kesimpulan dan saran" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="310" y="967" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6hTrddqR4h9kxPeOX5hT-30" value="Selesai" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;arcSize=50;" vertex="1" parent="1">
+        <mxCell id="6hTrddqR4h9kxPeOX5hT-30" value="Selesai" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;arcSize=50;" parent="1" vertex="1">
           <mxGeometry x="320" y="1049" width="170" height="30" as="geometry" />
         </mxCell>
       </root>

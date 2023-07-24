@@ -422,3 +422,67 @@ Dimana [m] dan [k] merupakan matriks massa dan kekakuan dari elemen. Apabila pad
 \end{align}
 
 $\overrightarrow{f}$ merupakan vektor gaya pada penghubung dan $\ddot{\overrightarrow{\textbf{W}}}$ merupakan percepatan pada \textit{nodes}. Dengan $\ddot{\overrightarrow{\textbf{W}}}$ merupakan turunan dari $\dot{\overrightarrow{\textbf{W}}}$ \cite{rao2004mechanical}. Semua proses matematis ini akan diproses menggunakan komputasi yang dimiliki oleh \textit{software} FEMAP dalam mencari penyelesaian serta memberikan representasi gerakan \textit{mode shape} pada helikopter yang akan dimodelkan.
+
+\section{\textit{Ground Vibration Test} (GVT)}
+\label{sec:GVT}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{gambar/Eksiter_landing.png}
+	\caption{Sumber penggetar pada bagian pendaratan \textit{aircraft} \cite{lubrina:hal-01059708}.}
+	\label{fig:shaker_landing}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{gambar/Shaker_mainrotor.png}
+	\caption{Penempatan \textit{shaker} pada bagian rotor utama \cite{Ciavarella2018AnEH}.}
+	\label{fig:shaker_rotor}
+\end{figure}
+
+\textit{Ground Vibration Test} (GVT) memiliki tujuan utama untuk memberikan informasi mengenai karakterisasi struktur objek \textit{aircraft}. Dengan GVT dapat dilakukan identifikasi terhadap parameter modal eksperimental seperti frekuensi eigen, mode eigen, rasio redaman, massa umum, dan fungsi transfer yang menggambarkan perilaku dinamis struktural dari \textit{aircraft} yang diuji. Selain didapatkannya informasi tentang dinamika struktural \textit{aircraft}, juga akan didapatkan informasi fundamental untuk memvalidasi serta model terbaru dari \textit{Finite Element} (FE) dinamis \cite{Ciavarella2018AnEH}.
+
+Untuk mendapatkan kualitas pengujian data yang baik, diperlukan pemahaman tentang struktur \textit{rotorcraft} serta persiapan yang tepat dalam melakukan GVT \cite{Ciavarella2018AnEH}. Selain itu, diperlukan juga peralatan yang memadai untuk memberikan \textit{input} getaran dalam mengukur respon getaran. Dengan ukuran dan berat yang cukup besar, rentang frekuensi yang dianalisis umum berada pada frekuensi rendah. Berdasarkan apa yang telah dikerjakan pada \cite{lubrina:hal-01059708} (contoh peletakan ada pada gambar \ref{fig:shaker_landing}) dilakukan analisis pada rentang frekuensi yang tidak lebih tinggi dari 50Hz. Batas frekuensi rendah dari rentang frekuensi bergantung pada karakteristik suspensi. Sedangkan pengukuran untuk melakukan identifikasi frekuensi eigen pada \textit{rigid body} batas frekuensi terendahnya tidak lebih kecil dari 1Hz. Sehingga sumber penggetar (\textit{shaker}) harus memiliki eksitasi hetaran pada frekuensi eigen yang rendah dengan kekuatan yang cukup \cite{lubrina:hal-01059708}. Disisi lain pada penelitian \cite{Ciavarella2018AnEH} memberikan 4 \textit{shaker} pada bagian rotor utama helikopter dengan arah lateral dan vertikal yang berkisar pada rentang 220 hingga 2200N (gambar \ref{fig:shaker_rotor}).
+
+Untuk tujuan mitigasi, dilakukan 2 pengukuran gaya eksitasi dengan prinsip pengukuran yang berbeda. Pertama, gaya eksitasi diukur menggunakan alat ukur piezo elektrik. Kedua, gaya eksitasi diukur menggunakan arus koil yang disediakan oleh \textit{power amplifier} pada \textit{shaker}. Sensor perpindahan digunakan untuk mengukur perpindahan relatif dari armatur \textit{shaker} pada tempat peletakan \textit{shaker}. Sedangkan untuk mengukur respon vibrasi secara utama menggunakan akselerometer dalam pengukurannya. Pada penelitian \cite{lubrina:hal-01059708} digunakan sebanyak 500 sensor akselerometer untuk melakukan GVT, kemudian data hasil sensor diakuisisi menggunakan \textit{multichannel dynamic data} dari LMS Scadas III unutk selanjutnya diatur dengan perangkat lunak seperti Test.Lab \textit{software}.
+
+
+\section{AS 565 MBe Panther}
+\label{sec:AS565MBe}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{gambar/AS565pic.png}
+	\caption{Potret AS 565 MBe Panther saat mengudara.}
+	\label{fig:AS565pic}
+\end{figure}
+
+AS 565 MBe Panther adalah versi militer dari Eurocopter AS 365 Dauphin helikopter dengan mesin ganda dan bobot menengah yang multiguna. Helikopter ini dapat digunakan untuk berbagai peran militer, termasuk serangan tempur, dukungan tembakan, perang anti-kapal selam, perang anti-permukaan, pencarian dan penyelamatan, dan evakuasi medis \cite{AS565MBe}. Helikopter AS 565 MBe Panther dapat dimodifikasi sedemikian rupa untuk selanjutnya ditambahkan fitur persenjataan yang dapat mendukung kinerja helikopter ini dalam melakukan tugasnya. \textit{Profile} mengenai helikopter AS 565 MBe Panther dapat dilihat pada gambar \ref{fig:AS565MBe}. Dari informasi tersebut, helikopter ini memiliki berat maksimum agar helikopter dapat terbang adalah sebesar 4500kg. Sehingga, apabila modifikasi yang dilakukan pada helikopter merupakan modifikasi penambahan massa tanpa adanya modifikasi pada rotor, maka massa 4500kg akan menjadi batas maksimum modifikasi tersebut. Adapun potret dan dimensi spesifik terkait helikopter AS 565 MBe Panther dapat dilihat pada gambar
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=0.7\linewidth]{gambar/Propertis_AS565MBe.png}}
+	\caption{\textit{Profile} helikopter AS 565 MBe Panther.}
+	\label{fig:AS565MBe}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{gambar/as565_samping.png}
+	\caption{Dimensi Helikopter AS 565 MBe Panther tampak samping.}
+	\label{fig:as565mbe_samping}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{gambar/as565_atas.png}
+	\caption{Dimensi Helikopter AS 565 MBe Panther tampak atas.}
+	\label{fig:as565mbe_atas}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{gambar/as565_depan.png}
+	\caption{Dimensi Helikopter AS 565 MBe Panther tampak depan.}
+	\label{fig:as565mbe_depan}
+\end{figure}

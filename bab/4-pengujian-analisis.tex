@@ -7,7 +7,7 @@ Pada penelitian ini dilakukan 3 aspek pengerjaan dalam menjawab tujuannya, diant
 
 \section{Hasil pengukuran getaran pada FTIS}
 
-Hasil pengukuran data \textit{ground test} dibagi menjadi 2 bagian, seperti yang telah dijelaskan pada bagian metodologi penelitian, bahwa data yang didapatkan merupakan data pengukuran getaran pada FTIS untuk mencari \textit{damping ratio} dan pengukuran data getaran pada akseleromter untuk mendapatkan respon frekuensi dominan oleh helikopter akibat \textit{input} yang diberikan. Berikut ini merupakan grafik yang didapatkan dari masing-masing kondisi yang mengacu pada tabel \ref{tb:variasilanding}.
+Hasil pengukuran data \textit{ground test} dibagi menjadi 2 bagian, seperti yang telah dijelaskan pada bagian metodologi penelitian, bahwa data yang didapatkan merupakan data pengukuran getaran pada FTIS untuk mencari \textit{damping ratio} dan pengukuran data getaran pada akseleromter untuk mendapatkan respon frekuensi dominan oleh helikopter akibat \textit{input} yang diberikan. Berikut ini (gambar \ref{fig:condition_1}) merupakan grafik yang didapatkan dari masing-masing kondisi yang mengacu pada tabel \ref{tb:variasilanding}.
 
 \begin{figure}[H]
 	\centering
@@ -16,10 +16,11 @@ Hasil pengukuran data \textit{ground test} dibagi menjadi 2 bagian, seperti yang
 	\label{fig:condition_1}
 \end{figure}
 
-Selanjutnya merupakan grafik dengan keterangan serupa, dimana pada grafik tersebut memiliki keterangan sebagaimana pada tabel berikut:
+Selanjutnya merupakan grafik dengan keterangan serupa, dimana pada grafik tersebut memiliki keterangan sebagaimana pada tabel \ref{tb:penyajian_data}. Posisi dari masing-masing keterangan berkorelasi dengan posisi pada grafik yang diberikan, contoh: pada bagian awal, dari arah kiri terdapat keterangan "\textbf{\textit{Lateral Cyclic Displacement (\%)}}" maka grafik pada posisi tersebut merepresentasikan "\textbf{\textit{Lateral Cyclic Displacement (\%)}}", begitu seterusnya.
 
 \begin{table}[]
 	\caption{Keterangan pengukuran pada grafik}
+	\label{tb:penyajian_data}
 	\begin{tabular}{|c|c|c|}
 		\hline
 		\textit{Lateral cyclic displacement (\%)} & \textit{Longitudinal cyclic displacement} & Pedal displacement (\%)           \\ \hline
@@ -29,7 +30,7 @@ Selanjutnya merupakan grafik dengan keterangan serupa, dimana pada grafik terseb
 	\end{tabular}
 \end{table}
 
-Posisi dari masing-masing keterangan berkorelasi dengan posisi pada grafik yang diberikan, contoh: pada bagian awal, dari arah kiri terdapat keterangan "\textbf{\textit{Lateral Cyclic Displacement (\%)}}" maka grafik pada posisi tersebut merepresentasikan "\textbf{\textit{Lateral Cyclic Displacement (\%)}}", begitu seterusnya.
+
 
 \begin{figure}[H]
 	\centering
@@ -434,9 +435,9 @@ Untuk memastikan bahwa respon hasil rekonstruksi sudah sesuai dengan data penguk
 	\label{fig:FFT_validation}
 \end{figure}
 
-Dari gambar \ref{fig:FFT_ch3} dan \ref{fig:FFT_validation} didapatkan bahwa letak dominan frekuensi yang dihasilkan dari ketiga respon berada pada nilai yang berdekatan. Untuk hasil pengukuran didapatkan puncak (gambar \ref{fig:FFT_ch3}) berada pada frekuensi 16.334 Hz, 701.83 Hz, 748.285 Hz, dan 839.859 Hz. Sedangkan untuk FFT hasil rekonstruksi, responnya berada pada frekuensi 16.3 Hz, 709.9 Hz, 748.2 Hz dan 839.9 Hz. Sehingga respon hasil rekonstruksi dapat digunakan sebagai representatif hasil pengukuran.
+Dari gambar \ref{fig:FFT_ch3} dan \ref{fig:FFT_validation} didapatkan bahwa letak dominan frekuensi yang dihasilkan dari ketiga respon berada pada nilai yang berdekatan. Untuk hasil pengukuran didapatkan puncak (gambar \ref{fig:FFT_ch3}) berada pada frekuensi 16.334 Hz, 701.83 Hz, 748.285 Hz, dan 839.859 Hz. Sedangkan untuk FFT hasil rekonstruksi, responnya berada pada frekuensi 16.29 Hz, 701.9 Hz, 748.2 Hz dan 839.8 Hz. Sehingga respon hasil rekonstruksi dapat digunakan sebagai representatif hasil pengukuran.
 
-Solusi persamaan yang telah dicantumkan pada gambar \ref{fig:validation_time_domain} setelah digunakan FFT, memiliki puncak pada frekuensi 13.04 Hz dan 24.25 Hz. Nilai error terdekat antara solusi persamaan matematis dan pengukuran berada pada nilai error 20$\%$. Sedangkan dari gambar \ref{fig:measur_solution} merupakan grafik yang menampilkan grafik solusi matematis untuk identifikasi error RMSE (\textit{Root Mean Square Error}) terhadap respon rekonstruksi hasil pengukuran. Dari hasil perhitungan komputasi pada Matlab didpatkan nilai RMSE nya adalah sebesar 0.026 atau sebesar 2.6$\%$.
+Solusi persamaan yang telah dicantumkan pada gambar \ref{fig:validation_time_domain} setelah digunakan FFT, memiliki puncak pada frekuensi 16.72 Hz. Nilai error terdekat antara solusi persamaan matematis dan pengukuran berada pada nilai error 2.63$\%$. Sedangkan dari gambar \ref{fig:measur_solution} merupakan grafik yang menampilkan grafik solusi matematis untuk identifikasi error RMSE (\textit{Root Mean Square Error}) terhadap respon rekonstruksi hasil pengukuran. Dari hasil perhitungan komputasi pada Matlab didpatkan nilai RMSE nya adalah sebesar 0.017 atau sebesar 1.7$\%$.
 
 \begin{figure}[H]
 	\centering
@@ -445,11 +446,11 @@ Solusi persamaan yang telah dicantumkan pada gambar \ref{fig:validation_time_dom
 	\label{fig:measur_solution}
 \end{figure}
 
-Sehingga didapatkan secara matematis, pendekatan yang dilakukan merupakan pendekatan dengan besaran error perhitungan terhadap pengukuran sebesar 20$\%$ dalam domain frekuensinya. Salah satu faktor yang menyebabkan terjadinya error yang besar ini adalah penyederhanaan bentuk matematis yang banyak memberikan toleransi dalam identifikasinya. Disisi lain, pendekatan propertis mekanik yang masih kurang dari kondisi sebenarnya pada bagian helikopter sebenarnya. Maka selanjutnya setelah diketahui besarnya error pada perhitungan matematis terhadap pengukuran, akan dilakukan analisis terhadap perhitungan matematis.
+Sehingga didapatkan secara matematis, pendekatan yang dilakukan merupakan pendekatan dengan besaran error perhitungan terhadap pengukuran sebesar 2.63$\%$ dalam domain frekuensinya. Salah satu faktor yang menyebabkan terjadinya error ini adalah penyederhanaan bentuk matematis yang banyak memberikan toleransi dalam identifikasinya. Disisi lain, pendekatan propertis mekanik yang masih kurang tepat dari kondisi pada bagian helikopter sebenarnya. Maka selanjutnya setelah diketahui besarnya error pada perhitungan matematis terhadap pengukuran, akan dilakukan analisis terhadap perhitungan matematis dan hasil pemodelan pada Femap.
 
 \section{Hasil Perhitungan Matematis}
 
-Perhitungan matematis yang dilakukan berdasarkan dari apa yang telah dikerjakan pada \cite{BERGEOT201672}, frekuensi \textit{ground resonance} akan terjadi pada \textit{regressive rotor mode}, yaitu mode yang terjadi pada bilah rotor. Dalam perhitungan tersebut, digunakan matriks dari persamaan \ref{eq:state-space}. Berdasarkan matriks yang telah didapatkan pada persamaan \ref{eq:linearisasi} kemudian disubtitusi pada persamaan \ref{eq:EOM} dan diubah menjadi bentuk \textit{state-space} pada persamaan \ref{eq:state-space_simplified}, maka akan dihitung nilai eigen dari matriks A berikut.
+Perhitungan matematis yang dilakukan berdasarkan dari apa yang telah dikerjakan pada \cite{BERGEOT201672}, frekuensi \textit{ground resonance} akan terjadi pada \textit{regressive rotor mode}, yaitu mode yang terjadi pada bilah rotor. Dalam perhitungan tersebut, digunakan matriks dari persamaan \ref{eq:state-space}. Berdasarkan matriks yang telah didapatkan pada persamaan \ref{eq:linearisasi} kemudian disubtitusi pada persamaan \ref{eq:EOM} dan diubah menjadi bentuk \textit{state-space} pada persamaan \ref{eq:state-space_simplified}, maka akan dihitung nilai eigen dari matriks \textbf{A}.
 
 \begin{align*}
 	\mathbf{A}=\begin{bmatrix}
@@ -458,7 +459,7 @@ Perhitungan matematis yang dilakukan berdasarkan dari apa yang telah dikerjakan 
 	\end{bmatrix}
 \end{align*}
 
-Nilai eigen pada matriks A merupakan solusi yang menampilkan besarnya frekuensi pada \textit{fuselage} dan \textit{rotor}. Informasi material pada helikopter akan disubtitusi pada matriks tersebut. Akan tetapi dalam penelitian ini, didapatkan keterbatasan pada spesifikasi propertis helikopter. Sehingga dilakukan pendekatan untuk nilai propertis persamaan diatas menggunakan data kecepatan bilah rotor helikopter, dimana untuk masing-masing propertis adalah sebagai berikut:
+Nilai eigen pada matriks A merupakan solusi yang menampilkan besarnya frekuensi pada \textit{fuselage} dan \textit{rotor}. Informasi material pada helikopter akan disubtitusi pada matriks tersebut. Akan tetapi dalam penelitian ini, didapatkan keterbatasan pada spesifikasi propertis helikopter. Sehingga dilakukan pendekatan untuk nilai propertis persamaan diatas menggunakan data kecepatan bilah rotor helikopter, dimana untuk masing-masing propertis tersebut dapat dilihat pada tabel \ref{tb:propertis}.
 
 \begin{table}[h]
 	\centering
@@ -504,13 +505,59 @@ Pada grafik \ref{fig:imag(uncoupled)} garis putus-putus berwarna biru merupakan 
 	\label{fig:real(coupled)}
 \end{figure}
 
-Grafik pada gambar \ref{fig:imag(coupled)} merupakan grafik saat sistem helikopter yang memiliki interkoneksi pada bagian \textit{input} dan \textit{output} nya (\textit{coupled}). $\alpha$ merupakan nilai eigen dari sistem \textit{coupled}. Kondisi saat nilai eigen \textit{coupled} melebur dengan garis dari nilai eigennya pada nilai eigen di mode \textit{fuselage} nya akan mengakibatkan terjadinya \textit{ground resonance}. Kemudian pada gambar \ref{fig:real(coupled)} memberikan informasi terkait batas siklus osilasi pada satu bilah rotor, yaitu sebesar 16.88 Hz. Sehingga bila satu buah bilah rotor memiliki frekuensi rotasi sebesar 16.88 Hz, helikopter akan mengalami \textit{ground resonance}.
+Grafik pada gambar \ref{fig:imag(coupled)} merupakan grafik saat sistem helikopter yang memiliki interkoneksi pada bagian \textit{input} dan \textit{output} nya (\textit{coupled}). $\alpha$ merupakan nilai eigen dari sistem \textit{coupled}. Kondisi saat nilai eigen \textit{coupled} melebur dengan garis dari nilai eigennya pada nilai eigen di mode \textit{fuselage} nya akan mengakibatkan terjadinya \textit{ground resonance}. Kemudian pada gambar \ref{fig:real(coupled)} memberikan informasi terkait batas siklus osilasi pada satu bilah rotor, yaitu berada pada rentang 17.75-20.57 Hz. Sehingga bila satu buah bilah rotor memiliki frekuensi rotasi pada rentang tersebut, helikopter akan mengalami \textit{ground resonance}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{gambar/sol_plot_2.jpg}
+	\caption{Plot solusi gerakan pusat massa rotor pada sumbu-x pada frekuensi rotor 16 Hz.}
+	\label{fig:sol_plot_2}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{gambar/sol_plot_3.jpg}
+	\caption{Plot solusi gerakan pusat massa rotor pada sumbu-x pada frekuensi rotor 17.75 Hz.}
+	\label{fig:sol_plot_3}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{gambar/sol_plot_5.jpg}
+	\caption{Plot solusi gerakan pusat massa rotor pada sumbu-x pada frekuensi rotor 30 Hz.}
+	\label{fig:sol_plot_5}
+\end{figure}
+
+Pada rentang 17.75-20.57 Hz merupakan rentang terjadinya \textit{ground resonance} (gambar \ref{fig:sol_plot_2} hingga \ref{fig:sol_plot_5}). Amplitudo dari solusi perpindahan pusat massa pada sumbu-x berada pada nilai yang besar seiring dengan berjalannya waktu. Hal ini memvalidasi bahwa dalam rentang 17.75-20.57 Hz merupakan rentang terjadinya \textit{ground resonance} helikopter. Amplitudo pada gambar \ref{fig:sol_plot_2} dan \ref{fig:sol_plot_5} memiliki nilai yang berada di skala 0.06 meter. Sedangkan pada gambar \ref{fig:sol_plot_3} amplitudonya membesar seiring berjalannya waktu. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{gambar/xy_2.jpg}
+	\caption{Plot pergerakan pusat massa rotor pada sumbu-xy pada frekuensi 16 Hz.}
+	\label{fig:xy_2}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{gambar/xy_3.jpg}
+	\caption{Plot pergerakan pusat massa rotor pada sumbu-xy pada frekuensi 17.75 Hz.}
+	\label{fig:xy_3}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{gambar/xy_5.jpg}
+	\caption{Plot pergerakan pusat massa rotor pada sumbu-xy pada frekuensi 30 Hz.}
+	\label{fig:xy_5}
+\end{figure}
+
+Gambar \ref{fig:xy_2} dan \ref{fig:xy_5} merupakan perpindahan pusat massa rotor helikopter saat tidak terjadi \textit{ground resonance} yaitu pada frekuensi rotor 16 Hz dan 30 Hz. Sedangkan pada gambar \ref{fig:xy_3} merupakan perpindahan pusat massa rotor helikopter saat terjadi fenomena \textit{ground resonance}. Pusat massa rotor seiring berjalannya waktu akan semakin jauh berpindah dari titik pusat massa aslinya, yaitu 0,0, bahkan skala perpindahannya bisa mencapai lebih dari 0.5 meter. 
 
 Gambar pada grafik \ref{fig:real(coupled)} memberikan informasi, bahwa pada bagian riil dari nilai eigen sistem \textit{coupled} berada pada nilai positif pada rentang 17.75-20.57 Hz. Berdasarkan pada apa yang telah dikerjakan pada \cite{BERGEOT201672}, \cite{Eckert2007AnalyticalAA},\cite{Bergeot_passive}, dan banyak literatur mengenai fenomena \textit{ground resonance} maka pada kondisi tersebut helikopter akan mengalami getaran yang dapat menyebabkan \textit{ground resonance}. 
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=0.7\linewidth]{gambar/find_range_10-11,89.png}}
+	\includegraphics[width=0.6\linewidth]{gambar/find_range_10-11,89.png}
 	\caption{Validasi pencarian rentang frekuensi respon helikopter pada rentang 17.75-20.57 Hz menggunakan MS Excel.}
 	\label{fig:resonance_range}
 \end{figure}
@@ -526,34 +573,34 @@ Diasumsikan bahwa pada $m_y$ terdapat penambahan massa baru sebesar $m_m$. Sehin
 	m'_y=m_y+m_m
 \end{align}
 
-Sehingga akan dilakukan perhitungan, saat $m_m = 0$ hingga penambahan sampai pada $m_m = 300$ yang menandakan bahwa perubahan pada massanya akan bertambah sebesar 300 kg. Akan tetapi dalam perhitungan terhadap potensi fenomena \textit{ground resonance} ini memiliki batas penambahan maksimum, yaitu sebesar 4500 kg. Sehingga nilai pertambahan maksimum pada modifikasi helikopter adalah sebesar 2094 kg. Selanjutnya akan coba dilihat melalui grafik seperti pada gambar grafik \ref{fig:imag(coupled)} dan \ref{fig:real(coupled)} untuk kondisi modifikasi penambahan massa pertama, yaitu sebesar 300 kg. Maka akan didapatkan grafik berikut:
+Sehingga akan dilakukan perhitungan, saat $m_m = 0$ hingga penambahan sampai pada $m_m = 300$ yang menandakan bahwa perubahan pada massanya akan bertambah sebesar 300 kg. Akan tetapi dalam perhitungan terhadap potensi fenomena \textit{ground resonance} ini memiliki batas penambahan maksimum, yaitu sebesar 4500 kg. Sehingga nilai pertambahan maksimum pada modifikasi helikopter adalah sebesar 2094 kg. Selanjutnya akan coba dilihat melalui grafik seperti pada gambar grafik \ref{fig:imag(coupled)} dan \ref{fig:real(coupled)} untuk kondisi modifikasi penambahan massa pertama, yaitu sebesar 300 kg. Maka akan didapatkan seperti pada gambar \ref{fig:imag(modified)_1} dan \ref{fig:real(modified)_1}.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=0.65\linewidth]{gambar/imag(modified)_1.jpg}}
+	\includegraphics[width=0.65\linewidth]{gambar/imag(modified)_1.jpg}
 	\caption{Plot grafik imajiner terhadap kecepatan rotor $\Omega$ pada kondisi \textit{coupled} sebelum (hitam) dan setelah penambahan massa 300 kg (hijau).}
 	\label{fig:imag(modified)_1}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=0.65\linewidth]{gambar/real(modified)_1.jpg}}
+	\includegraphics[width=0.65\linewidth]{gambar/real(modified)_1.jpg}
 	\caption{Plot grafik riil terhadap kecepatan rotor $\Omega$ pada kondisi \textit{coupled} sebelum (hitam) dan setelah penambahan massa 300 kg (hijau).}
 	\label{fig:real(modified)_1}
 \end{figure}
 
-Variabel keterangan berwarna hijau yang disimbolkan dengan $\alpha_m$ merupakan grafik hasil modifikasi helikopter.  Pada grafik tersebut, yaitu pada gambar \ref{fig:real(modified)_1} dan \ref{fig:imag(modified)_1} menunjukkan adanya pergeseran frekuensi resonansi pada modifikasi penambahan 300 kg pada helikopter, yaitu menjadi 17.45-20.57 Hz. Pergeseran tersebut secara kuantitatif memiliki selisih sebesar 0.3 Hz pada batas awal dan 0.69 Hz batas akhir. Selanjutnya dilakukan penambahan yang lebih berat, yaitu sebesar 1000 kg atau sebesar 1 ton. Sehingga akan didapatkan grafik sebagaimana berikut ini:
+Variabel keterangan berwarna hijau yang disimbolkan dengan $\alpha_m$ merupakan grafik hasil modifikasi helikopter.  Pada grafik tersebut, yaitu pada gambar \ref{fig:real(modified)_1} dan \ref{fig:imag(modified)_1} menunjukkan adanya pergeseran frekuensi resonansi pada modifikasi penambahan 300 kg pada helikopter, yaitu menjadi 17.45-20.57 Hz. Pergeseran tersebut secara kuantitatif memiliki selisih sebesar 0.3 Hz pada batas awal dan 0.69 Hz batas akhir. Selanjutnya dilakukan penambahan yang lebih berat, yaitu sebesar 1000 kg atau sebesar 1 ton. Sehingga akan didapatkan grafik sebagaimana pada gambar \ref{fig:imag(modified)_2}.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=0.65\linewidth]{gambar/imag(modified)_2.jpg}}
+	\includegraphics[width=0.65\linewidth]{gambar/imag(modified)_2.jpg}
 	\caption{Plot grafik imajiner terhadap kecepatan rotor $\Omega$ pada kondisi \textit{coupled} sebelum (hitam) dan setelah penambahan massa 1000 kg (hijau).}
 	\label{fig:imag(modified)_2}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=0.65\linewidth]{gambar/real(modified)_2.jpg}}
+	\includegraphics[width=0.65\linewidth]{gambar/real(modified)_2.jpg}
 	\caption{Plot grafik riil terhadap kecepatan rotor $\Omega$ pada kondisi \textit{coupled} sebelum (hitam) dan setelah penambahan massa 1000 kg (hijau).}
 	\label{fig:real(modified)_2}
 \end{figure}
@@ -562,14 +609,14 @@ Grafik pada gambar \ref{fig:imag(modified)_2} menunjukkan pergeseran rentang fre
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=0.65\linewidth]{gambar/imag(modified)_3.jpg}}
+	\includegraphics[width=0.65\linewidth]{gambar/imag(modified)_3.jpg}
 	\caption{Plot grafik imajiner terhadap kecepatan rotor $\Omega$ pada kondisi \textit{coupled} sebelum (hitam) dan setelah penambahan massa 2000 kg (hijau).}
 	\label{fig:imag(modified)_3}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=0.65\linewidth]{gambar/real(modified)_3.jpg}}
+	\includegraphics[width=0.65\linewidth]{gambar/real(modified)_3.jpg}
 	\caption{Plot grafik riil terhadap kecepatan rotor $\Omega$ pada kondisi \textit{coupled} sebelum (hitam) dan setelah penambahan massa 2000 kg (hijau).}
 	\label{fig:real(modified)_3}
 \end{figure}
@@ -603,28 +650,28 @@ Helikopter dimodelkan berdasarkan model stik atau batang. Pada masing-masing pen
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=0.58\linewidth]{gambar/simulasi_tampak_atas.jpg}}
+	\includegraphics[width=0.58\linewidth]{gambar/simulasi_tampak_atas.jpg}
 	\caption{Gambar hasil pemodelan stik helikopter tampak dari atas.}
 	\label{fig:simulasi_tampak_atas}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=0.58\linewidth]{gambar/simulasi_tampak_depan.jpg}}
+	\includegraphics[width=0.58\linewidth]{gambar/simulasi_tampak_depan.jpg}
 	\caption{Gambar hasil pemodelan stik helikopter tampak dari depan.}
 	\label{fig:simulasi_tampak_depan}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=0.58\linewidth]{gambar/simulasi_tampak_samping.jpg}}
+	\includegraphics[width=0.58\linewidth]{gambar/simulasi_tampak_samping.jpg}
 	\caption{Gambar hasil pemodelan stik helikopter tampak dari samping.}
 	\label{fig:simulasi_tampak_samping}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=0.58\linewidth]{gambar/simulasi_tampak_normal.jpg}}
+	\includegraphics[width=0.58\linewidth]{gambar/simulasi_tampak_normal.jpg}
 	\caption{Gambar hasil pemodelan stik helikopter tampak dari normal.}
 	\label{fig:simulasi_tampak_normal}
 \end{figure}
@@ -636,14 +683,14 @@ Pada gambar \ref{fig:mode1} hingga \ref{fig:mode10} merupakan deformasi mode 1 h
 \begin{figure}[H]
 	\begin{subfigure}{0.49\textwidth}
 		\centering
-		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode1.jpg}}
+		\includegraphics[width=0.9\linewidth]{gambar/mode1.jpg}
 		\caption{}
 		\label{fig:mode1}
 	\end{subfigure}
 	\centering
 	\begin{subfigure}{0.49\textwidth}
 		\centering
-		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode2.jpg}}
+		\includegraphics[width=0.9\linewidth]{gambar/mode2.jpg}
 		\caption{}
 		\label{fig:mode2}
 	\end{subfigure}
@@ -653,14 +700,14 @@ Pada gambar \ref{fig:mode1} hingga \ref{fig:mode10} merupakan deformasi mode 1 h
 \begin{figure}[H]
 	\begin{subfigure}{0.49\textwidth}
 		\centering
-		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode3.jpg}}
+		\includegraphics[width=0.9\linewidth]{gambar/mode3.jpg}
 		\caption{}
 		\label{fig:mode3}
 	\end{subfigure}
 	\centering
 	\begin{subfigure}{0.49\textwidth}
 		\centering
-		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode4.jpg}}
+		\includegraphics[width=0.9\linewidth]{gambar/mode4.jpg}
 		\caption{}
 		\label{fig:mode4}
 	\end{subfigure}
@@ -670,14 +717,14 @@ Pada gambar \ref{fig:mode1} hingga \ref{fig:mode10} merupakan deformasi mode 1 h
 \begin{figure}[H]
 	\begin{subfigure}{0.49\textwidth}
 		\centering
-		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode5.jpg}}
+		\includegraphics[width=0.9\linewidth]{gambar/mode5.jpg}
 		\caption{}
 		\label{fig:mode5}
 	\end{subfigure}
 	\centering
 	\begin{subfigure}{0.49\textwidth}
 		\centering
-		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode6.jpg}}
+		\includegraphics[width=0.9\linewidth]{gambar/mode6.jpg}
 		\caption{}
 		\label{fig:mode6}
 	\end{subfigure}
@@ -687,14 +734,14 @@ Pada gambar \ref{fig:mode1} hingga \ref{fig:mode10} merupakan deformasi mode 1 h
 \begin{figure}[H]
 	\begin{subfigure}{0.49\textwidth}
 		\centering
-		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode7.jpg}}
+		\includegraphics[width=0.9\linewidth]{gambar/mode7.jpg}
 		\caption{}
 		\label{fig:mode7}
 	\end{subfigure}
 	\centering
 	\begin{subfigure}{0.49\textwidth}
 		\centering
-		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode8.jpg}}
+		\includegraphics[width=0.9\linewidth]{gambar/mode8.jpg}
 		\caption{}
 		\label{fig:mode8}
 	\end{subfigure}
@@ -704,14 +751,14 @@ Pada gambar \ref{fig:mode1} hingga \ref{fig:mode10} merupakan deformasi mode 1 h
 \begin{figure}[H]
 	\begin{subfigure}{0.49\textwidth}
 		\centering
-		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode9.jpg}}
+		\includegraphics[width=0.9\linewidth]{gambar/mode9.jpg}
 		\caption{}
 		\label{fig:mode9}
 	\end{subfigure}
 	\centering
 	\begin{subfigure}{0.49\textwidth}
 		\centering
-		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode10.jpg}}
+		\includegraphics[width=0.9\linewidth]{gambar/mode10.jpg}
 		\caption{}
 		\label{fig:mode10}
 	\end{subfigure}
@@ -730,14 +777,14 @@ Dari beberapa \textit{mode shape} yang telah didapatkan, terdapat salah satu ger
 \begin{figure}[H]
 	\begin{subfigure}{0.49\textwidth}
 		\centering
-		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode6_frame_1.PNG}}
+		\includegraphics[width=0.9\linewidth]{gambar/mode6_frame_1.PNG}
 		\caption{}
 		\label{fig:mode6_frame_1}
 	\end{subfigure}
 	\centering
 	\begin{subfigure}{0.49\textwidth}
 		\centering
-		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode6_frame_2.PNG}}
+		\includegraphics[width=0.9\linewidth]{gambar/mode6_frame_2.PNG}
 		\caption{}
 		\label{fig:mode6_frame_2}
 	\end{subfigure}
@@ -747,14 +794,14 @@ Dari beberapa \textit{mode shape} yang telah didapatkan, terdapat salah satu ger
 \begin{figure}[H]
 	\begin{subfigure}{0.49\textwidth}
 		\centering
-		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode6_frame_3.PNG}}
+		\includegraphics[width=0.9\linewidth]{gambar/mode6_frame_3.PNG}
 		\caption{}
 		\label{fig:mode6_frame_3}
 	\end{subfigure}
 	\centering
 	\begin{subfigure}{0.49\textwidth}
 		\centering
-		\fbox{\includegraphics[width=0.9\linewidth]{gambar/mode6_frame_4.PNG}}
+		\includegraphics[width=0.9\linewidth]{gambar/mode6_frame_4.PNG}
 		\caption{}
 		\label{fig:mode6_frame_4}
 	\end{subfigure}
@@ -764,3 +811,28 @@ Dari beberapa \textit{mode shape} yang telah didapatkan, terdapat salah satu ger
 Dalam pemodelan simulasi pada Femap, terdapat banyak aspek yang disederhanakan. Bentuk helikopter yang sangat kompleks direpresentasikan dalam bentuk stik model seperti yang dikerjakan pada \cite{Grzegorz2016THESP} dimana pada pemodelan tersebut, digunakan data propertis yang sudah sesuai dengan kondisi eksisting pada helikopter. Akan tetapi pada pemodelan yang telah dibuat kali ini, masih menjadi sebuah batasan untuk melakukan pendekatan sesuai dengan propertis material yang digunakan. Sehingga pada pemodelan ini hanya akan digunakan analisis untuk merepresentasikan \textit{mode shape} yang sesuai dengan mekanisme terjadinya fenomena \textit{ground resonance}.
 
 Frekuensi pada mode ke-6, merupakan frekuensi eigen yang berada dekat pada rentang frekuensi $f_1$ (5.92-6.02 Hz). Apabila pada rentang frekuensi di mode ke-6 dilakukan identifikasi jumlah frekuensi respon helikopter, akan didapatkan sebanyak $3\%$ respon frekuensi helikopter yang berada pada sekitar frekuensi mode ke-6 (82 respon frekuensi) dengan batas-batas pada 4-4.5 Hz. Hal ini mnunjukkan, bahwa apabila ditinjau dari \textit{finite element analysis}, tidak terdapat potensi yang besar untuk terjadinya fenomena \textit{ground resonance} pada helikopter hasil modifikasi ini. 
+
+\section{Validasi Hasil Simulasi}
+
+Validasi yang dilakukan dari hasil simulasi tidak dapat diidentifikasi sama seperti validasi matematis, hal ini dikarenakan \textit{software} keterbatasan pengguna pada Femap yang tidak dapat menampilkan bentuk grafik penyelesaian solusi. Sehingga dilakukan identifikasi dari hasil deformasi terhadap nilai g-peak dari hasil pengukuran.
+
+Dari hasil simulasi didapatkan bahwa frekuensi respon yang berkorelasi dengan \textit{ground resonance} berada pada frekuensi 4.13 (rentang 4 hingga 4.5 Hz). Sehingga dari rentang tersebut akan divalidasi menggunakan deformasi pada hasil Femap. Deformasi tersebut memiliki amplitudo pergeseran sebesar 0.000556 meter. Titik yang diidentifikasi merupakan titik dimana diletakannya sensor pada pengukuran, yaitu pada titik 3s' atau yang terletak pada node 15. Pada channel yang searah dengan gerakan deformasi ini (\textit{channel} 3) memiliki sebanyak 3 respon frekuensi, yaitu 4.16, 4.29 dan 4.46 Hz yang terdapat pada tabel \ref{tb:pengukuran_simulasi}.
+
+
+\begin{table}[H]
+	\centering
+	\caption{Perbandingan nilai g-peak dari hasil pengukuran dan simulasi pada rentang frekuensi di mode-6.}
+	\label{tb:pengukuran_simulasi}
+	\resizebox{0.6\textwidth}{!}{%
+		\begin{tabular}{|c|cc|c|}
+			\hline
+			\multirow{2}{*}{frekuensi (Hz)} & \multicolumn{2}{c|}{g-peak} & \multirow{2}{*}{error} \\ \cline{2-3}
+			& \multicolumn{1}{c|}{Pengukuran} & Simulasi &  \\ \hline
+			4.16403 & \multicolumn{1}{c|}{0.008312} & 0.000019 & 99.77\% \\ \hline
+			4.29022 & \multicolumn{1}{c|}{0.005279} & 0.00002 & 99.62\% \\ \hline
+			4.46505 & \multicolumn{1}{c|}{0.004478} & 0.000022 & 99.51\% \\ \hline
+		\end{tabular}%
+	}
+\end{table}
+
+Hasil simulasi yang didapatkan memiliki nilai error yang cukup besar dari hasil pengukuran. Meskipun jika diidentifikasi dari gerakan, hasil simulasi memiliki gerakan yang serupa dengan fenomena \textit{ground resonance}. Akan tetapi secara kuantifikasi, nilai tersebut memiliki error yang hampir mencapai 100$\%$. Error tersebut dapat disebabkan oleh pendekatan propertis mekanik yang belum sesuai dengan helikopter yang sebenarnya dan pembuatan \textit{finite element} yang masih belum sesuai dengan model stik helikopter. Sehingga pada skala pengembangan kedepannya diperlukan bentuk \textit{finite element} yang lebih akurat dan pemilihan propertis mekanik yang lebih sesuai dengan helikopter yang dimodelkan.

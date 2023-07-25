@@ -10,7 +10,7 @@ Untuk mendapatkan informasi secara teoritis. Dilakukan sebuah pencarian untuk me
 
 Helikopter merupakan bentuk aplikasi dari prinsip-prinsip dasar fundametal hukum fisika, dimulai dari hukum pertama, kedua dan ketiga Newton, prinsip Bernoulli, konservasi energi dan aerodinamika. Keempat hukum dasar tersebut adalah sedikit dari prinsip fisika yang menjadi teori fundamental dari helikopter. Kompleksitas dibalik mengapa helikopter bisa terbang dapat dimengerti oleh pilot pemula sekalipun melalui pemahaman yang mendalam terhadap teori fisika yang berada pada helikopter\cite{wagtendonk2006principles}.
 
-Helikopter memiliki banyak komponen, dimulai dari sistem transmisi yang dilakukan oleh mesin menuju rotor utama, rotor pada ekor, dan komponen lain yang bergantung pada propulsi mesin. Bagian dari transmisi pada helikopter terdiri dari gigi rotor utama, poros penggerak, unit \textit{freewheeling}, rem rotor dan roda gigi rotor pada ekor  \cite{wagtendonk2006principles}.
+Helikopter memiliki banyak komponen (gambar \ref{fig:komponenheli}), dimulai dari sistem transmisi yang dilakukan oleh mesin menuju rotor utama, rotor pada ekor, dan komponen lain yang bergantung pada propulsi mesin. Bagian dari transmisi pada helikopter terdiri dari gigi rotor utama, poros penggerak, unit \textit{freewheeling}, rem rotor dan roda gigi rotor pada ekor  \cite{wagtendonk2006principles}.
 
 \begin{figure}[H]
 	\centering
@@ -19,7 +19,7 @@ Helikopter memiliki banyak komponen, dimulai dari sistem transmisi yang dilakuka
 	\label{fig:komponenheli}
 \end{figure}
 
-\textit{Fuselage} badan helikopter merupakan bagian inti luar dari rangka yang menampung kabin berisi kru, penumpang, dan kargo. Kabin helikopter memiliki susunan tempat duduk yang berbeda-beda. Selain itu, badan helikopter juga berfungsi untuk memberikan ruang pada mesin, transmisi, avionik, kontrol penerbangan sumber power pada helikopter. Untuk sistem transmisi helikopter, mesin pada gigi rotor utama akan membuat poros rotor berputar. Ketika rotor berputar pada rpm mesin, kecepatan ujung rotor akan lebih cepat daripada kecepatan suara, kekuatan pada rotor harus ditingkatkan dan kelembaman dari giroskop akan menjadi sangat ekstrim. Terdapat bagian yang dinamakan \textit{clutch} (kopling) yaitu bagian yang terintegrasi dengan sistem transmisi. Bagian ini memungkinkan pilot untuk dapat mengatur kontak antara mesin dan poros penggerak \cite{wagtendonk2006principles}.
+\textit{Fuselage} badan helikopter merupakan bagian inti luar dari rangka yang menampung kabin berisi kru, penumpang, dan kargo. Kabin helikopter memiliki susunan tempat duduk yang berbeda-beda. Selain itu, badan helikopter juga berfungsi untuk memberikan ruang pada mesin, transmisi, avionik, kontrol penerbangan sumber power pada helikopter. Untuk sistem transmisi helikopter, mesin pada gigi rotor utama akan membuat poros rotor berputar. Ketika rotor berputar pada rpm mesin, kecepatan ujung rotor akan lebih cepat daripada kecepatan suara, kekuatan pada rotor harus ditingkatkan dan kelembaman dari giroskop akan menjadi sangat ekstrim. Terdapat bagian yang dinamakan \textit{clutch} (kopling) (gambar \ref{fig:clutch}) yaitu bagian yang terintegrasi dengan sistem transmisi. Bagian ini memungkinkan pilot untuk dapat mengatur kontak antara mesin dan poros penggerak \cite{wagtendonk2006principles}.
 
 \begin{figure}[H]
 	\begin{subfigure}{0.3\textwidth}
@@ -39,7 +39,7 @@ Helikopter memiliki banyak komponen, dimulai dari sistem transmisi yang dilakuka
 	\label{fig:clutch}
 \end{figure}
 
-Untuk mengatur pergerakannya, terdapat bagian komponen yang disebut dengan \textit{swashplate}. Komponen ini dapat mengatur orientasi rotor utama dan jumlah gaya dorong rotor yang dihasilkan. Bearing (bola kecil) pada bagian \textit{swashplate} disesuaikan antara kedua piringan rotor yang bergerak. Sehingga gerakan piringan yang digerakkan oleh pilot akan berpindah ke rotor \cite{wagtendonk2006principles}.
+Untuk mengatur pergerakannya, terdapat bagian komponen yang disebut dengan \textit{swashplate}, dapat dilihat pada gambar \ref{fig:swashplate}. Komponen ini dapat mengatur orientasi rotor utama dan jumlah gaya dorong rotor yang dihasilkan. Bearing (bola kecil) pada bagian \textit{swashplate} disesuaikan antara kedua piringan rotor yang bergerak. Sehingga gerakan piringan yang digerakkan oleh pilot akan berpindah ke rotor \cite{wagtendonk2006principles}.
 
 \begin{figure}[H]
 	\centering
@@ -47,7 +47,7 @@ Untuk mengatur pergerakannya, terdapat bagian komponen yang disebut dengan \text
 	\caption{Mekanisme kontrol pada gerakan rotor utama \cite{handbook}.}
 	\label{fig:swashplate}
 \end{figure}
-Sistem \textit{fully articulated rotor} mempunyai kemampuan pada rotornya untuk melakukan \textit{lead/lag} (gerakan kedepan dan belakang), \textit{flap} (gerakan atas dan bawah) dan \textit{feather} (berotasi pada sumbu radial) untuk merubah gaya angkat \cite{handbook}.
+Sistem \textit{fully articulated rotor} mempunyai kemampuan pada rotornya untuk melakukan \textit{lead/lag} (gerakan kedepan dan belakang), \textit{flap} (gerakan atas dan bawah) dan \textit{feather} (berotasi pada sumbu radial) untuk merubah gaya angkat \cite{handbook} yang dapat dilihat pada gambar \ref{fig:fullyarticulated}.
 
 \begin{figure}[H]
 	\centering
@@ -170,7 +170,7 @@ Untuk dapat melakukan pendekatan secara analitik seperti yang telah diteliti ole
 	\label{fig:simplifiedmodel}
 \end{figure}
 
-Sistem koordinat kartesian digunakan dengan titik pusat di $O$. dengan $G_f$ merupakan pusat inersia \textit{fuselage} dan 3 sumbu kartesian pada sumbu-$x_0$, sumbu-$y_0$ dan sumbu-$z_0$ seperti yang terdapat pada gambar \ref{fig:rotorfuselage}. Kemudian terdapat $G_r$ yang merupakan pusat inersia rotor yang terletak di sumbu-$z_0$. Pada bagian \textit{fuselage} disederhanakan dengan representasi pemodelan yang tersusun seperti pada gambar \ref{fig:topviewrotorfuslage}, yaitu terdiri dari pegas, redaman dan massa dengan 1 arah translasi di sumbu-$y_0$. Selanjut pada arah translasi tersebut akan didefinisikan dalam domain waktu dengan koordinat $y(t)$. Pada masing-masing bilah rotor memiliki massa poin $G_i$ dengan [$i=1,2,3,4$], terletak pada jarak L dari sumbu-$z_0$. Sedangkan posisi pada bilah rotor ke-$i$ pada bidang-$x_0y_0$ sebagaimana persamaan berikut ini:
+Sistem koordinat kartesian digunakan dengan titik pusat di $O$. dengan $G_f$ merupakan pusat inersia \textit{fuselage} dan 3 sumbu kartesian pada sumbu-$x_0$, sumbu-$y_0$ dan sumbu-$z_0$ seperti yang terdapat pada gambar \ref{fig:rotorfuselage}. Kemudian terdapat $G_r$ yang merupakan pusat inersia rotor yang terletak di sumbu-$z_0$. Pada bagian \textit{fuselage} disederhanakan dengan representasi pemodelan yang tersusun seperti pada gambar \ref{fig:topviewrotorfuslage}, yaitu terdiri dari pegas, redaman dan massa dengan 1 arah translasi di sumbu-$y_0$. Selanjut pada arah translasi tersebut akan didefinisikan dalam domain waktu dengan koordinat $y(t)$. Pada masing-masing bilah rotor memiliki massa poin $G_i$ dengan [$i=1,2,3,4$], terletak pada jarak L dari sumbu-$z_0$. Sedangkan posisi pada bilah rotor ke-$i$ pada bidang-$x_0y_0$ sebagaimana persamaan \ref{eq:posisixy}.
 
 \begin{equation}
 \begin{cases}
@@ -182,15 +182,20 @@ y_{G_i} = y(t) + L sin(\xi_i(t)+\delta_i(t))&(b)
 
 Dimana $\delta_i$ merupakan sudut \textit{lead/lag} pada bilah rotor ke-$i$. Sudut \textit{lead/lag} adalah perbedaan posisi bilah rotor saat waktu tertentu dengan posisi bilah rotor saat setimbangnya, yaitu $\xi_i(t)=\Omega t-(\pi/2)(i-1)$ sesuai pada gambar \ref{fig:topviewrotorfuslage}.
 
-Persamaan gerak memiliki fungsi waktu untuk sistem 5 DOF pada helikopter, yaitu perpindahan \textit{fuselage} $y(t)$ dan 4 sudut \textit{lead/lag} $\delta_i(t)$. Kemudian pada tahap berikutnya adalah menurunkan persamaan gerak tersebut menggunakan metode Lagrange dengan variabel yang berkaitan ($T$=energi kinetik, $V$=energi potensial, dan $D$=disipasi energi Rayleigh) sebagaimana berikut:
+Persamaan gerak memiliki fungsi waktu untuk sistem 5 DOF pada helikopter, yaitu perpindahan \textit{fuselage} $y(t)$ dan 4 sudut \textit{lead/lag} $\delta_i(t)$. Kemudian pada tahap berikutnya adalah menurunkan persamaan gerak tersebut menggunakan metode Lagrange dengan variabel yang berkaitan ($T$=energi kinetik, $V$=energi potensial, dan $D$=disipasi energi Rayleigh) seperti pada persamaan \ref{eq:kinetik}, \ref{eq:potensial} dan \ref{eq:disipasi}.
 
 \begin{align}
-T &= \frac{1}{2}m_y\dot{y}^2 + \sum_{i=1}^{4}\frac{1}{2} m_{\delta} v^2_{\delta,i}\\
-V &= \frac{1}{2}k_yy^2+\sum_{i=1}^{4}\frac{1}{2}k_\delta \delta_i^2\\
+T &= \frac{1}{2}m_y\dot{y}^2 + \sum_{i=1}^{4}\frac{1}{2} m_{\delta} v^2_{\delta,i}
+\label{eq:kinetik}
+\\
+V &= \frac{1}{2}k_yy^2+\sum_{i=1}^{4}\frac{1}{2}k_\delta \delta_i^2
+\label{eq:potensial}
+\\
 D &= \frac{1}{2}c_y\dot{y}^2+\sum_{i=1}^{4}\frac{1}{2}c_\delta \dot{\delta}^2
+\label{eq:disipasi}
 \end{align}
 
-Dengan bentuk umum persamaan dalam Lagrange adalah sebagai berikut:
+Dengan bentuk umum persamaan dalam Lagrange seperti pada persamaan \ref{eq:lagrange_eq}.
 
 \begin{align}
 	\frac{d}{dt}\left(\frac{\partial T}{\partial \dot{q}_i}\right) - \frac{\partial T}{\partial q_i} + \frac{\partial D}{\partial \dot{q}_i} + \frac{\partial V}{\partial q_i} &= 0
@@ -209,7 +214,7 @@ Sehingga didapatkan:
 
 Dengan ( $\dot{}$ ) merupakan tanda bahwa variabel tersebut telah diturunkan terhadap waktu $t$, $m_y$ merupakan massa \textit{fuselage}, $m_\delta$ adalah massa dari masing-masing bilah rotor. $M_\delta = m_\delta L$ dan $I_\delta = m_\delta L^2$ berturut-turut adalah momen statik dan momen inersia dari 1 bilah rotor. Subskrip $y$ adalah bagian dari \textit{fuselage} dan $\delta$ adalah bagian dari 1 buah bilah rotor. sehingga $c_y$ dan $c_\delta$ merupakan koefisien redaman dari \textit{fuselage} dan bilah rotor, $k_y$ dan $k_\delta$ adalah koefisien kekakuan linier dari \textit{fuselage} dan bilah rotor.
 
-Untuk mendapatkan persamaan sistem yang \textit{time-invariant} (fungsi yang tidak bergantung mutlak pada waktu), maka persamaan \ref{eq:hasilmetodelagrang} harus dilinierisasi. Untuk itu, dilakukan asumsi bahwa sudut \textit{lead/lag} merupakan sudut yang sangat kecil ($\delta_i(t)<1$) kemudian menggunakan deret Taylor untuk mendapatkan sistem liniernya. Sehingga persamaan \ref{eq:hasilmetodelagrang} akan menjadi seperti persamaan berikut:
+Untuk mendapatkan persamaan sistem yang \textit{time-invariant} (fungsi yang tidak bergantung mutlak pada waktu), maka persamaan \ref{eq:hasilmetodelagrang} harus dilinierisasi. Untuk itu, dilakukan asumsi bahwa sudut \textit{lead/lag} merupakan sudut yang sangat kecil ($\delta_i(t)<1$) kemudian menggunakan deret Taylor untuk mendapatkan sistem liniernya. Sehingga persamaan \ref{eq:hasilmetodelagrang} akan menjadi seperti persamaan \ref{eq:linearisasi_sudutkecil}.
 
 \begin{equation}
 	\begin{cases}
@@ -219,7 +224,7 @@ Untuk mendapatkan persamaan sistem yang \textit{time-invariant} (fungsi yang tid
 \label{eq:linearisasi_sudutkecil}
 \end{equation}
 
-Transformasi Coleman melibatkan variabel yang mengubah gerakan masing-masing bilah rotor menjadi variabel gerakan kolektif. Untuk 4 bilah rotor akan terdapat 4 koordinat Coleman, diantaranya adalah $\delta_0$, $\delta_{1c}$, $\delta_{1s}$, dan $\delta_{cp}$ yang didefinisikan pada persamaan berikut:
+Transformasi Coleman melibatkan variabel yang mengubah gerakan masing-masing bilah rotor menjadi variabel gerakan kolektif. Untuk 4 bilah rotor akan terdapat 4 koordinat Coleman, diantaranya adalah $\delta_0$, $\delta_{1c}$, $\delta_{1s}$, dan $\delta_{cp}$ yang didefinisikan pada persamaan \ref{eq:colemantrans}.
 
 \begin{equation}
 \begin{aligned}
@@ -231,7 +236,7 @@ Transformasi Coleman melibatkan variabel yang mengubah gerakan masing-masing bil
 \label{eq:colemantrans}
 \end{equation}
 
-Sebagaimana pada gambar \ref{fig:topviewrotorfuslage}, $\delta_i$ merupakan derajat kebebasan pada bilah rotor yang terlambat (\textit{lagging}), maka $\delta_0$ adalah \textit{lag} kolektif yang dimiliki rotor, sedangkan $\delta_{1c}$ dan $\delta_{1s}$ saling berhubungan dan merepresentasikan perpindahan dari pusat massa rotor $G_r$ pada bidangnya masing-masing di sumbu $x_0$ dan $y_0$ \cite{inproceedings}, sehingga:
+Sebagaimana pada gambar \ref{fig:topviewrotorfuslage}, $\delta_i$ merupakan derajat kebebasan pada bilah rotor yang terlambat (\textit{lagging}), maka $\delta_0$ adalah \textit{lag} kolektif yang dimiliki rotor, sedangkan $\delta_{1c}$ dan $\delta_{1s}$ saling berhubungan dan merepresentasikan perpindahan dari pusat massa rotor $G_r$ pada bidangnya masing-masing di sumbu $x_0$ dan $y_0$ \cite{inproceedings}, sehingga didapatkan persamaan \ref{eq:pusatmassarotor}.
 
 \begin{equation}
 	\begin{cases}
@@ -241,7 +246,7 @@ Sebagaimana pada gambar \ref{fig:topviewrotorfuslage}, $\delta_i$ merupakan dera
 	\label{eq:pusatmassarotor}
 \end{equation}
 
-Dengan memasukkan variabel pada persamaan \ref{eq:colemantrans} ke persamaan \ref{eq:linearisasi_sudutkecil}, persamaan \ref{eq:linearisasi_sudutkecil}a dan \ref{eq:linearisasi_sudutkecil}b masing-masing akan menjadi:
+Dengan memasukkan variabel pada persamaan \ref{eq:colemantrans} ke persamaan \ref{eq:linearisasi_sudutkecil}, persamaan \ref{eq:linearisasi_sudutkecil}a dan \ref{eq:linearisasi_sudutkecil}b masing-masing akan persamaan \ref{eq:linearisasi}.
 
 \begin{equation}
 	\begin{cases}
@@ -255,14 +260,14 @@ Dengan memasukkan variabel pada persamaan \ref{eq:colemantrans} ke persamaan \re
 
 Pada persamaan \ref{eq:colemantrans} diatas, mode pada rotor hanya bergantung pada $\delta_{1c}$ dan $\delta_{1s}$, hal tersebut dikarenakan $\delta_{1c}$ dan $\delta_{1s}$ memengaruhi gaya dari rotor menuju ke \textit{fuselage}. Disisi lain, dari persamaan \ref{eq:linearisasi}, variabel $\delta_0$ dan $\delta_{cp}$ tidak saling berhubungan (\textit{uncoupled}) dan dapat diabaikan. Sehingga, hanya terdapat 3 derajat kebebasan dari pemodelan sederhana yang telah dilakukan diatas, yaitu $y$, $\delta_{1c}$, dan $\delta_{1s}$.
 
-Persamaan gerak sederhana sesuai pada gambar \ref{fig:topviewrotorfuslage} dapat dituliskan dalam bentuk matriks berikut ini:
+Persamaan gerak sederhana sesuai pada gambar \ref{fig:topviewrotorfuslage} dapat dituliskan dalam bentuk matriks pada persamaan \ref{eq:EOM}.
 
 \begin{equation}
 	\label{eq:EOM}
 	\mathbf{M\ddot{X}}+(\mathbf{C}+\mathbf{G})\mathbf{\dot{X}}+\mathbf{KX}=\mathbf{0}
 \end{equation}
 
-Persamaan \ref{eq:linearisasi} dimuat dalam bentuk matriks dalam persamaan \ref{eq:EOM}. Dimana matriks $\mathbf{X}$, $\mathbf{M}$, $\mathbf{K}$, $\mathbf{C}$, dan $\mathbf{G}$ berturut-turut merupakan matriks derajat kebebasan, massa, kekakuan, redaman dan matriks giroskop dari sistem gerak. Masing-masing matriks tersebut didefinisikan pada persamaan berikut:
+Persamaan \ref{eq:linearisasi} dimuat dalam bentuk matriks dalam persamaan \ref{eq:EOM}. Dimana matriks $\mathbf{X}$, $\mathbf{M}$, $\mathbf{K}$, $\mathbf{C}$, dan $\mathbf{G}$ berturut-turut merupakan matriks derajat kebebasan, massa, kekakuan, redaman dan matriks giroskop dari sistem gerak. Masing-masing matriks tersebut didefinisikan pada persamaan \ref{eq:DOF} dan \ref{eq:matriks}.
 
 \begin{equation}
 	\label{eq:DOF}
@@ -292,6 +297,7 @@ Persamaan \ref{eq:linearisasi} dimuat dalam bentuk matriks dalam persamaan \ref{
 		0& -\tilde{\lambda}_{\delta}\Omega& \omega^2_{\delta}-\Omega^2
 	\end{bmatrix}
 \end{gathered}
+\label{eq:matriks}
 \end{equation}
 
 Dengan,
@@ -314,7 +320,7 @@ Dengan,
 	\end{gathered}
 \end{equation}
 
-\textit{Ground resonance} berkaitan dengan analisis stabilitas pada persamaan \ref{eq:EOM}. Sehingga dapat didefinisikan dalam bentuk \textit{state-space}. Bentuk \textit{state-space} secara umum difenisikan sebagai berikut:
+\textit{Ground resonance} berkaitan dengan analisis stabilitas pada persamaan \ref{eq:EOM}. Sehingga dapat didefinisikan dalam bentuk \textit{state-space}. Bentuk \textit{state-space} secara umum difenisikan pada persamaan \ref{eq:AdanQ}.
 
 \begin{equation}
 	\label{eq:AdanQ}
@@ -345,7 +351,7 @@ Dengan $\mathbf{0}$ dan $\mathbf{I}$ masing-masing merupakan matriks bernilai $0
 
 Dalam suatu sistem periodik yang memiliki peredam. Pergerakan sistem tersebut seiring berjalannya waktu akan mengalami reduksi dan pada suatu waktu tertentu akan berhenti bergerak. Hal ini disebabkan oleh keberadaan peredam pada sistem. Penurunan amplitudo pada pergerakan suatu sistem yang teredam memiliki beberapa bentuk penurunan. Terdapat penurunan amplitudo yang terjadi secara linier dan logaritmik. Untuk penurunan yang bersifat logaritmik, terdapat peredam histeresis dan peredam viskositas. Pada bagian helikopter, peredam terdapat di bagian peredam hidrolik. Oleh karena itu, untuk analisis \textit{logarithmic decrement} pada helikopter digunakan peredam viskositas.
 
-Dalam peredam viskositas, redaman terhadap penurunan amplitudo sistem terbagi menjadi 3 bentuk redaman, \textit{overdamped, critically damped,} dan \textit{underdamped}. Berikut ini merupakan grafik yang menunjukkan gerakan penurunan amplitudo pada peredam viskositas. 
+Dalam peredam viskositas, redaman terhadap penurunan amplitudo sistem terbagi menjadi 3 bentuk redaman, \textit{overdamped, critically damped,} dan \textit{underdamped}. Gambar \ref{fig:damping_motion} dan \ref{fig:underdamped} merupakan grafik yang menunjukkan gerakan penurunan amplitudo pada peredam viskositas. 
 
 \begin{figure}[H]
 	\centering
@@ -363,7 +369,7 @@ Penurunan secara logaritmik atau \textit{logarithmic decrement} merupakan pareme
 	\label{fig:underdamped}
 \end{figure}
 
-Berikut ini merupakan formulasi \textit{logarithmic decrement} pada kondisi \textit{underdamped}:
+Persamaan \ref{eq:logdec} merupakan formulasi \textit{logarithmic decrement} pada kondisi \textit{underdamped}:
 
 \begin{align}
 	\delta = \frac{1}{m}ln\frac{x_1}{x_{m+1}}
@@ -381,7 +387,7 @@ Kemudian dari formulasi pada \ref{eq:logdec} dapat diformulasikan \textit{dampin
 
 Metode elemen berhingga atau \textit{finite element method} merupakan sebuah metode numerik yang digunakan untuk mencari solusi dari mekanika kompleks serta permasalahan getaran dari suatu struktur. Pada metode ini, struktur asli pada objek dibagi menjadi elemen yang lebih kecil. Pada masing-masing elemen diasumsikan memiliki perilaku seperti bagian kontinu dari struktur yang disebut dengan elemen hingga (\textit{finite element}). Pada masing-masing elemen dihubungkan dengan suatu penghubung yang disebut dengan \textit{nodes} \cite{Lojewski2020InfluenceOC}.
 
-Beberapa percobaan menggunakan analisis \textit{finite element} bertujuan untuk mendesain ulang dengan mengetahui terlebih dahulu deformasi yang terjadi pada suatu struktur, seperti yang dikejakan pada \cite{Gorecki2013}. Pada penelitian tersebut, dilakukan sebuah pemodelan pada helikopter menggunakan elemen stik model sebagai representasi bentuk simulasi pada pengujian resonansi sebenarnya dan langkah pertama untuk mengubah desain pada rotor helikopter. Berikut ini merupakan contoh luaran yang didapatkan pada \cite{Gorecki2013}.
+Beberapa percobaan menggunakan analisis \textit{finite element} bertujuan untuk mendesain ulang dengan mengetahui terlebih dahulu deformasi yang terjadi pada suatu struktur, seperti yang dikejakan pada \cite{Gorecki2013}. Pada penelitian tersebut, dilakukan sebuah pemodelan pada helikopter menggunakan elemen stik model sebagai representasi bentuk simulasi pada pengujian resonansi sebenarnya dan langkah pertama untuk mengubah desain pada rotor helikopter. Gambar \ref{fig:ex_finite_element} merupakan contoh luaran yang didapatkan pada \cite{Gorecki2013}.
 
 \begin{figure}[H]
 	\centering
@@ -390,9 +396,10 @@ Beberapa percobaan menggunakan analisis \textit{finite element} bertujuan untuk 
 	\label{fig:ex_finite_element}
 \end{figure}
 
-Pada gambar \ref{fig:ex_finite_element} merupakan salah satu contoh analisis menggunakan elemen hingga. Secara matematis, deformasi atau perpindahan secara transversal pada suatu elemen tertentu dapat diekspresikan dalam persamaan matematis berikut:
+Pada gambar \ref{fig:ex_finite_element} merupakan salah satu contoh analisis menggunakan elemen hingga. Secara matematis, deformasi atau perpindahan secara transversal pada suatu elemen tertentu dapat diekspresikan dalam persamaan \ref{eq:FEM}.
 
 \begin{align}
+	\label{eq:FEM}
 	w(x,y,t)=\sum_{i=1}^{n}N_i(x,y)w_i(t)
 \end{align}
 
@@ -457,11 +464,11 @@ Untuk tujuan mitigasi, dilakukan 2 pengukuran gaya eksitasi dengan prinsip pengu
 	\label{fig:AS565pic}
 \end{figure}
 
-AS 565 MBe Panther adalah versi militer dari Eurocopter AS 365 Dauphin helikopter dengan mesin ganda dan bobot menengah yang multiguna. Helikopter ini dapat digunakan untuk berbagai peran militer, termasuk serangan tempur, dukungan tembakan, perang anti-kapal selam, perang anti-permukaan, pencarian dan penyelamatan, dan evakuasi medis \cite{AS565MBe}. Helikopter AS 565 MBe Panther dapat dimodifikasi sedemikian rupa untuk selanjutnya ditambahkan fitur persenjataan yang dapat mendukung kinerja helikopter ini dalam melakukan tugasnya. \textit{Profile} mengenai helikopter AS 565 MBe Panther dapat dilihat pada gambar \ref{fig:AS565MBe}. Dari informasi tersebut, helikopter ini memiliki berat maksimum agar helikopter dapat terbang adalah sebesar 4500kg. Sehingga, apabila modifikasi yang dilakukan pada helikopter merupakan modifikasi penambahan massa tanpa adanya modifikasi pada rotor, maka massa 4500kg akan menjadi batas maksimum modifikasi tersebut. Adapun potret dan dimensi spesifik terkait helikopter AS 565 MBe Panther dapat dilihat pada gambar
+AS 565 MBe Panther seperti pada gambar \ref{fig:AS565pic} adalah versi militer dari Eurocopter AS 365 Dauphin helikopter dengan mesin ganda dan bobot menengah yang multiguna. Helikopter ini dapat digunakan untuk berbagai peran militer, termasuk serangan tempur, dukungan tembakan, perang anti-kapal selam, perang anti-permukaan, pencarian dan penyelamatan, dan evakuasi medis \cite{AS565MBe}. Helikopter AS 565 MBe Panther dapat dimodifikasi sedemikian rupa untuk selanjutnya ditambahkan fitur persenjataan yang dapat mendukung kinerja helikopter ini dalam melakukan tugasnya. \textit{Profile} mengenai helikopter AS 565 MBe Panther dapat dilihat pada gambar \ref{fig:AS565MBe}. Dari informasi tersebut, helikopter ini memiliki berat maksimum agar helikopter dapat terbang adalah sebesar 4500kg. Sehingga, apabila modifikasi yang dilakukan pada helikopter merupakan modifikasi penambahan massa tanpa adanya modifikasi pada rotor, maka massa 4500kg akan menjadi batas maksimum modifikasi tersebut. Adapun potret dan dimensi spesifik terkait helikopter AS 565 MBe Panther dapat dilihat pada gambar \ref{fig:AS565MBe}, \ref{fig:as565mbe_atas}, \ref{fig:as565mbe_depan} dan \ref{fig:as565mbe_samping}.
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=0.7\linewidth]{gambar/Propertis_AS565MBe.png}}
+	\includegraphics[width=0.7\linewidth]{gambar/Propertis_AS565MBe.png}
 	\caption{\textit{Profile} helikopter AS 565 MBe Panther.}
 	\label{fig:AS565MBe}
 \end{figure}
@@ -482,7 +489,7 @@ AS 565 MBe Panther adalah versi militer dari Eurocopter AS 365 Dauphin helikopte
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{gambar/as565_depan.png}
+	\includegraphics[width=0.7\linewidth]{gambar/as565_depan.png}
 	\caption{Dimensi Helikopter AS 565 MBe Panther tampak depan.}
 	\label{fig:as565mbe_depan}
 \end{figure}

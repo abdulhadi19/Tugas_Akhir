@@ -2,12 +2,14 @@
 \label{chap:hasil dan pembahasan}
 
 % Ubah bagian-bagian berikut dengan isi dari pengujian dan analisis
-
+\thispagestyle{newchap}
 Pada penelitian ini dilakukan 3 aspek pengerjaan dalam menjawab tujuannya, diantaranya adalah data eksperimen yang telah didapatkan dari PTDI. Kemudian validasi matematis menggunakan landasan teori yang telah disesuaikan dengan kondisi pengerjaan penelitian ini, yaitu \textit{ground resonance} helikopter. Kemudian yang terakhir adalah simulasi untuk mendukung hasil data pengukuran dan perhitungan. 
 
-\section{Hasil pengukuran getaran pada FTIS}
+\section{Hasil Data \textit{Ground Test}}
 
-Hasil pengukuran data \textit{ground test} dibagi menjadi 2 bagian, seperti yang telah dijelaskan pada bagian metodologi penelitian, bahwa data yang didapatkan merupakan data pengukuran getaran pada FTIS untuk mencari \textit{damping ratio} dan pengukuran data getaran pada akseleromter untuk mendapatkan respon frekuensi dominan oleh helikopter akibat \textit{input} yang diberikan. Berikut ini (gambar \ref{fig:condition_1}) merupakan grafik yang didapatkan dari masing-masing kondisi yang mengacu pada tabel \ref{tb:variasilanding}.
+\subsection{Hasil Pengukuran Data Vibrasi pada FTIS}
+
+Hasil pengukuran data \textit{ground test} dibagi menjadi 2 bagian, seperti yang telah dijelaskan pada bagian metodologi penelitian, bahwa data yang didapatkan merupakan data pengukuran getaran pada FTIS untuk mencari \textit{damping ratio} dan pengukuran data getaran pada akseleromter untuk mendapatkan respon frekuensi dominan oleh helikopter. Berikut ini (gambar \ref{fig:condition_1}) merupakan grafik yang didapatkan dari masing-masing kondisi yang mengacu pada tabel \ref{tb:variasilanding}.
 
 \begin{figure}[H]
 	\centering
@@ -21,167 +23,113 @@ Selanjutnya merupakan grafik dengan keterangan serupa, dimana pada grafik terseb
 \begin{table}[]
 	\caption{Keterangan pengukuran pada grafik}
 	\label{tb:penyajian_data}
+	\resizebox{\linewidth}{!}{
 	\begin{tabular}{|c|c|c|}
 		\hline
 		\textit{Lateral cyclic displacement (\%)} & \textit{Longitudinal cyclic displacement} & Pedal displacement (\%)           \\ \hline
 		\textit{Roll (deg)}                       & \textit{Pitch (deg)}                      & \textit{Heading (deg)}            \\ \hline
 		\textit{Rate of roll (deg/s)}             & \textit{Rate of Pitch (deg/s)}            & \textit{Rate of Yaw (deg/s)}      \\ \hline
 		\textit{Acceleration-x ($m/s^2$)}         & \textit{Acceleration-y ($m/s^2$)}         & \textit{Acceleration-z ($m/s^2$)} \\ \hline
-	\end{tabular}
+	\end{tabular}}
 \end{table}
 
+Grafik pada gambar \ref{fig:condition_1} merupakan data kondisi 1 yang dibagi menjadi beberapa segmen yang sesuai dengan variasi \textit{input} pada tabel \ref{tb:variasi_input}. Sehingga pada tahap selanjutnya akan dihitung nilai \textit{damping ratio} dari masing-masing orientasi respon helikopter. Hasil perhitungan \textit{damping ratio} pada tabel \ref{tb:damp_ratio_table} didapatkan secara visual melakukan identifikasi melalui data yang telah disajikan seperti pada gambar \ref{fig:NLLO-4}. Cara tersebut adalah dengan memberikan tanda pada puncak amplitudo hingga amplitudo terendah seperti pada gambar \ref{fig:output_ROR_mark22_4} dan \ref{fig:output_acc-y_mark22_4}, kemudian menghitung besarnya \textit{logarithmic decrement} kemudian menghitung nilai \textit{damping ratio}. Disisi lain terdapat respon yang langsung teredam setelah \textit{input} berhenti, kondisi ini dapat dilihat pada gambar \ref{fig:FLLO-3_mark10} sehingga tidak dapat diidentifikasi seperti pada gambar \ref{fig:output_ROY_ROR} dan \ref{fig:output_ROP_acc-y}.
 
-
-\begin{figure}[H]
-	\centering
-	\begin{subfigure}{0.49\textwidth}
-		\centering
-		\includegraphics[width=0.9\linewidth]{gambar/FTIS_image/All-plot/All_config_2.jpg}
-		\caption{}
-		\label{fig:condition_2}
-	\end{subfigure}
-	\centering
-	\begin{subfigure}{0.49\textwidth}
-		\centering
-		\includegraphics[width=0.9\linewidth]{gambar/FTIS_image/All-plot/All_config_3.jpg}
-		\caption{}
-		\label{fig:condition_3}
-	\end{subfigure}
-	\caption{(a) Grafik data pengukuran pada kondisi-2 (b) Grafik data pengukuran pada kondisi-3.}
-\end{figure}
-
-\begin{figure}[H]
-	\begin{subfigure}{0.49\textwidth}
-		\centering
-		\includegraphics[width=0.9\linewidth]{gambar/FTIS_image/All-plot/All_config_4.jpg}
-		\caption{}
-		\label{fig:condition_4}
-	\end{subfigure}
-	\centering
-	\begin{subfigure}{0.49\textwidth}
-		\centering
-		\includegraphics[width=0.9\linewidth]{gambar/FTIS_image/All-plot/All_config_5.jpg}
-		\caption{}
-		\label{fig:condition_5}
-	\end{subfigure}
-	\caption{(a) Grafik data pengukuran pada kondisi-4 (b) Grafik data pengukuran pada kondisi-5.}
-\end{figure}
-
-\begin{figure}[H]
-	\begin{subfigure}{0.49\textwidth}
-		\centering
-		\includegraphics[width=0.9\linewidth]{gambar/FTIS_image/All-plot/All_config_6.jpg}
-		\caption{}
-		\label{fig:condition_6}
-	\end{subfigure}
-	\centering
-	\begin{subfigure}{0.49\textwidth}
-		\centering
-		\includegraphics[width=0.9\linewidth]{gambar/FTIS_image/All-plot/All_config_7.jpg}
-		\caption{}
-		\label{fig:condition_7}
-	\end{subfigure}
-	\caption{(a) Grafik data pengukuran pada kondisi-6 (b) Grafik data pengukuran pada kondisi-7.}
-\end{figure}
-
-\begin{figure}[H]
-	\begin{subfigure}{0.49\textwidth}
-		\centering
-		\includegraphics[width=0.9\linewidth]{gambar/FTIS_image/All-plot/All_config_8.jpg}
-		\caption{}
-		\label{fig:condition_8}
-	\end{subfigure}
-	\centering
-	\begin{subfigure}{0.49\textwidth}
-		\centering
-		\includegraphics[width=0.9\linewidth]{gambar/FTIS_image/All-plot/All_config_9.jpg}
-		\caption{}
-		\label{fig:condition_9}
-	\end{subfigure}
-	\caption{(a) Grafik data pengukuran pada kondisi-8 (b) Grafik data pengukuran pada kondisi-9.}
-\end{figure}
-
-\begin{figure}[H]
-	\begin{subfigure}{0.49\textwidth}
-		\centering
-		\includegraphics[width=0.9\linewidth]{gambar/FTIS_image/All-plot/All_config_10.jpg}
-		\caption{}
-		\label{fig:condition_10}
-	\end{subfigure}
-	\centering
-	\begin{subfigure}{0.49\textwidth}
-		\centering
-		\includegraphics[width=0.9\linewidth]{gambar/FTIS_image/All-plot/All_config_11.jpg}
-		\caption{}
-		\label{fig:condition_11}
-	\end{subfigure}
-	\caption{(a) Grafik data pengukuran pada kondisi-10 (b) Grafik data pengukuran pada kondisi-11.}
-\end{figure}
-
-\begin{table}[H]
-	\centering
-	\caption{Hasil identifikasi damping ratio rata-rata dari respon helikopter berdasarkan variasi kondisi}
-	\label{tb:damp_ratio_table}
-	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|c|ccccccccc|}
-			\hline
-			\multirow{2}{*}{Kondisi} & \multicolumn{9}{c|}{Rata-rata \textit{damping ratio} respon} \\ \cline{2-10} 
-			& \multicolumn{1}{c|}{Roll} & \multicolumn{1}{c|}{Pitch} & \multicolumn{1}{c|}{Heading} & \multicolumn{1}{c|}{Rate of Roll} & \multicolumn{1}{c|}{Rate of Pitch} & \multicolumn{1}{c|}{Rate of Yaw} & \multicolumn{1}{c|}{Acceleration-X} & \multicolumn{1}{c|}{Acceleration-Y} & Acceleration-Z \\ \hline
-			1 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.05285435} & \multicolumn{1}{c|}{0.036747763} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.050426643} & - \\ \hline
-			2 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.058120539} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.045805814} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.038387333} & - \\ \hline
-			3 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.055225124} & \multicolumn{1}{c|}{0.05507518} & \multicolumn{1}{c|}{0.043144563} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.040316101} & - \\ \hline
-			4 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.055248847} & \multicolumn{1}{c|}{0.04408422} & \multicolumn{1}{c|}{0.036747763} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.062462147} & - \\ \hline
-			5 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.064958942} & \multicolumn{1}{c|}{0.054761252} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.035288539} & - \\ \hline
-			6 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.050658456} & \multicolumn{1}{c|}{0.04408422} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.064120389} & - \\ \hline
-			7 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.04732238} & \multicolumn{1}{c|}{0.043670692} & \multicolumn{1}{c|}{0.047821495} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.064757723} & - \\ \hline
-			8 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.049504081} & \multicolumn{1}{c|}{0.05727551} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.048365129} & - \\ \hline
-			9 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & - \\ \hline
-			10 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & - \\ \hline
-			11 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & - \\ \hline
-			Rata-rata total & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.05423659} & \multicolumn{1}{c|}{0.047956977} & \multicolumn{1}{c|}{0.043379909} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.050515501} & - \\ \hline
-		\end{tabular}%
-	}
-\end{table}
-
-Pada grafik diatas dibagi menjadi beberapa segmen yang sesuai dengan variasi \textit{input} yang telah diberikan pada tabel \ref{tb:variasi_input} sehingga selanjutnya akan dihitung nilai \textit{damping ratio} dari masing-masing orientasi respon helikopter. Hasil perhitungan \textit{damping ratio} pada tabel \ref{tb:damp_ratio_table} didapatkan dengan cara melakukan identifikasi melalui data yang telah di-plot seperti pada gambar \ref{fig:NLLO-4} secara visual, yaitu dengan memberikan tanda pada puncak amplitudo hingga amplitudo terendah, kemudian menghitung besarnya \textit{logarithmic decrement} untuk mendapatkan \textit{damping ratio}. Disisi lain terdapat respon yang langsung teredam setelah \textit{input} berhenti, kondisi ini dapat dilihat pada gambar \ref{fig:FLLO-3_mark10}. \textit{Damping ratio} pada respon helikopter akan dihitung setelah helikopter berhenti memberikan \textit{input}.
-
-Dari data yang telah didapatkan, diperlukan sebuah tahap untuk memvalidasi bahwa \textit{input} yang diberikan memiliki korelasi dengan \textit{output} yang terdapat pada helikopter. Korelasi tersebut ditunjukkan oleh grafik pada gambar \ref{fig:koheren-4_NLLO-4} dan \ref{fig:koheren-3_FLLO}. Grafik tersebut berisi \textit{bode plot} dan \textit{phase lag} yang merepresentasikan perbandingan respon dari \textit{output} terhadap \textit{input} yang telah diberikan. Kompleksitas pada helikopter membuat grafik \textit{bode plot} dan \textit{phase lag} nya menjadi tidak halus. Akan tetapi nilai koherensinya bernilai 1, hal tersebut berarti \textit{input} dan \textit{output} memiliki konsistensi dan hubungan yang erat. Hal tersebut juga memiliki interpretasi bahwa \textit{output} memiliki susunan yang sejajar dengan \textit{input} yang diberikan. Sehingga terbukti bahwa \textit{input} dan \textit{output} pada helikopter memiliki korelasi yang erat dan dapat dilakukan analisis untuk mencari parameter yang diinginkan.
-
-Data pengukuran getaran yang didapatkan dari FTIS merupakan data yang diidentifikasi untuk melihat potensi terjadinya \textit{ground resonance} secara visual. Apabila terdapat respon yang meningkat setelah \textit{input} berhenti, maka berdasarkan teori yang telah dijelaskan pada fenomena \textit{ground resonance}. Kondisi tersebut merupakan kondisi awal mula terjadinya \textit{self-excited} yang membuat kerangka helikopter bergetar dengan amplitudo yang semakin besar, sehingga helikopter mengalami kerusakan. Dari variasi \textit{input} yang telah dijelaskan, \textit{input} hanya berasal dari \textit{longitudinal cyclic displacement} dan \textit{lateral cyclic displacement}. Pada gambar \ref{fig:condition_1} hingga \ref{fig:condition_11} dapat dilihat bahwa setiap \textit{input} memiliki respon pada setiap orientasi helikopter, dimulai dari \textit{roll, pitch, heading, rate of roll, rate of pitch, rate of yaw,} percepatan pada arah-X,Y, dan Z. 
-
-Dari tabel \ref{tb:damp_ratio_table} didapatkan informasi bahwa hanya pada orientasi \textit{rate of roll, rate of pitch, rate of yaw,} dan percepatan pada arah sumbu-Y yang dapat diidentifikasi untuk menghitung \textit{damping ratio} helikopter. Hal ini menandakan bahwa helikopter memiliki respon untuk goncangan kanan dan kiri (\textit{rate of roll}) pada tumpuan bannya dengan \textit{damping ratio} rata-rata sebesar 0.054. Respon yang selanjutnya juga memberikan nilai setelah \textit{input} berhenti adalah pada bagian \textit{rate of pitch}, hal ini menandakan bahwa helikopter juga mengalami guncangan ke arah depan dan belakang dengan \textit{damping ratio} rata-rata sebesar 0.0479. Kemudian pada respon \textit{rate of yaw} didapatkan besaran \textit{damping ratio} rata-rata sebesar 0.0433 dan respon percepatan pada arah sumbu-Y dengan \textit{damping ratio} sebesar 0.0505. Hal ini memberikan informasi bahwa helikopter juga memiliki kecenderungan untuk bergerak dengan orientasi berbelok arah ke-kanan dan kiri. Sehingga selanjutnya akan dilihat hasil pada sensor akselerometer, apakah kecenderungan pergerakan ini berkorelasi dengan banyaknya frekuensi respon yang dimiliki oleh helikopter.
-
-Nilai rata-rata \textit{damping ratio} terkecil diberikan oleh \textit{rate of pitch} dan \textit{rate of yaw}. Orientasi tersebut dapat dilihat kembali seperti yang terdapat pada gambar \ref{fig:orientasiheli}. Getaran akan lebih sering terjadi pada orientasi berbelok ke arah kanan dan kiri serta ke arah \textit{pitch} kedepan dan belakang. Secara teori, hal ini disebabkan oleh gaya sentrifugal pada rotor. Disisi lain, orientasi perubahan arah \textit{pitch} rotor juga berubah pada saat bilah pada bilah rotor berada tepat pada bagian kiri dan kanan helikopter.
+Dari data yang telah didapatkan, diperlukan sebuah tahap untuk memvalidasi bahwa \textit{input} yang diberikan memiliki korelasi dengan \textit{output} yang terdapat pada helikopter. Korelasi tersebut ditunjukkan oleh grafik pada gambar \ref{fig:koheren-4_NLLO-4} dan \ref{fig:koheren-3_FLLO}. Grafik tersebut berisi \textit{bode plot} dan \textit{phase lag} yang merepresentasikan perbandingan respon dari \textit{output} terhadap \textit{input} yang telah diberikan. Kompleksitas pada helikopter membuat grafik \textit{bode plot} dan \textit{phase lag} nya menjadi tidak halus. Akan tetapi nilai koherensinya bernilai 1, hal tersebut memberikan informasi bahwa \textit{input} dan \textit{output} memiliki konsistensi dan hubungan yang erat. Hal tersebut juga memiliki interpretasi bahwa \textit{output} memiliki susunan yang sejajar dengan \textit{input} yang diberikan. Sehingga terbukti bahwa \textit{input} dan \textit{output} pada helikopter memiliki korelasi yang erat dan dapat dilakukan analisis untuk mencari parameter yang diinginkan.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{gambar/contoh_grafik_damp_ratio.jpg}
+	\includegraphics[width=0.9\linewidth]{gambar/contoh_grafik_damp_ratio.jpg}
 	\caption{Grafik data pengukuran saat respon masih bergetar pada NLLO kondisi-4.}
 	\label{fig:NLLO-4}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\linewidth]{gambar/koheren-config_4_NLLO.jpg}
+	\includegraphics[width=0.6\linewidth]{gambar/koheren-config_4_NLLO.jpg}
 	\caption{Grafik respon \textit{output rate of roll} terhadap \textit{input} (longitudinal) pada \textit{bode plot, phase lag} dan koherensinya (kondisi-4 NLLO).}
 	\label{fig:koheren-4_NLLO-4}
 \end{figure}
 
+Data pengukuran getaran yang didapatkan dari FTIS merupakan data yang diidentifikasi untuk melihat potensi terjadinya \textit{ground resonance} secara visual. Apabila terdapat respon yang meningkat setelah \textit{input} berhenti, maka berdasarkan teori yang telah dijelaskan pada fenomena \textit{ground resonance}. Kondisi tersebut merupakan kondisi awal mula terjadinya \textit{self-excited} yang membuat kerangka helikopter bergetar dengan amplitudo yang semakin besar, sehingga helikopter mengalami kerusakan. Dari variasi \textit{input} yang telah dijelaskan, \textit{input} hanya berasal dari \textit{longitudinal cyclic displacement} dan \textit{lateral cyclic displacement}. Dari kondisi-1 hingga 11 didapatkan bahwa setiap \textit{input} memiliki respon pada setiap orientasi helikopter, dimulai dari \textit{roll, pitch, heading, rate of roll, rate of pitch, rate of yaw,} percepatan pada arah-x,y dan z akan tetapi hanya beberapa \textit{output} saja yang mampu diidentifikasi. 
+
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{gambar/Contoh_TC_Config_3_mark10_FLLO.jpg}
+	\includegraphics[width=0.7\linewidth]{gambar/input_long_mark22_4.jpg}
+	\caption{Grafik \textit{input} longitudinal pada kondisi-4 NLLO.}
+	\label{fig:input_long_mark22_4}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{gambar/output_ror_mark22_4.jpg}
+	\caption{Grafik \textit{output rate of roll} pada kondisi-4 NLLO.}
+	\label{fig:output_ROR_mark22_4}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{gambar/output_acc-y_mark22_4.jpg}
+	\caption{Grafik \textit{output} percepatan pada sumbu-y kondisi-4 NLLO.}
+	\label{fig:output_acc-y_mark22_4}
+\end{figure}
+
+Dari tabel \ref{tb:damp_ratio_table} memberikan informasi hasil perhitungan \textit{damping ratio} yang hanya memiliki nilai pada orientasi \textit{rate of roll, rate of pitch, rate of yaw,} dan percepatan pada arah sumbu-y saja untuk kemudian dapat diidentifikasi dalam menghitung \textit{damping ratio} helikopter. Hal ini menandakan bahwa helikopter memiliki respon untuk goncangan kanan dan kiri (\textit{rate of roll}) pada tumpuan bannya dengan \textit{damping ratio} rata-rata sebesar 0.054. Respon yang selanjutnya juga memberikan nilai setelah \textit{input} berhenti adalah pada bagian \textit{rate of pitch} yang menandakan helikopter mengalami guncangan ke arah depan dan belakang dengan \textit{damping ratio} rata-rata sebesar 0.0479. Kemudian pada respon \textit{rate of yaw} didapatkan besaran \textit{damping ratio} rata-rata sebesar 0.0433 dan respon percepatan pada arah sumbu-y dengan \textit{damping ratio} sebesar 0.0505. Hal ini memberikan informasi bahwa helikopter juga memiliki kecenderungan untuk bergerak dengan orientasi berbelok arah ke-kanan dan kiri.
+
+Nilai rata-rata \textit{damping ratio} terkecil diberikan oleh \textit{rate of pitch} dan \textit{rate of yaw}. Orientasi tersebut dapat dilihat kembali seperti yang terdapat pada gambar \ref{fig:orientasiheli}. Getaran akan lebih sering terjadi pada orientasi berbelok ke arah kanan dan kiri (\textit{yaw}) begitu pula orientasi ke arah depan dan belakang (\textit{pitch}). Secara teori, dominan arah gerak ini disebabkan oleh gaya sentrifugal pada bilah rotor yang berotasi saat pengujian.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{gambar/Contoh_TC_Config_3_mark10_FLLO.jpg}
 	\caption{Grafik data pengukuran saat respon teredam dengan cepat pada FLLO kondisi-3.}
 	\label{fig:FLLO-3_mark10}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\linewidth]{gambar/koheren-config_3_FLLO.jpg}
+	\includegraphics[width=0.6\linewidth]{gambar/koheren-config_3_FLLO.jpg}
 	\caption{Grafik respon \textit{output} percepatan sumbu-y terhadap \textit{input} (longitudinal) pada \textit{bode plot, phase lag} dan koherensinya (kondisi-3 FLLO).}
 	\label{fig:koheren-3_FLLO}
 \end{figure}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{gambar/input_long_mark10_3.jpg}
+	\caption{Grafik \textit{input} longitudinal pada kondisi-3 FLLO.}
+	\label{fig:input_long_mark10_3}
+\end{figure}
 
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.4\textwidth}
+	\centering
+	\includegraphics[width=\linewidth]{gambar/output_ROY_mark10_3.jpg}
+	\label{fig:output_ROY_mark10_3}
+	\end{subfigure}
+	\begin{subfigure}{0.4\textwidth}
+	\centering
+	\includegraphics[width=\linewidth]{gambar/output_ROR_mark10_3.jpg}
+	\label{fig:output_ROR_mark10_3}
+	\end{subfigure}
+	\caption{(a) Grafik \textit{output rate of yaw} dan, (b) Grafik \textit{output rate of roll} pada kondisi-3 FLLO (respon teredam cepat).}
+	\label{fig:output_ROY_ROR}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.4\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{gambar/output_ROP_mark10_3.jpg}
+		\label{fig:output_ROP_mark10_3}
+	\end{subfigure}
+	\begin{subfigure}{0.4\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{gambar/output_acc-y_mark10_3.jpg}
+		\label{fig:output_acc-y_mark10_3}
+	\end{subfigure}
+	\caption{(a) Grafik \textit{output rate of pitch} dan, (b) Grafik percepatan pada sumbu -y kondisi-3 FLLO (respon teredam cepat).}
+	\label{fig:output_ROP_acc-y}
+\end{figure}
 
 \begin{figure}[h]
 	\centering
@@ -218,11 +166,36 @@ Nilai rata-rata \textit{damping ratio} terkecil diberikan oleh \textit{rate of p
 	\label{fig:plot_All}
 \end{figure}
 
+\begin{table}[H]
+	\centering
+	\caption{Hasil identifikasi damping ratio rata-rata dari respon helikopter berdasarkan variasi kondisi}
+	\label{tb:damp_ratio_table}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|c|ccccccccc|}
+			\hline
+			\multirow{2}{*}{Kondisi} & \multicolumn{9}{c|}{Rata-rata \textit{damping ratio} respon} \\ \cline{2-10} 
+			& \multicolumn{1}{c|}{Roll} & \multicolumn{1}{c|}{Pitch} & \multicolumn{1}{c|}{Heading} & \multicolumn{1}{c|}{Rate of Roll} & \multicolumn{1}{c|}{Rate of Pitch} & \multicolumn{1}{c|}{Rate of Yaw} & \multicolumn{1}{c|}{Acceleration-X} & \multicolumn{1}{c|}{Acceleration-Y} & Acceleration-Z \\ \hline
+			1 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.05285435} & \multicolumn{1}{c|}{0.036747763} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.050426643} & - \\ \hline
+			2 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.058120539} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.045805814} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.038387333} & - \\ \hline
+			3 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.055225124} & \multicolumn{1}{c|}{0.05507518} & \multicolumn{1}{c|}{0.043144563} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.040316101} & - \\ \hline
+			4 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.055248847} & \multicolumn{1}{c|}{0.04408422} & \multicolumn{1}{c|}{0.036747763} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.062462147} & - \\ \hline
+			5 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.064958942} & \multicolumn{1}{c|}{0.054761252} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.035288539} & - \\ \hline
+			6 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.050658456} & \multicolumn{1}{c|}{0.04408422} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.064120389} & - \\ \hline
+			7 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.04732238} & \multicolumn{1}{c|}{0.043670692} & \multicolumn{1}{c|}{0.047821495} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.064757723} & - \\ \hline
+			8 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.049504081} & \multicolumn{1}{c|}{0.05727551} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.048365129} & - \\ \hline
+			9 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & - \\ \hline
+			10 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & - \\ \hline
+			11 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & - \\ \hline
+			Rata-rata total & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.05423659} & \multicolumn{1}{c|}{0.047956977} & \multicolumn{1}{c|}{0.043379909} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{0.050515501} & - \\ \hline
+		\end{tabular}%
+	}
+\end{table}
+
 Gambar dari \ref{fig:plot_ROR} hingga \ref{fig:plot_Acc_Y} merupakan plot nilai \textit{damping ratio} berdasarkan masing-masing kondisi untuk orientasi \textit{rate of roll, rate of pitch, rate of yaw,} dan percepatan dalam arah sumbu-y. Sumbu-x pada gambar tersebut merupakan keterangan pada kondisi ke-berapa terdapat \textit{damping ratio} dengan nilai-nilai yang didapatkan dari perhitungan. Pada gambar \ref{fig:plot_ROR} \textit{damping ratio} tertinggi pada respon \textit{rate of roll} berada pada nilai 0.0912 di kondisi-5 dan terendah pada nilai 0.0291 di kondisi-6. Sedangkan pada gambar \ref{fig:plot_ROP} memberikan informasi nilai \textit{damping ratio} pada \textit{rate of pitch} terbesar pada nilai 0.0572 yang terjadi pada kondisi-8 dan terkecil pada nilai 0.0367 yang terjadi di kondisi-1. Selanjutnya pada gambar \ref{fig:plot_ROY} didapatkan nilai \textit{damping ratio} terbesar pada nilai 0.0478 di kondisi-7 dan terkecil pada nilai 0.0367 di kondisi-4. Kemudian pada arah sumbu-Y, didapatkan nilai \textit{damping ratio} terbesar pada nilai 0.0647 di kondisi-7 dan terkecil pada 0.0352 di kondisi-5.  
 
 Saat pengujian, helikopter memberikan respon getaran yang normal, namun kuantifikasi terhadap kondisi tersebut belum menjelaskan seberapa aman helikopter tersebut dari fenomena \textit{ground resonance}. Perhitungan \textit{damping ratio} setidaknya menjelaskan respon yang dimiliki oleh helikopter terhadap orientasi gerakannya di tanah. Meskipun secara visual, respon helikopter secara jelas tidak menunjukkan adanya potensi terjadinya \textit{ground resonance}. Sehingga identifikasi akan dilanjutkan melalui data hasil pengukuran menggunakan akselerometer.
 
-\section{Hasil pengukuran getaran pada Akselerometer}
+\subsection{Hasil Pengukuran Data Vibrasi Akselerometer}
 
 Data yang didapatkan dari hasil sensor akselerometer ditunjukkan pada gambar dibawah ini:
 
@@ -240,7 +213,7 @@ Data yang didapatkan dari hasil sensor akselerometer ditunjukkan pada gambar dib
 	\label{fig:fft_config2_FILO}
 \end{figure}
 
-Grafik pada gambar \ref{fig:raw_config2_FILO} merupakan grafik data hasil pengukuran yang didapatkan oleh sensor akselerometer pada \textit{channel} 1 dan grafik pada \ref{fig:fft_config2_FILO} merupakan grafik data yang telah diolah menggunakan FFT, sehingga didapatkan nilai dalam domain frekuensi. Data hasil pengukuran menggunakan akselerometer pada gambar diatas akan dibandingkan dengan acuan dari MIL-STD-810H-Method-514.8 (vibrasi) \cite{MILSTD}. Standar tersebut pada dasarnya digunakan sebagai alternatif pengganti \textit{ground vibration test} (GVT) seperti yang dilakukan pada \cite{lubrina:hal-01059708} dan \cite{Ciavarella2018AnEH}. Informasi dari grafik gambar \ref{fig:MIL_STD} didapatkan batas siklus osilasi helikopter. Sehingga didapatkan grafik batas siklus osilasi pada gambar \ref{fig:batas_siklus}. 
+Grafik pada gambar \ref{fig:raw_config2_FILO} merupakan grafik data hasil pengukuran yang didapatkan oleh sensor akselerometer pada \textit{channel} 1 dan grafik pada \ref{fig:fft_config2_FILO} merupakan grafik data yang telah diolah menggunakan FFT, sehingga didapatkan nilai dalam domain frekuensi. Data hasil pengukuran menggunakan akselerometer pada gambar diatas akan dibandingkan dengan acuan dari MIL-STD-810H-Method-514.8 (vibrasi) \cite{MILSTD}. Standar tersebut pada dasarnya digunakan sebagai alternatif pengganti \textit{ground vibration test} (GVT) seperti yang dilakukan pada \cite{lubrina:hal-01059708} dan \cite{Ciavarella2018AnEH}. Informasi dari tabel \ref{tb:batas_siklus} didapatkan batas siklus osilasi helikopter. Sehingga dapat dihasilkan grafik batas siklus osilasi pada gambar \ref{fig:batas_siklus}. 
 
 \begin{figure}[h]
 	\centering
@@ -269,7 +242,7 @@ Grafik pada gambar \ref{fig:raw_config2_FILO} merupakan grafik data hasil penguk
 	}
 \end{table}
 
-Untuk mendapatkan grafik pada gambar \ref{fig:batas_siklus} diperlukan informasi kecepatan rotor helikopter. Diketahui (informasi \textit{flight manual} dari PTDI) nilai kecepatan maksimum dan minimum dari rotor berturut-turut adalah sebesar $365 rpm$ dan $355 rpm$, sehingga didapatkan frekuensi ($f_1$) nya dimulai dari 5.92Hz (minimum) hingga 6.08Hz (maksimum). Perhitungan nilai $f_2$, $f_3$, dan $f_4$ dapat dilihat pada tabel \ref{tb:batas_siklus}. Nilai peak pada tabel tersebut dihitung menggunakan formulasi pada gambar \ref{fig:MIL_STD} yang terletak pada kolom "\textbf{PEAK ACCELERATION ($A_x$) at $f_x$ (GRAVITY UNITS (g))}". Berdasarkan standar yang dimiliki oleh \cite{MILSTD} terdapatnya nilai respon frekuensi pada batas siklus osilasi menunjukkan potensi kejadian terburuk (salah satunya adalah fenomena \textit{ground resonance}) yang secara langsung akan berkaitan dengan keselamatan dan kelayakan penerbangan helikopter. Namun, dari respon yang diberikan oleh helikopter pada semua variasi kondisi dan \textit{input} nilai puncak tertinggi yang dimiliki oleh respon helikopter hanya berada pada nilai 0.143 pada $f_2$ yaitu 23.68 hingga 24.32Hz. Sehingga, dari grafik pada gambar \ref{fig:11_FLLO} (kondisi-11 variasi FLLO) tidak ditemukan potensi adanya \textit{ground resonance} pada helikopter. Adapun respon pada kondisi yang lain dengan variasi \textit{input} yang telah ditentukan, responnya memiliki nilai yang lebih kecil dari kondisi pada gambar \ref{fig:11_FLLO}, meskipun respon tersebut berada pada batas siklus osilasi helikopter.
+Untuk mendapatkan grafik pada gambar \ref{fig:batas_siklus} diperlukan informasi kecepatan rotor helikopter. Diketahui (informasi \textit{flight manual} dari PTDI) nilai kecepatan maksimum dan minimum dari rotor berturut-turut adalah sebesar $365 rpm$ dan $355 rpm$, sehingga didapatkan frekuensi ($f_1$) nya dimulai dari 5.92Hz (minimum) hingga 6.08Hz (maksimum). Perhitungan nilai $f_2$, $f_3$, dan $f_4$ dapat dilihat pada tabel \ref{tb:batas_siklus}. Nilai peak pada tabel tersebut dihitung menggunakan formulasi pada tabel \ref{tb:MIL-STD} yang terletak pada kolom "\textbf{PEAK ACCELERATION ($A_x$) at $f_x$ (GRAVITY UNITS (g))}". Berdasarkan standar yang dimiliki oleh \cite{MILSTD} terdapatnya nilai respon frekuensi pada batas siklus osilasi menunjukkan potensi kejadian terburuk (salah satunya adalah fenomena \textit{ground resonance}) yang secara langsung akan berkaitan dengan keselamatan dan kelayakan penerbangan helikopter. Namun, dari respon yang diberikan oleh helikopter pada semua variasi kondisi dan \textit{input} nilai puncak tertinggi yang dimiliki oleh respon helikopter hanya berada pada nilai 0.143 pada $f_2$ yaitu 23.68 hingga 24.32Hz. Sehingga, dari grafik pada gambar \ref{fig:11_FLLO} (kondisi-11 variasi FLLO) tidak ditemukan potensi adanya \textit{ground resonance} pada helikopter. Adapun respon pada kondisi yang lain dengan variasi \textit{input} yang telah ditentukan, responnya memiliki nilai yang lebih kecil dari kondisi pada gambar \ref{fig:11_FLLO}, meskipun respon tersebut berada pada batas siklus osilasi helikopter.
 
 \begin{figure}[h]
 	\centering
@@ -408,7 +381,9 @@ Pada tabel \ref{tab:jumlah_proporsi_respon_frekuensi}, respon frekuensi yang ber
 
 Pada tabel \ref{tb:list_all_data_sort}, di data ke-671, didapatkan respon frekuensi yang berada pada rentang mendekati $f_1$ dengan puncak yang berada pada nilai 0.0067 g-peak. Akan tetapi nilai ini secara kuantitas masih berada pada wilayah aman terhadap batas siklus osilasi $f_1$, yaitu berada pada rentang 5.92-6.08Hz yang berasal dari \textit{channel} 2 (arah getaran sumbu-z). Meskipun batas siklus osilasi tersebut memiliki batas g-peak yang cukup rendah dibandingkan dengan batas siklus yang lain. Akan tetapi sekali lagi, bahwa pada rentang tersebut tidak ditemukan adanya respon frekuensi helikopter, walaupun selisih antara frekuensi tersebut dengan batas siklus osilasi pada $f_1$ hanya sebesar 0.0033. Batas siklus osilasi pada $f_1$ menjadi fokusan yang penting dikarenakan batas g-peak pada $f_1$ sangat kecil. Dengan kata lain, apabila terdapat respon yang berada pada batas siklusi $f_1$ dengan nilai g-peak 0.14 saja, maka helikopter akan mengalami kondisi yang cukup berbahaya dalam gerakan vibrasinya seperti yang dijelaskan pada \cite{MILSTD}. 
 
-\section{Validasi Matematis}
+\section{Hasil Perhitungan Matematis}
+
+\subsection{Hasil Validasi Matematis}
 
 Persamaan \ref{eq:EOM} yang ditampilkan dalam bentuk matriks memiliki 6 representatif gerakan \textit{degree of freedom} pada matriks \textbf{Q} pada persamaan \ref{eq:state-space}. Respon frekuensi helikopter pada arah sumbu-x direkonstruksi untuk dilakukan validasi pada persamaan matematika yang telah dibuat. Sehingga didapatkan grafik solusi dari persamaan \ref{eq:EOM} untuk gerak perpindahan pusat massa rotor $X_{G_r}(t)$ pada arah sumbu-x dan rekonstruksi respon frekuensi helikopter hasil pengukuran pada gambar \ref{fig:validation_time_domain}. 
 
@@ -448,7 +423,7 @@ Solusi persamaan yang telah dicantumkan pada gambar \ref{fig:validation_time_dom
 
 Sehingga didapatkan secara matematis, pendekatan yang dilakukan merupakan pendekatan dengan besaran error perhitungan terhadap pengukuran sebesar 2.63$\%$ dalam domain frekuensinya. Salah satu faktor yang menyebabkan terjadinya error ini adalah penyederhanaan bentuk matematis yang banyak memberikan toleransi dalam identifikasinya. Disisi lain, pendekatan propertis mekanik yang masih kurang tepat dari kondisi pada bagian helikopter sebenarnya. Maka selanjutnya setelah diketahui besarnya error pada perhitungan matematis terhadap pengukuran, akan dilakukan analisis terhadap perhitungan matematis dan hasil pemodelan pada Femap.
 
-\section{Hasil Perhitungan Matematis}
+\subsection{Analisis Matematis Ketidakstabilan Kondisi Normal}
 
 Perhitungan matematis yang dilakukan berdasarkan dari apa yang telah dikerjakan pada \cite{BERGEOT201672}, frekuensi \textit{ground resonance} akan terjadi pada \textit{regressive rotor mode}, yaitu mode yang terjadi pada bilah rotor. Dalam perhitungan tersebut, digunakan matriks dari persamaan \ref{eq:state-space}. Berdasarkan matriks yang telah didapatkan pada persamaan \ref{eq:linearisasi} kemudian disubtitusi pada persamaan \ref{eq:EOM} dan diubah menjadi bentuk \textit{state-space} pada persamaan \ref{eq:state-space_simplified}, maka akan dihitung nilai eigen dari matriks \textbf{A}.
 
@@ -469,13 +444,13 @@ Nilai eigen pada matriks A merupakan solusi yang menampilkan besarnya frekuensi 
 	\begin{tabular}{|c|c|c|}
 		\hline
 		Variabel     & Nilai  	& Besaran \\ \hline 
-		$L$          & 5.97  	& $m$     \\ \hline
-		$k_y$        & 6.19E6 	& $N/m$   \\ \hline
+		$L$          & 5.97  	& m     \\ \hline
+		$k_y$        & 6.19E6 	& N/m   \\ \hline
 		$m_y$        & 2006  	& kg      \\ \hline
-		$c_y$        & 1.94E3  	& $Ns/m$  \\ \hline
+		$c_y$        & 0.403  	& Ns/m  \\ \hline
 		$m_{\delta}$ & 100.5  	& kg      \\ \hline
-		$k_{\delta}$ & 1.67E7 	& $N/m$   \\ \hline
-		$c_{\delta}$ & 109.29 	& $Ns/m$  \\ \hline
+		$k_{\delta}$ & 1.67E7 	& N/m   \\ \hline
+		$c_{\delta}$ & 0.543 	& Ns/m  \\ \hline
 	\end{tabular}
 }
 \end{table}
@@ -558,13 +533,13 @@ Gambar pada grafik \ref{fig:real(coupled)} memberikan informasi, bahwa pada bagi
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{gambar/find_range_10-11,89.png}
-	\caption{Validasi pencarian rentang frekuensi respon helikopter pada rentang 17.75-20.57 Hz menggunakan MS Excel.}
+	\caption{Jumlah rentang frekuensi respon helikopter pada rentang 17.75-20.57 Hz menggunakan MS Excel.}
 	\label{fig:resonance_range}
 \end{figure}
 
 Gambar \ref{fig:resonance_range} merupakan langkah yang dilakukan untuk mencari respon helikopter yang terdapat pada interval 17.75-20.57 Hz. Data respon helikopter berada pada A2 hingga A4540. Langkah ini dilakukan untuk mengonfirmasi apakah dari perhitungan matematis, helikopter memiliki potensi mengalami fenomena \textit{ground resonance} atau tidak. Dari hasil tersebut dapat diperhatikan bahwa tidak terdapat respon yang berada pada rentang 17.75-20.57 Hz. Hal ini berkorelasi dengan kondisi di lapangan saat dilakukannya pengujian pada helikopter, bahwa helikopter tidak mengalami getaran besar yang menyebabkan terjadinya \textit{ground resonance}. Aspek penyesuaian yang dipertimbangkan dalam formulasi matematis melibatkan \textit{lagging motion} pada helikopter dan koefisien kopling yang terkuantifikasi secara matematis, sehingga menyebabkan perbedaan nilai pada standar MIL-STD-810H-Method-514.8. Namun, perlu diperhatikan, perhitungan matematis ini didapatkan dengan pendekatan material helikopter yang pada umumnya, yaitu menggunakan material \textit{airframe} helikopter pada umumnya, yaitu Aluminum 7075-T6 \cite{ASTM}.
 
-\section{Potensi \textit{Ground Resonance} pada bentuk Modifikasi Penambahan Massa}
+\subsection{Analisis Matematis Ketidakstabilan Kondisi Modifikasi}
 
 Diasumsikan bahwa pada $m_y$ terdapat penambahan massa baru sebesar $m_m$. Sehingga pada persamaan yang mengandung $m_y$ pada matriks A \ref{eq:state-space} akan menjadi $m'_y$. dengan:
 
@@ -642,9 +617,11 @@ Dari grafik \ref{fig:real(modified)_3} menunjukkan pergeseran yang cukup siginif
 Akan tetapi asumsi penambahan massa modifikasi pada helikopter ini didasarkan pada penambahan yang merata pada setiap titik helikopter. Oleh karena itu diperlukan analisis dari aspek geometri jika penambahan massa pada helikopter melibatkan modifikasi bentuk yang tidak merata pada helikopter. Hal tersebut dikarenakan penambahan massa yang tidak merata pada helikopter akan menyebabkan pusat massa helikopter berpindah dari pusat massa awalnya. 
 
 
-\section{Hasil Simulasi FEMAP}
+\section{Hasil Pemodelan Simulasi pada Femap}
 
-Hasil simulasi pada FEMAP menggunakan beberapa kondisi pendekatan dengan keadaan sebenarnya dari helikopter. Dalam hal ini, diberikan \textit{constraint} pada beberapa titik di helikopter. Titik tersebut terletak pada bagian depan dan tengah diposisi kanan-kiri kerangka helikopter. \textit{Constraint} tersebut merepresentasikan posisi pendaratan helikopter pada darat, yaitu ban dan oleo. Dari titik yang telah ditentukan pada tabel \ref{tb:koordinat}, yaitu terletak pada ID 9, 10, 15, dan 16 atau jika dilihat menggunakan skema pada gambar \ref{fig:skema_model} terletak pada mark 1s, 1s', 3s dan 3s'. \textit{Constraint} yang diberikan merupakan batasan yang hanya berada pada arah sumbu-x. Sehingga pada titik tersebut tidak terdapat perindahan secara translasi.
+\subsection{Hasil Femap (\textit{Mode Shape})}
+
+Hasil simulasi pada Femap menggunakan beberapa kondisi pendekatan dengan keadaan sebenarnya dari helikopter. Dalam hal ini, diberikan \textit{constraint} pada beberapa titik di helikopter. Titik tersebut terletak pada bagian depan dan tengah diposisi kanan-kiri kerangka helikopter. \textit{Constraint} tersebut merepresentasikan posisi pendaratan helikopter pada darat, yaitu ban dan oleo. Dari titik yang telah ditentukan pada tabel \ref{tb:koordinat}, yaitu terletak pada ID 9, 10, 15, dan 16 atau jika dilihat menggunakan skema pada gambar \ref{fig:skema_model} terletak pada mark 1s, 1s', 3s dan 3s'. \textit{Constraint} yang diberikan merupakan batasan yang hanya berada pada arah sumbu-x. Sehingga pada titik tersebut tidak terdapat perindahan secara translasi.
 
 Helikopter dimodelkan berdasarkan model stik atau batang. Pada masing-masing penghubung stiknya merupakan \textit{node}. Digunakan material berbahan dasar aluminum 7075-T6 untuk elemen pada stik pemodelan helikopter dengan informasi yang didapat dari \cite{ASTM}.
 
@@ -676,9 +653,9 @@ Helikopter dimodelkan berdasarkan model stik atau batang. Pada masing-masing pen
 	\label{fig:simulasi_tampak_normal}
 \end{figure}
 
-Dari pemodelan yang telah dibuat pada FEMAP, selanjutnya telah digunakan analisis pada fitur FEMAP untuk mencari \textit{mode shape} pada helikopter. Secara matematis, pada dasarnya untuk mencari \textit{mode shape} pada helikopter adalah dengan mencari nilai eigen dari sistem pemodelannya. Kemudian dari nilai eigen tersebut didapatkan vektor eigen untuk selanjutnya dapat merepresentasikan gerakan dari n-mode yang dimilki oleh helikopter. Dalam hal ini telah didapatkan 10 mode pada helikopter.
+Dari pemodelan yang telah dibuat pada Femap, selanjutnya telah digunakan analisis pada fitur Femap untuk mencari \textit{mode shape} pada helikopter. Secara matematis, pada dasarnya untuk mencari \textit{mode shape} pada helikopter adalah dengan mencari nilai eigen dari sistem pemodelannya. Kemudian dari nilai eigen tersebut didapatkan vektor eigen untuk selanjutnya dapat merepresentasikan gerakan dari n-mode yang dimilki oleh helikopter. Dalam hal ini telah didapatkan 10 mode pada helikopter.
 
-Pada gambar \ref{fig:mode1} hingga \ref{fig:mode10} merupakan deformasi mode 1 hingga mode 10. Setiap mode memiliki bentuk deformasi dan frekuensi yang berbeda-beda. Mode 1 hingga 3 memiliki frekuensi yang sangat kecil, dari ketiga \textit{mode shape} tersebut memiliki gerakan yang hampir sama. Kemudian pada mode 4 hingga 10 memiliki frekuensi dan \textit{mode shape} yang berbeda-beda pula. Bila dikembalikan pada pemahaman teoritis, fenomena \textit{ground resonance} dapat terjadi apabila peredam pada bilah rotor tidak dapat mengkompensasi gerakan tertinggal bilahnya (\textit{lead/lag motion}) maka pusat massa helikopter tidak akan segaris lagi dengan rotor. Hal tersebut dapat menyebabkan ketidakstabilan oleh gaya sentrifugal pada frekuensi tertentu yang menyebabkan badan helikopter mengalami getaran dan saat frekuensi dari rotor memiliki nilai yang mendekati frekuensi natural helikopter maka terjadilah \textit{ground resonance}. Hal ini seperti yang ditunjukkan pada gambar \ref{fig:simulasiGR}.
+Pada gambar \ref{fig:mode1} hingga \ref{fig:mode10} merupakan deformasi mode 1 hingga mode 10. Setiap mode memiliki bentuk deformasi dan frekuensi yang berbeda-beda. Mode 1 hingga 3 memiliki frekuensi yang sangat kecil, dari ketiga \textit{mode shape} tersebut memiliki gerakan yang hampir sama. Kemudian pada mode 4 hingga 10 memiliki frekuensi dan \textit{mode shape} yang berbeda-beda pula. Bila dikembalikan pada pemahaman teoritis, fenomena \textit{ground resonance} dapat terjadi apabila peredam pada bilah rotor tidak dapat mengkompensasi gerakan tertinggal bilahnya (\textit{lead/lag motion}) maka pusat massa helikopter tidak akan segaris lagi dengan rotor. Hal tersebut dapat menyebabkan ketidakstabilan oleh gaya sentrifugal (gambar \ref{fig:simulasiGR}) pada frekuensi tertentu yang menyebabkan badan helikopter mengalami getaran dan saat frekuensi dari rotor memiliki nilai yang mendekati frekuensi natural helikopter maka terjadilah \textit{ground resonance}.
 
 \begin{figure}[H]
 	\begin{subfigure}{0.49\textwidth}
@@ -695,6 +672,7 @@ Pada gambar \ref{fig:mode1} hingga \ref{fig:mode10} merupakan deformasi mode 1 h
 		\label{fig:mode2}
 	\end{subfigure}
 	\caption{Deformasi pada: (a) mode 1 di frekuensi 4.12*$10^-6$ Hz (b) mode 2 di frekuensi 1.07*$10^-6$ Hz.}
+	\label{fig:modeshape1}
 \end{figure}
 
 \begin{figure}[H]
@@ -763,11 +741,12 @@ Pada gambar \ref{fig:mode1} hingga \ref{fig:mode10} merupakan deformasi mode 1 h
 		\label{fig:mode10}
 	\end{subfigure}
 	\caption{Deformasi: (a) mode 9 pada frekuensi 10.1 Hz (b) mode 10 pada frekuensi 10.7 Hz.}
+	\label{fig:modeshape10}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.6\linewidth]{gambar/simulasiGR.png}
+	\includegraphics[width=0.7\linewidth]{gambar/simulasiGR.png}
 	\caption{Gaya sentrifugal dan ketidakstabilan helikopter saat \textit{ground resonance}.}
 	\label{fig:simulasiGR}
 \end{figure}
@@ -810,29 +789,41 @@ Dari beberapa \textit{mode shape} yang telah didapatkan, terdapat salah satu ger
 
 Dalam pemodelan simulasi pada Femap, terdapat banyak aspek yang disederhanakan. Bentuk helikopter yang sangat kompleks direpresentasikan dalam bentuk stik model seperti yang dikerjakan pada \cite{Grzegorz2016THESP} dimana pada pemodelan tersebut, digunakan data propertis yang sudah sesuai dengan kondisi eksisting pada helikopter. Akan tetapi pada pemodelan yang telah dibuat kali ini, masih menjadi sebuah batasan untuk melakukan pendekatan sesuai dengan propertis material yang digunakan. Sehingga pada pemodelan ini hanya akan digunakan analisis untuk merepresentasikan \textit{mode shape} yang sesuai dengan mekanisme terjadinya fenomena \textit{ground resonance}.
 
-Frekuensi pada mode ke-6, merupakan frekuensi eigen yang berada dekat pada rentang frekuensi $f_1$ (5.92-6.02 Hz). Apabila pada rentang frekuensi di mode ke-6 dilakukan identifikasi jumlah frekuensi respon helikopter, akan didapatkan sebanyak $3\%$ respon frekuensi helikopter yang berada pada sekitar frekuensi mode ke-6 (82 respon frekuensi) dengan batas-batas pada 4-4.5 Hz. Hal ini mnunjukkan, bahwa apabila ditinjau dari \textit{finite element analysis}, tidak terdapat potensi yang besar untuk terjadinya fenomena \textit{ground resonance} pada helikopter hasil modifikasi ini. 
-
-\section{Validasi Hasil Simulasi}
-
-Validasi yang dilakukan dari hasil simulasi tidak dapat diidentifikasi sama seperti validasi matematis, hal ini dikarenakan \textit{software} keterbatasan pengguna pada Femap yang tidak dapat menampilkan bentuk grafik penyelesaian solusi. Sehingga dilakukan identifikasi dari hasil deformasi terhadap nilai g-peak dari hasil pengukuran.
-
-Dari hasil simulasi didapatkan bahwa frekuensi respon yang berkorelasi dengan \textit{ground resonance} berada pada frekuensi 4.13 (rentang 4 hingga 4.5 Hz). Sehingga dari rentang tersebut akan divalidasi menggunakan deformasi pada hasil Femap. Deformasi tersebut memiliki amplitudo pergeseran sebesar 0.000556 meter. Titik yang diidentifikasi merupakan titik dimana diletakannya sensor pada pengukuran, yaitu pada titik 3s' atau yang terletak pada node 15. Pada channel yang searah dengan gerakan deformasi ini (\textit{channel} 3) memiliki sebanyak 3 respon frekuensi, yaitu 4.16, 4.29 dan 4.46 Hz yang terdapat pada tabel \ref{tb:pengukuran_simulasi}.
-
-
-\begin{table}[H]
+\begin{figure}[h]
 	\centering
-	\caption{Perbandingan nilai g-peak dari hasil pengukuran dan simulasi pada rentang frekuensi di mode-6.}
-	\label{tb:pengukuran_simulasi}
-	\resizebox{0.6\textwidth}{!}{%
-		\begin{tabular}{|c|cc|c|}
-			\hline
-			\multirow{2}{*}{frekuensi (Hz)} & \multicolumn{2}{c|}{g-peak} & \multirow{2}{*}{error} \\ \cline{2-3}
-			& \multicolumn{1}{c|}{Pengukuran} & Simulasi &  \\ \hline
-			4.16403 & \multicolumn{1}{c|}{0.008312} & 0.000019 & 99.77\% \\ \hline
-			4.29022 & \multicolumn{1}{c|}{0.005279} & 0.00002 & 99.62\% \\ \hline
-			4.46505 & \multicolumn{1}{c|}{0.004478} & 0.000022 & 99.51\% \\ \hline
-		\end{tabular}%
-	}
-\end{table}
+	\includegraphics[width=0.8\linewidth]{gambar/find_femap_range}
+	\caption{Jumlah rentang respon frekuensi hasil simulasi Femap pada rentang 4-4.5 Hz menggunakan MS Excel.}
+	\label{fig:fem_range}
+\end{figure}
 
-Hasil simulasi yang didapatkan memiliki nilai error yang cukup besar dari hasil pengukuran. Meskipun jika diidentifikasi dari gerakan, hasil simulasi memiliki gerakan yang serupa dengan fenomena \textit{ground resonance}. Akan tetapi secara kuantifikasi, nilai tersebut memiliki error yang hampir mencapai 100$\%$. Error tersebut dapat disebabkan oleh pendekatan propertis mekanik yang belum sesuai dengan helikopter yang sebenarnya dan pembuatan \textit{finite element} yang masih belum sesuai dengan model stik helikopter. Sehingga pada skala pengembangan kedepannya diperlukan bentuk \textit{finite element} yang lebih akurat dan pemilihan propertis mekanik yang lebih sesuai dengan helikopter yang dimodelkan.
+
+Frekuensi pada mode ke-6, merupakan frekuensi eigen yang berada dekat pada rentang frekuensi $f_1$ (5.92-6.02 Hz). Apabila pada rentang frekuensi di mode ke-6 dilakukan identifikasi jumlah frekuensi respon helikopter seperti yang dapat dilihat pada gambar \ref{fig:fem_range}, akan didapatkan sebanyak $3\%$ respon frekuensi helikopter yang berada pada sekitar frekuensi mode ke-6 (82 respon frekuensi) dengan batas-batas pada 4-4.5 Hz. Hal ini mnunjukkan, bahwa apabila ditinjau dari \textit{finite element analysis}, tidak terdapat potensi yang besar untuk terjadinya fenomena \textit{ground resonance} pada helikopter hasil modifikasi ini. 
+
+\subsection{Validasi Hasil Simulasi}
+
+Validasi simulasi yang dilakukan berdasarkan pada deformasi pada hasil \textit{mode shape} simulasi Femap. Dari data pengukuran, sensor akselerometer diletakkan pada titik 2s', 2s, dan 3s'. Kemudian selanjutnya akan dilakukan identifikasi deformasi pada titik 3s' pada arah sumbu-y seperti yang dapat dilihat pada gambar \ref{fig:FEM_pengukuran}.
+
+Deformasi pada titik 3s' (node ke-15) di mode-6 (4.31 Hz) pada arah sumbu-y didapatkan sebesar 0.016 m. Sehingga bila diekspresikan dalam bentuk getaran (gambar \ref{fig:fem_validation_time_domain}) akan dihasilkan grafik perbandingan perpindahan hasil pengukuran pada titik 3s' terhadap simulasi Femap. Selanjutnya dari hasil FFT untuk kedua respon frekuensi (pengukuran dan simulasi) didapatkan dari hasil simulasi frekuensinya berada pada 9.30 Hz. Sedangkan untuk hasil pengukuran sebesar 16.19. Sehingga terhadap dominan frekuensinya didapatkan besarnya error antara keduanya adalah sebesar 42.5$\%$ sedangkan untuk \textit{root mean square error} nya didapatkan sebesar 5.8$\%$. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{gambar/FEM.png}
+	\caption{Bentuk \textit{finite element} stik model pada titik pengukuran helikopter.}
+	\label{fig:FEM_pengukuran}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{gambar/fem_compare.jpg}
+	\caption{Respon frekuensi helikopter pada arah sumbu-x dan Plot simulasi Femap arah sumbu-x.}
+	\label{fig:fem_validation_time_domain}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{gambar/fem_fft.jpg}
+	\caption{Respon frekuensi helikopter pada arah sumbu-x dan Plot simulasi Femap arah sumbu-x.}
+	\label{fig:fem_fft}
+\end{figure}
+
+Hasil simulasi yang didapatkan memiliki nilai error yang cukup besar dari hasil pengukuran. Meskipun identifikasi dari gerakan hasil simulasi memiliki gerakan yang serupa dengan fenomena \textit{ground resonance}. Akan tetapi secara kuantitatif, nilai tersebut memiliki error yang hampir mencapai 42.5$\%$. Error tersebut dapat disebabkan oleh pendekatan propertis mekanik yang belum sesuai dengan helikopter yang sebenarnya dan pembuatan \textit{finite element} yang masih belum sesuai dengan model stik helikopter. Sehingga pada skala pengembangan kedepannya diperlukan bentuk \textit{finite element} yang lebih akurat dan pemilihan propertis mekanik yang lebih sesuai dengan helikopter yang dimodelkan.

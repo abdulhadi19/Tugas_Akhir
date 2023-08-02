@@ -4,16 +4,18 @@
 
 \section{Latar Belakang}
 \label{sec:latarbelakang}
-
-Helikopter merupakan \textit{rotorcraft} yang dalam gerakannya memiliki berbagai jenis getaran. Dari beberapa getaran yang dihasilkan, dapat menyebabkan terjadinya kerusakan secara instan pada helikopter. Hal itu dapat disebabkan oleh interaksi antara gerakan rotor yang terlambat (\textit{lagging motion}) terhadap salah satu \textit{mode-shape} dari gerakan kerangka helikopter \cite{Dzy1}. Secara khusus kerusakan tersebut terjadi pada fenomena \textit{ground resonance}.  Kondisi \textit{ground resonance} terjadi pada kecepatan tertentu oleh rotor, dimana mode regresif melebur dengan mode gerakan kerangka helikopter (\textit{fuselage}) yang mengakibatkan kerusakan langsung pada badan helikopter \cite{DASIL}. 
+\thispagestyle{newchap}
+Helikopter terdiri dari sistem yang rumit dan kompleks. Kemampuan \textit{flap}, \textit{feather}, \textit{lead-lag} helikopter pada rotornya merupakan helikopter jenis \textit{fully\hyp{}articulated rotor system} \cite{wagtendonk2006principles}. Helikopter jenis ini memiliki potensi yang besar untuk mengalami kondisi \textit{ground resonance} \cite{Eckert2007AnalyticalAA}. Hal itu dapat disebabkan oleh interaksi antara gerakan rotor yang terlambat (\textit{lagging motion}) terhadap salah satu \textit{mode-shape} dari gerakan kerangka helikopter \cite{Dzy1}. Secara khusus kerusakan tersebut terjadi pada fenomena \textit{ground resonance}.  Kondisi \textit{ground resonance} terjadi pada kecepatan tertentu oleh rotor, dimana mode regresif melebur dengan mode gerakan kerangka helikopter (\textit{fuselage}) yang mengakibatkan kerusakan langsung pada badan helikopter \cite{DASIL}. 
 
 Coleman pada tahun 1957 menunjukkan bahwa \textit{ground resonance} merupakan bentuk ketidakstabilan yang tereksitasi pada helikopter dengan menggunakan analisis klasik. Pada dasarnya, beberapa gangguan dari luar akan memengaruhi rotor. Gangguan tersebut mengakibatkan pusat massa helikopter bergeser dan membentuk gaya inersia yang bekerja melawan badan helikopter \cite{Coleman}. Beberapa pengamatan menggunakan linearisasi persamaan gerak helikopter telah dijelaskan pada \cite{Friedmann} dan \cite{bielawa2006}. Akan tetapi, helikopter dengan redaman yang memiliki sistem elastomer (komponen yang meredam dan mengurangi getaran) mempunyai karakteristik respon yang nonlinier, kemudian dilakukan analisis secara nonlinier seperti pada \cite{KUNZ2002383} dan \cite{DASIL}. 
 
-Helikopter terdiri dari sistem yang rumit dan kompleks. Kemampuan \textit{flap}, \textit{feather}, \textit{lead-lag} helikopter pada rotornya merupakan helikopter jenis \textit{fully-articulated rotor system} \cite{wagtendonk2006principles}. Helikopter jenis ini memiliki potensi yang besar untuk mengalami kondisi \textit{ground resonance} \cite{Eckert2007AnalyticalAA}. Salah satu helikopter jenis ini adalah helikopter AS 565 MBe Panther yang merupakan bagian helikopter AS 565 MBe versi angkatan laut. Helikopter ini dirancang untuk beroperasi dari geladak kapal, lokasi lepas pantai, dan lokasi berbasis darat \cite{AS565MBe}.
+Beberapa penelitian sebelumnya seperti \cite{Ciavarella2018AnEH} dan \cite{Dzy1} melakukan suatu penelitian yang berangkat dari pemodelan pada simulasi untuk identifikasi fenomena \textit{\hyp{}ground resonance} menggunakan metode \textit{finite element}. Pada masing-masing elemen pemodelan helikopter didefinisikan dalam koordinat titik-titik sehingga membentuk suatu kerangka helikopter. Kemudian dilakukan analisis yang menghasilkan \textit{mode shape} helikopter agar selanjutnya dapat ditentukan letak sensor untuk \textit{ground test} dan dapat digunakan sebagai pemodelan yang merepresentasikan kondisi uji resonansi yang sebenarnya.
 
-PT Dirgantara Indonesia atau yang dikenal dengan PTDI adalah salah satu perusahaan \textit{aerospace} di Asia dengan kompetensi inti dalam desain dan pengembangan pesawat, pembuatan struktur pesawat, produksi pesawat, dan layanan pesawat untuk sipil dan militer dari pesawat ringan dan menengah \cite{PTDI}. PTDI melakukan sebuah modifikasi terhadap helikopter AS 565 MBe Panther untuk suatu kebutuhan tertentu. Disisi lain, keamanan dan keselamatan penerbangan merupakan prioritas utama dalam dunia aviasi. Berdasarkan Peraturan Menteri Perhubungan nomor 8 tahun 2010 mengenai Program Keselamatan Penerbangan Nasional, diperlukan suatu usaha untuk mengidentifikasi bahaya dan proses manajemen risiko secara berkesinambungan \cite{MenPerhub}. Sehingga dalam proses modifikasi dibutuhkan serangkaian uji untuk memastikan hasil modifikasi yang dilakukan pada helikopter telah aman dan dapat digunakan sebagaimana tujuannya.
+Perhitungan matematis untuk melakukan identifikasi terhadap fenomena terjadinya \textit{ground resonance} telah dijelaskan pada \cite{Bergeot_passive}, \cite{BERGEOT201672}, \cite{borgesdasilva:hal-02188554}, dan \cite{DASIL} menggunakan analisis pada geometri rotor dan kerangka helikopter yang disederhanakan menggunakan pegas dan peredam yang kemudian disatukan dalam bentuk matriks. Hasil dari matriks tersebut kemudian dicari nilai eigennya agar dapat ditentukan rentang frekuensi ketidakstabilannya.
 
-Pengujian yang dilakukan oleh PTDI menghasilkan parameter vibrasi yang dapat diidentifikasi melalui pengolahan data dan analisa matematika. Pengujian tersebut dilakukan di PTDI pada kondisi saat masih di tanah \textit{ground test} dengan menggunakan \textit{input} impuls \textit{lateral} dan \textit{longitudinal} pada \textit{control pilot} dengan variasi kondisi \textit{rotor speed}, \textit{stability augmentation system} (SAS) dan \textit{landing gear shock absorbers}. Dalam pengerjaan penelitian ini, akan ditambahkan aspek simulasi menggunakan \textit{software} FEMAP (\textit{Finite Element Modeling And Postprocessing}) yang dapat merepresentasikan hasil akhir dari tujuan tugas akhir ini. Aspek matematis yang digunakan merupakan perhitungan dari beberapa acuan yang dijadikan sebagai referensi. Serangkaian pengujian yang dilakukan diatas merupakan upaya untuk membuktikan bahwa tidak terdapat potensi terjadinya \textit{ground resonance} serta memberikan batasan pada osilasi rotor helikopter untuk menghindari kondisi \textit{ground resonance}.
+PT Dirgantara Indonesia atau yang dikenal dengan PTDI adalah salah satu perusahaan \textit{aerospace} di Asia dengan kompetensi inti dalam desain dan pengembangan pesawat, pembuatan struktur pesawat, produksi pesawat, dan layanan pesawat untuk sipil dan militer dari pesawat ringan dan menengah \cite{PTDI}. PTDI melakukan sebuah modifikasi terhadap helikopter AS565 MBe Panther untuk suatu kebutuhan tertentu. Disisi lain, keamanan dan keselamatan penerbangan merupakan prioritas utama dalam dunia aviasi. Berdasarkan Peraturan Menteri Perhubungan nomor 8 tahun 2010 mengenai Program Keselamatan Penerbangan Nasional, diperlukan suatu usaha untuk mengidentifikasi bahaya dan proses manajemen risiko secara berkesinambungan \cite{MenPerhub}. Sehingga dalam proses modifikasi dibutuhkan serangkaian uji untuk memastikan hasil modifikasi yang dilakukan pada helikopter telah aman dan dapat digunakan sebagaimana tujuannya.
+
+PTDI melakukan \textit{ground test} helikopter AS565 MBe Panther hanya pada 3 titik uji yang seharusnya jika mengacu pada \cite{Ciavarella2018AnEH} dan \cite{lubrina:hal-01059708} terdapat sebanyak 300 hingga 500 sensor akselerometer pada seluruh bagian kerangka \textit{aircraft}. Tingkat vibrasi data pengukuran pada masing-masing sensor akan diuji menggunakan standar MIL-STD-810H-Method-514.8 \cite{MILSTD}, perhitungan matematis, dan simulasi menggunakan \textit{software} Femap (\textit{Finite Element Modeling And Postprocessing}) sebagai unjuk kerja identifikasi fenomena \textit{ground resonance} pada helikopter AS565 MBe Panther. Perhitungan matematis dan hasil simulasi pada Femap akan divalidasi menggunakan data pengukuran pada helikopter, sehingga kuantifikasi fenomena \textit{ground resonance} dapat dilakukan pada helikopter hasil modifikasi.
 
 \section{Rumusan Masalah}
 \label{sec:rumusan masalah}
@@ -22,13 +24,12 @@ Dari permasalahan yang telah disebutkan pada latar belakang, berikut ini merupak
 
 \begin{enumerate}[nolistsep]
 	
-	\item Apakah potensi fenomena \textit{ground resonance} terjadi pada modifikasi helikopter AS 565 MBe Panther melalui pengujian di tanah (\textit{ground test})?
+	\item Apakah data hasil pengukuran \textit{ground test} helikopter AS565 MBe Panther memiliki respon frekuensi yang berada pada batas siklus frekuensi standar MIL-STD-810H-Method-514.8?
 	
-	\item Bagaimana batas siklus osilasi helikopter AS 565 MBe Panther hasil modifikasi terhadap fenomena \textit{ground resonance} menggunakan standar MIL-STD-810H-Method-514.8 dan pendekatan matematis?
+	\item Bagaimana batas siklus osilasi \textit{ground resonance} hasil perhitungan matematis pada helikopter AS565 MBe Panther terhadap data hasil pengukuran \textit{ground test} dan hasil modifikasinya?
 	
-	\item Bagaimana respon frekuensi helikopter AS 565 MBe Panther hasil modifikasi terhadap pengujian dan perhitungan matematis terhadap fenomena \textit{ground resonance}?
-	
-	\item Bagaimana pemodelan simulasi dari helikopter modifikasi AS 565 MBe Panther menggunakan \textit{finite element} pada \textit{software} FEMAP terhadap fenomena \textit{ground resonance}? 
+	\item Bagaimana frekuensi osilasi \textit{ground resonance} yang dimiliki oleh pemodelan hasil simulasi pada Femap terhadap data hasil pengukuran \textit{ground test} helikopter AS565 MBe Panther?
+
 \end{enumerate}
 
 \section{Tujuan}
@@ -36,13 +37,12 @@ Dari permasalahan yang telah disebutkan pada latar belakang, berikut ini merupak
 
 \begin{enumerate}[nolistsep]
 
-	\item Menganalisis potensi terjadinya \textit{ground resonance} pada modifikasi helikopter AS 565 MBe Panther dari pengujian yang dilakukan di tanah (\textit{ground test}).
+	\item Menganalisis data hasil pengukuran \textit{ground test} berupa respon frekuensi dari helikopter AS565 MBe Panther menggunakan batas siklus frekuensi standar MIL-STD-810H-Method-514.8.
 	
-	\item Menganalisis batas siklus osilasi modifikasi helikopter AS 565 MBe Panther hasil modifikasi yang dilakukan oleh PTDI terhadap fenomena \textit{ground resonance} menggunakan standar MIL-STD-810H-Method-514.8 dan pendekatan matematis.
+	\item Menganalisis batas siklus osilasi hasil perhitungan matematis pada helikopter AS565 MBe Panther terhadap data hasil pengukuran \textit{ground test} dan hasil modifikasinya.
 	
-	\item Menganalisis  respon frekuensi helikopter AS 565 MBe Panther hasil modifikasi terhadap pengujian dan perhitungan matematis terhadap fenomena \textit{ground resonance}.
-	
-	\item Menganalisis pemodelan simulasi dari helikopter modifikasi AS 565 MBe Panther menggunakan \textit{finite element} pada \textit{software} FEMAP terhadap fenomena \textit{ground resonance}.
+	\item Menganalisis frekuensi osilasi yang dimiliki oleh pemodelan hasil simulasi pada Femap terhadap data hasil pengukuran \textit{ground test} helikopter AS565.
+
 \end{enumerate}
 
 \section{Batasan Masalah}
@@ -52,17 +52,23 @@ Batasan masalah dari tugas akhir ini adalah sebagai berikut:
 
 \begin{enumerate}[nolistsep]
 
-  \item Lokasi tempat pengerjaan tugas akhir dilakukan di PT. Dirgantara Indonesia dan di Laboratorium Vibrasi dan Akustik Teknik Fisika ITS.
-
-  \item Objek yang digunakan pada penelitian ini adalah helikopter AS 565 MBe Panther yang telah dimodifikasi oleh PT. Dirgantara Indonesia.
+  \item Objek yang digunakan pada penelitian ini adalah helikopter AS565 MBe Panther yang telah dimodifikasi oleh PT. Dirgantara Indonesia.
   
-  \item Helikopter modifikasi yang dimaksud hanya terbatas pada penambahan massa helikopter secara homogen pada seluruh bagian helikopter.
+  \item \textit{Ground test} pengambilan data yang dimaksud terbagi dalam 2 jenis pengukuran, yaitu pengukuran menggunakan FTIS (\textit{Flight Test Instrumentation System}) dan pengukuran menggunakan akselerometer yang diletakkan pada 3 titik di helikopter.
   
-  \item Material pada helikopter AS 565 MBe Panther menggunakan pendekatan pada sumber yang ada saja tanpa ada informasi langsung dari PTDI.
-
+  \item Standar MIL-STD-810H-Method-514.8 merupakan standar keamanan dan kelayakan \textit{aircraft} helikopter dari aspek getaran yang berada atau yang muncul pada helikopter.
+  
+  \item Batas siklus osilasi yang dimaksudkan merupakan batas frekuensi kecepatan rotor helikopter. Sehingga apabila rotor berada pada rentang batas siklus tersebut dalam waktu yang lama, akan terjadi \textit{ground resonance} pada helikopter.
+  
   \item Pengambilan data pengukuran helikopter dilakukan saat kondisi cerah pagi hari dengan batas waktu dari pukul 07.00 hingga 11.00 WIB.
+    
+  \item Helikopter modifikasi yang dimaksud hanya terbatas pada penambahan massa helikopter secara homogen pada seluruh bagian helikopter, dimulai dengan penambahan +300 kg, +1000 kg dan +2000 kg.
   
-  \item \textit{Software} yang digunakan dalam pengerjaan tugas akhir ini adalah Matlab dan FEMAP.
+  \item Propertis mekanik untuk pemodelan dan perhitungan matematis pada helikopter menggunakan material Alumninum 7075-T6.
+ 
+  \item Perhitungan matematis yang digunakan merupakan hasil penurunan dari bentuk geometri helikopter yang disederhanakan dalam bentuk pegas dan peredam serta menggunakan bantuan komputasi \textit{software} Matlab untuk menghitung dan membuat grafik yang nantinya akan diidentifikasi.
+
+  \item Pemodelan simulasi helikopter AS565 MBe panther menggunakan \textit{finite element} dalam bentuk stik pada \textit{software} Femap (\textit{Finite Element Modeling And Postprocessing}).
   
   \item Rentang waktu pengambilan data dilakukan dari bulan Juli-September 2022 dan Maret-Mei 2023.
 

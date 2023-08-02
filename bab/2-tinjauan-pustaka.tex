@@ -2,24 +2,24 @@
 \label{chap:tinjauanpustaka}
 
 % Ubah bagian-bagian berikut dengan isi dari tinjauan pustaka
-
+\thispagestyle{newchap}
 Untuk mendapatkan informasi secara teoritis. Dilakukan sebuah pencarian untuk memberikan pemahaman yang cukup dalam melakukan pengerjaan Tugas Akhir ini. Berikut ini merupakan tinjauan pustaka yang menjadi landasan pemahaman.
 
 \section{Kerangka dan Rotor Helikopter}
 \label{sec:strukturheli}
 
-Helikopter merupakan bentuk aplikasi dari prinsip-prinsip dasar fundametal hukum fisika, dimulai dari hukum pertama, kedua dan ketiga Newton, prinsip Bernoulli, konservasi energi dan aerodinamika. Keempat hukum dasar tersebut adalah sedikit dari prinsip fisika yang menjadi teori fundamental dari helikopter. Kompleksitas dibalik mengapa helikopter bisa terbang dapat dimengerti oleh pilot pemula sekalipun melalui pemahaman yang mendalam terhadap teori fisika yang berada pada helikopter\cite{wagtendonk2006principles}.
+Helikopter merupakan bentuk aplikasi dari prinsip-prinsip dasar fundametal hukum fisika, dimulai dari hukum pertama, kedua dan ketiga Newton, prinsip \hyp{}Bernoulli, konservasi energi dan aerodinamika. Keempat hukum dasar tersebut adalah sedikit dari prinsip fisika yang menjadi teori fundamental dari helikopter. Kompleksitas dibalik mengapa helikopter bisa terbang dapat dimengerti oleh pilot pemula sekalipun melalui pemahaman yang mendalam terhadap teori fisika yang berada pada helikopter \cite{wagtendonk2006principles}.
 
 Helikopter memiliki banyak komponen (gambar \ref{fig:komponenheli}), dimulai dari sistem transmisi yang dilakukan oleh mesin menuju rotor utama, rotor pada ekor, dan komponen lain yang bergantung pada propulsi mesin. Bagian dari transmisi pada helikopter terdiri dari gigi rotor utama, poros penggerak, unit \textit{freewheeling}, rem rotor dan roda gigi rotor pada ekor  \cite{wagtendonk2006principles}.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{gambar/komponenheli.png}
+	\includegraphics[width=0.7\linewidth]{gambar/komponenheli.png}
 	\caption{Komponen helikopter secara umum \cite{handbook}.}
 	\label{fig:komponenheli}
 \end{figure}
 
-\textit{Fuselage} badan helikopter merupakan bagian inti luar dari rangka yang menampung kabin berisi kru, penumpang, dan kargo. Kabin helikopter memiliki susunan tempat duduk yang berbeda-beda. Selain itu, badan helikopter juga berfungsi untuk memberikan ruang pada mesin, transmisi, avionik, kontrol penerbangan sumber power pada helikopter. Untuk sistem transmisi helikopter, mesin pada gigi rotor utama akan membuat poros rotor berputar. Ketika rotor berputar pada rpm mesin, kecepatan ujung rotor akan lebih cepat daripada kecepatan suara, kekuatan pada rotor harus ditingkatkan dan kelembaman dari giroskop akan menjadi sangat ekstrim. Terdapat bagian yang dinamakan \textit{clutch} (kopling) (gambar \ref{fig:clutch}) yaitu bagian yang terintegrasi dengan sistem transmisi. Bagian ini memungkinkan pilot untuk dapat mengatur kontak antara mesin dan poros penggerak \cite{wagtendonk2006principles}.
+Pada gambar \ref{fig:komponenheli}, \textit{fuselage} merupakan badan helikopter yang menampung kabin berisi kru, penumpang, dan kargo. Kabin helikopter memiliki susunan tempat duduk yang berbeda-beda. Selain itu, badan helikopter juga berfungsi untuk memberikan ruang pada mesin, transmisi, avionik, kontrol penerbangan sumber power pada helikopter. Untuk sistem transmisi helikopter, mesin pada gigi rotor utama akan membuat poros rotor berputar. Ketika rotor berputar pada rpm mesin, kecepatan ujung rotor akan lebih cepat daripada kecepatan suara, kekuatan pada rotor harus ditingkatkan dan kelembaman dari giroskop akan menjadi sangat ekstrim. Terdapat bagian yang dinamakan \textit{clutch} (kopling) (gambar \ref{fig:clutch}) yaitu bagian yang terintegrasi dengan sistem transmisi. Bagian ini memungkinkan pilot untuk dapat mengatur kontak antara mesin dan poros penggerak \cite{wagtendonk2006principles}.
 
 \begin{figure}[H]
 	\begin{subfigure}{0.3\textwidth}
@@ -51,26 +51,26 @@ Sistem \textit{fully articulated rotor} mempunyai kemampuan pada rotornya untuk 
 
 \begin{figure}[H]
 	\centering
+		\begin{subfigure}{0.4\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{gambar/feather_flap.png}
+		\caption{}
+		\label{fig:featherflap}
+	\end{subfigure}
+	\centering
 	\begin{subfigure}{0.17\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{gambar/lead-lag.png}
 		\caption{}
 		\label{fig:lead/lag}
 	\end{subfigure}
-	\centering
-	\begin{subfigure}{0.4\textwidth}
-		\centering
-		\includegraphics[width=\linewidth]{gambar/feather_flap.png}
-		\caption{}
-		\label{fig:featherflap}
-	\end{subfigure}
-	\caption{(a) Komponen \textit{lead/lag} membuat rotor dapat bergerak kedepan dan belakang pada bidangnya. (b) Komponen \textit{feather} dan \textit{flap} untuk gerakan rotasi pada arah radial serta bergerak atas bawah \cite{handbook}.}
+	\caption{(a) \textit{Fully articulated rotor system} memiliki komponen \textit{feather} dan \textit{flap} untuk gerakan rotasi pada arah radial, bergerak atas bawah serta komponen \textit{lead/lag} untuk gerak bilah rotor mendahului dan terlambat pada rotasi geraknya. (b) Representatif gerakan \textit{lead/lag} pada bilah rotor \cite{handbook}.} 
 	\label{fig:fullyarticulated}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.68\linewidth]{gambar/roll-pitch-yaw.png}
+	\includegraphics[width=0.65\linewidth]{gambar/roll-pitch-yaw.png}
 	\caption{Orientasi arah helikopter \cite{Jhwang}.}
 	\label{fig:orientasiheli}
 \end{figure}
@@ -118,9 +118,7 @@ Parameter yang penting terkait fenomena \textit{ground resonance} adalah frekuen
 		\caption{}
 		\label{fig:gr_4}
 	\end{subfigure}
-		\caption{(a) Kondisi saat helikopter stabil.(b) Sudah mulai terdapat getaran pada bagian kerangka helikopter (indikasi mulai terjadinya \textit{ground resonance}). (c) Terjadinya \textit{ground resonance} yang merusak bagian pada badan helikopter. (d) Pasca terjadinya \textit{ground resonance} pada helikopter.\\
-		\urlstyle{rm}
-		sumber: \url{https://www.youtube.com/watch?v=D2tHA7KmRME&t=3s}.}
+		\caption{(a) Kondisi saat helikopter stabil.(b) Sudah mulai terdapat getaran pada bagian kerangka helikopter (indikasi mulai terjadinya \textit{ground resonance}). (c) Terjadinya \textit{ground resonance} yang merusak bagian pada badan helikopter. (d) Pasca terjadinya \textit{ground resonance} pada helikopter \cite{squorch_2006}.}	
 		\label{fig:gr}
 \end{figure}
 
@@ -137,7 +135,7 @@ Frekuensi yang dapat menyebabkan terjadinya fenomena \textit{ground resonance} d
 
 Saat sistem \textit{uncoupled} mengacu pada kondisi saat gerakan pada rotor dan \textit{fuselage} dapat diperlakukan secara independen, tanpa ada pengaruh timbal balik yang signifikan. Sedangkan pada kondisi sebenarnya, helikopter memiliki sistem yang saling berhubungan satu sama lain, terutama antara sistem mekanik dan aerodinamik terhadap rotor dan \textit{fuselage}. Kondisi saling terhubung ini diakibatkan oleh perpindahan beban, getaran, dan energi antara kedua komponen tersebut. Ketika rotor menghasilkan gaya angkat atau berada pada kondisi \textit{idle}, maka hal tersebut akan menginduksi getaran dan gaya yang ditransimisikan ke badan helikopter \textit{fuselage}. 
 
-Seiring dengan bertambahnya kecepatan pada rotor, frekuensi pada bilah rotor dan kecepatan pada rotor akan bertemu pada titik B dan C. Pada titik B, sistem masih dalam kondisi stabil. Sedangkan kondisi \textit{ground resonance} akan terjadi saat berada pada titik perpotongan di C. Pada kondisi sebenarnya (\textit{coupled}) memberikan visualisasi yang berbeda terhadap diagram pada gambar \ref{fig:southwell_diagram}. Saat kondisi ketidakstabilan terjadi, garis \textit{regressive mode} akan bertemu di sekitar titik C (gambar \ref{fig:southwell_coupled_diagram}), dan akan menyatu menjadi suatu rentang frekuensi yang mengindikasikan ketidakstabilan pada helikopter. 
+Seiring dengan bertambahnya kecepatan pada rotor, frekuensi pada bilah rotor dan kecepatan pada rotor akan bertemu pada titik B dan C. Pada titik B, sistem masih dalam kondisi stabil. Sedangkan kondisi \textit{ground resonance} akan terjadi saat berada pada titik perpotongan di C. Pada kondisi sebenarnya (\textit{coupled}) memberikan visualisasi yang berbeda terhadap diagram pada gambar \ref{fig:southwell_diagram}. Saat kondisi ketidakstabilan terjadi, garis \textit{regressive mode} akan bertemu di sekitar titik C (gambar \ref{fig:southwell_coupled_diagram}), dan akan menyatu menjadi suatu rentang frekuensi yang mengindikasikan ketidakstabilan pada helikopter. Sehingga dari grafik tersebut nantinya akan diidentifikasi rentang ketidakstabilan \textit{ground resonance} helikopter pada BAB \ref{chap:hasil dan pembahasan}.
 
 \begin{figure}[H]
 	\centering
@@ -148,6 +146,7 @@ Seiring dengan bertambahnya kecepatan pada rotor, frekuensi pada bilah rotor dan
 
 
 \section{Perhitungan Model Matematis}
+\label{Matematis}
 
 Untuk dapat melakukan pendekatan secara analitik seperti yang telah diteliti oleh B.Bergeot et al \cite{BERGEOT201672}, diperlukan suatu model mekanik dari helikopter dengan derajat kebebasan minimum yang berpotensi mengalami fenomena \textit{ground resonance}. Oleh karena itu, dibutuhkan minimalnya sebanyak 5 derajat kebebasan (\textit{degree of freedom}/DOF). Helikopter terdiri atas \textit{fuselage} yang memiliki 4 bilah rotor dengan kecepatan konstan sebesar $\Omega$.
 
@@ -345,7 +344,7 @@ Dimana,
 	\end{bmatrix}	
 \end{equation}
 
-Dengan $\mathbf{0}$ dan $\mathbf{I}$ masing-masing merupakan matriks bernilai $0$ dan matriks identitas berukuran 3x3. Solusi nilai eigen dan vektor eigen dari matriks $\mathbf{A}$ akan merepresentasikan fenomena dari \textit{ground resonance} melalui grafik imajiner terhadap kecepatan rotor $\Omega$ dan bagian riil terhadap kecepatan rotor $\Omega$.
+Dengan $\mathbf{0}$ dan $\mathbf{I}$ masing-masing merupakan matriks bernilai $0$ dan matriks identitas berukuran 3x3. Solusi nilai eigen dan vektor eigen dari matriks $\mathbf{A}$ akan merepresentasikan fenomena dari \textit{ground resonance} melalui grafik seperti pada gambar \ref{fig:southwell_coupled_diagram}. 
 
 \section{\textit{Logarithmic Decrement}}
 
@@ -360,7 +359,7 @@ Dalam peredam viskositas, redaman terhadap penurunan amplitudo sistem terbagi me
 	\label{fig:damping_motion}
 \end{figure}
 
-Penurunan secara logaritmik atau \textit{logarithmic decrement} merupakan paremeter spesifik yang dimiliki saat kondisi peredam viskositas berupa \textit{underdamped}. \textit{Logarithmic decrement} pada dasarnya juga merupakan parameter spesifik yang digunakan untuk menghitung koefisien redaman dari sistem liner \cite{Lojewski2020InfluenceOC}. 
+Penurunan secara logaritmik atau \textit{logarithmic decrement} merupakan paremeter spesifik yang dimiliki saat kondisi peredam viskositas berupa \textit{underdamped}. \textit{Logarithmic decrement} pada dasarnya juga merupakan parameter spesifik yang digunakan untuk menghitung koefisien redaman dari sistem linier \cite{Lojewski2020InfluenceOC}. 
 
 \begin{figure}[H]
 	\centering
@@ -382,12 +381,14 @@ Kemudian dari formulasi pada \ref{eq:logdec} dapat diformulasikan \textit{dampin
 	\zeta=\frac{\delta}{\sqrt{\left( 2\pi \right)^2+\delta^2}}
 \end{align}
 
+Perhitungan \textit{logarithmic decrement} dan \textit{damping ratio} selanjutnya akan digunakan pada BAB \ref{chap:hasil dan pembahasan} untuk mencari kecenderungan getaran yang terjadi pada masing-masing orientasi pada helikopter.
 
 \section{\textit{Finite Element Method}}
+\label{FEM}
 
 Metode elemen berhingga atau \textit{finite element method} merupakan sebuah metode numerik yang digunakan untuk mencari solusi dari mekanika kompleks serta permasalahan getaran dari suatu struktur. Pada metode ini, struktur asli pada objek dibagi menjadi elemen yang lebih kecil. Pada masing-masing elemen diasumsikan memiliki perilaku seperti bagian kontinu dari struktur yang disebut dengan elemen hingga (\textit{finite element}). Pada masing-masing elemen dihubungkan dengan suatu penghubung yang disebut dengan \textit{nodes} \cite{Lojewski2020InfluenceOC}.
 
-Beberapa percobaan menggunakan analisis \textit{finite element} bertujuan untuk mendesain ulang dengan mengetahui terlebih dahulu deformasi yang terjadi pada suatu struktur, seperti yang dikejakan pada \cite{Gorecki2013}. Pada penelitian tersebut, dilakukan sebuah pemodelan pada helikopter menggunakan elemen stik model sebagai representasi bentuk simulasi pada pengujian resonansi sebenarnya dan langkah pertama untuk mengubah desain pada rotor helikopter. Gambar \ref{fig:ex_finite_element} merupakan contoh luaran yang didapatkan pada \cite{Gorecki2013}.
+Beberapa percobaan menggunakan analisis \textit{finite element} bertujuan untuk mendesain ulang dengan mengetahui terlebih dahulu deformasi yang terjadi pada suatu struktur, seperti yang dikejakan pada \cite{Gorecki2013} dengan contoh modelnya seperti pada gambar \ref{fig:ex_finite_element}. Pada penelitian tersebut, dilakukan sebuah pemodelan pada helikopter menggunakan elemen stik model sebagai representasi bentuk simulasi pada pengujian resonansi sebenarnya.
 
 \begin{figure}[H]
 	\centering
@@ -396,56 +397,17 @@ Beberapa percobaan menggunakan analisis \textit{finite element} bertujuan untuk 
 	\label{fig:ex_finite_element}
 \end{figure}
 
-Pada gambar \ref{fig:ex_finite_element} merupakan salah satu contoh analisis menggunakan elemen hingga. Secara matematis, deformasi atau perpindahan secara transversal pada suatu elemen tertentu dapat diekspresikan dalam persamaan \ref{eq:FEM}.
+Pada gambar \ref{fig:ex_finite_element} merupakan salah satu contoh analisis menggunakan elemen hingga. Persamaan \ref{eq:DOF} yang merepresentasikan derajat kebebasan menjadi variabel terkait dalam identifikasi solusi yang akan dicari. Sehingga selanjutnya derajat kebebasan tersebut akan dimasukkan ke dalam persamaan \ref{eq:FEM} untuk selanjutnya diolah secara komputasi menggunakan Femap.
 
 \begin{align}
 	\label{eq:FEM}
-	w(x,y,t)=\sum_{i=1}^{n}N_i(x,y)w_i(t)
+	w(y,\delta_{1c}, \delta_{1s}, t)=\sum_{i=1}^{n}N_i(y,\delta_{1c}, \delta_{1s})w_i(t)
 \end{align}
 
-$N_i(x,y)$ merupakan \textit{shape function} yang berkorelasi dengan perpindahan pada \textit{nodes} $w_i(t)$ dan n merupakan penghubung ke-n. Jika diberikan gaya dari luar sebesar $f(x,y,t)$ pada elemennya. Maka gaya tersebut memiliki ekivalensi dengan bentuk $f_i(t)(i=1, 2, ...., n)$. Kemudian dapat didefinisikan dari energi kinetik serta potensial dari masing-masing elemen dalam bentuk matriks vektor ${\overrightarrow{\textbf{W}}}$. 
-
-\begin{align}
-	T=\frac{1}{2}\dot{\overrightarrow{\textbf{W}^T}}[m]\dot{\overrightarrow{\textbf{W}}}
-	\label{eq:kinetik_FEM}
-\end{align}
-
-\begin{align}
-	V=\frac{1}{2}\overrightarrow{\textbf{W}^T}[k]\overrightarrow{\textbf{W}}
-	\label{eq:potensial_FEM}
-\end{align}
-
-dengan,
-
-\begin{align*}
-\overrightarrow{\textbf{W}}=\left\{ \begin{matrix} w_1(t) \\ w_2(t) \\ w_3(t) \\ .\\ .\\ .\\ w_n(t) \end{matrix}\right\}, \dot{\overrightarrow{\textbf{W}}}=\left\{ \begin{matrix} \dot{w}_1(t) \\ \dot{w}_2(t) \\ \dot{w}_3(t) \\ .\\ .\\ .\\ \dot{w}_n(t) \end{matrix}\right\}=\left\{ \begin{matrix} dw_1/dt \\ dw_2/dt \\ dw_3/dt \\ .\\ .\\ .\\ dw_n/dt \end{matrix}\right\}
-\end{align*}
-
-Dimana [m] dan [k] merupakan matriks massa dan kekakuan dari elemen. Apabila pada persamaan \ref{eq:kinetik_FEM} dan \ref{eq:potensial_FEM} disubtitusikan dengan menggunakan persamaan Lagrange \ref{eq:lagrange_eq}. Maka persamaan tersebut akan menjadi:
-
-\begin{align}
-	[m]\ddot{\overrightarrow{\textbf{W}}}+[k]\overrightarrow{\textbf{W}}=\overrightarrow{f}
-	\label{eq:kinetik+potensial_lagrange}
-\end{align}
-
-$\overrightarrow{f}$ merupakan vektor gaya pada penghubung dan $\ddot{\overrightarrow{\textbf{W}}}$ merupakan percepatan pada \textit{nodes}. Dengan $\ddot{\overrightarrow{\textbf{W}}}$ merupakan turunan dari $\dot{\overrightarrow{\textbf{W}}}$ \cite{rao2004mechanical}. Semua proses matematis ini akan diproses menggunakan komputasi yang dimiliki oleh \textit{software} FEMAP dalam mencari penyelesaian serta memberikan representasi gerakan \textit{mode shape} pada helikopter yang akan dimodelkan.
+$N_i(y,\delta_{1c}, \delta_{1s})$ merupakan \textit{shape function} yang berkorelasi dengan perpindahan pada \textit{nodes} $w_i(t)$ dan n merupakan penghubung ke-n. Secara komputasi, solusi dari bentuk pemodelan seperti pada gambar \ref{fig:simulasi_tampak_normal} akan memberikan informasi terkait frekuensi modenya. Kemudian dari mode frekuensi tersebut pada titik pengukurannya akan dilakukan validasi simulasi terhadap data pengukuran menggunakan akselerometer.
 
 \section{\textit{Ground Vibration Test} (GVT)}
 \label{sec:GVT}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.6\linewidth]{gambar/Eksiter_landing.png}
-	\caption{Sumber penggetar pada bagian pendaratan \textit{aircraft} \cite{lubrina:hal-01059708}.}
-	\label{fig:shaker_landing}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.6\linewidth]{gambar/Shaker_mainrotor.png}
-	\caption{Penempatan \textit{shaker} pada bagian rotor utama \cite{Ciavarella2018AnEH}.}
-	\label{fig:shaker_rotor}
-\end{figure}
 
 \textit{Ground Vibration Test} (GVT) memiliki tujuan utama untuk memberikan informasi mengenai karakterisasi struktur objek \textit{aircraft}. Dengan GVT dapat dilakukan identifikasi terhadap parameter modal eksperimental seperti frekuensi eigen, mode eigen, rasio redaman, massa umum, dan fungsi transfer yang menggambarkan perilaku dinamis struktural dari \textit{aircraft} yang diuji. Selain didapatkannya informasi tentang dinamika struktural \textit{aircraft}, juga akan didapatkan informasi fundamental untuk memvalidasi serta model terbaru dari \textit{Finite Element} (FE) dinamis \cite{Ciavarella2018AnEH}.
 
@@ -453,43 +415,63 @@ Untuk mendapatkan kualitas pengujian data yang baik, diperlukan pemahaman tentan
 
 Untuk tujuan mitigasi, dilakukan 2 pengukuran gaya eksitasi dengan prinsip pengukuran yang berbeda. Pertama, gaya eksitasi diukur menggunakan alat ukur piezo elektrik. Kedua, gaya eksitasi diukur menggunakan arus koil yang disediakan oleh \textit{power amplifier} pada \textit{shaker}. Sensor perpindahan digunakan untuk mengukur perpindahan relatif dari armatur \textit{shaker} pada tempat peletakan \textit{shaker}. Sedangkan untuk mengukur respon vibrasi secara utama menggunakan akselerometer dalam pengukurannya. Pada penelitian \cite{lubrina:hal-01059708} digunakan sebanyak 500 sensor akselerometer untuk melakukan GVT, kemudian data hasil sensor diakuisisi menggunakan \textit{multichannel dynamic data} dari LMS Scadas III unutk selanjutnya diatur dengan perangkat lunak seperti Test.Lab \textit{software}.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.65\linewidth]{gambar/Eksiter_landing.png}
+	\caption{Sumber penggetar pada bagian pendaratan \textit{aircraft} \cite{lubrina:hal-01059708}.}
+	\label{fig:shaker_landing}
+\end{figure}
 
-\section{AS 565 MBe Panther}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.65\linewidth]{gambar/Shaker_mainrotor.png}
+	\caption{Penempatan \textit{shaker} pada bagian rotor utama \cite{Ciavarella2018AnEH}.}
+	\label{fig:shaker_rotor}
+\end{figure}
+
+
+Prosedur serupa pada dasarnya menjadi acuan pengukuran untuk pengambilan data pada helikopter. Namun, pada pengerjaan tugas akhir ini peletakkan sensor hanya terdapat pada 3 titik pengukuran. Sangat berbeda jauh dengan jumlah sebenarnya yang dibutuhkan untuk melakukan \textit{ground vibration test}. Sehingga perhitungan matematis pada sub \ref{Matematis} dan pemodelan \textit{finite element} pada \ref{FEM} akan divalidasi dengan hasil pengukuran yang dilakukan melalui pengujian \textit{ground vibration test}.
+
+\section{AS565 MBe Panther}
 \label{sec:AS565MBe}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{gambar/AS565pic.png}
-	\caption{Potret AS 565 MBe Panther saat mengudara.}
+	\caption{Potret AS565 MBe Panther saat mengudara.}
 	\label{fig:AS565pic}
 \end{figure}
 
-AS 565 MBe Panther seperti pada gambar \ref{fig:AS565pic} adalah versi militer dari Eurocopter AS 365 Dauphin helikopter dengan mesin ganda dan bobot menengah yang multiguna. Helikopter ini dapat digunakan untuk berbagai peran militer, termasuk serangan tempur, dukungan tembakan, perang anti-kapal selam, perang anti-permukaan, pencarian dan penyelamatan, dan evakuasi medis \cite{AS565MBe}. Helikopter AS 565 MBe Panther dapat dimodifikasi sedemikian rupa untuk selanjutnya ditambahkan fitur persenjataan yang dapat mendukung kinerja helikopter ini dalam melakukan tugasnya. \textit{Profile} mengenai helikopter AS 565 MBe Panther dapat dilihat pada gambar \ref{fig:AS565MBe}. Dari informasi tersebut, helikopter ini memiliki berat maksimum agar helikopter dapat terbang adalah sebesar 4500kg. Sehingga, apabila modifikasi yang dilakukan pada helikopter merupakan modifikasi penambahan massa tanpa adanya modifikasi pada rotor, maka massa 4500kg akan menjadi batas maksimum modifikasi tersebut. Adapun potret dan dimensi spesifik terkait helikopter AS 565 MBe Panther dapat dilihat pada gambar \ref{fig:AS565MBe}, \ref{fig:as565mbe_atas}, \ref{fig:as565mbe_depan} dan \ref{fig:as565mbe_samping}.
-
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{gambar/Propertis_AS565MBe.png}
-	\caption{\textit{Profile} helikopter AS 565 MBe Panther.}
+	\includegraphics[width=0.85\linewidth]{gambar/Propertis_AS565MBe.png}
+	\caption{\textit{Profile} helikopter AS565 MBe Panther.}
 	\label{fig:AS565MBe}
 \end{figure}
 
+AS565 MBe Panther seperti pada gambar \ref{fig:AS565pic} adalah versi militer dari Eurocopter AS 365 Dauphin helikopter dengan mesin ganda dan bobot menengah yang multiguna. Helikopter ini dapat digunakan untuk berbagai peran militer, termasuk serangan tempur, dukungan tembakan, perang anti-kapal selam, perang anti-permukaan, pencarian dan penyelamatan, dan evakuasi medis \cite{AS565MBe}. Helikopter AS565 MBe Panther dapat dimodifikasi sedemikian rupa untuk selanjutnya ditambahkan fitur persenjataan yang dapat mendukung kinerja helikopter ini dalam melakukan tugasnya.
+
+\textit{Profile} mengenai helikopter AS565 MBe Panther dapat dilihat pada gambar \ref{fig:AS565MBe}. Dimensi helikopter AS565 MBe Panther dapat dilihat dari tampak samping pada gambar \ref{fig:as565mbe_samping}, dari gambar tersebut didapatkan informasi mengenai dimensi panjang helikopter, panjang bilah rotor, jarak ban depan dan belakang. Dari gambar \ref{fig:as565mbe_atas} didapatkan informasi mengenai lebar sayap pada bagian ekor dan pada gambar \ref{fig:as565mbe_depan} didapatkan informasi mengenai lebar antar ban bagian depan dan antar ban pada bagian kanan-kiri.
+
+
+
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{gambar/as565_samping.png}
-	\caption{Dimensi Helikopter AS 565 MBe Panther tampak samping.}
+	\includegraphics[width=\linewidth]{gambar/as565_samping.png}
+	\caption{Dimensi Helikopter AS565 MBe Panther tampak samping.}
 	\label{fig:as565mbe_samping}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{gambar/as565_atas.png}
-	\caption{Dimensi Helikopter AS 565 MBe Panther tampak atas.}
+	\includegraphics[width=\linewidth]{gambar/as565_atas.png}
+	\caption{Dimensi Helikopter AS565 MBe Panther tampak atas.}
 	\label{fig:as565mbe_atas}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{gambar/as565_depan.png}
-	\caption{Dimensi Helikopter AS 565 MBe Panther tampak depan.}
+	\includegraphics[width=0.8\linewidth]{gambar/as565_depan.png}
+	\caption{Dimensi Helikopter AS565 MBe Panther tampak depan.}
 	\label{fig:as565mbe_depan}
 \end{figure}

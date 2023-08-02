@@ -2,21 +2,21 @@
 \label{chap:metodologipenelitian}
 
 % Ubah bagian-bagian berikut dengan isi dari desain dan implementasi
+\thispagestyle{newchap}
+Untuk mencapai tujuan dalam tugas akhir ini, dilakukan beberapa tahap yang dimulai dengan pemahaman fenomena \textit{ground resonance} pada helikopter melalui studi pustaka serta teori pendukung. Berikutnya adalah melakukan perumusan terhadap permasalahan yang akan diselesaikan, dalam hal ini adalah terkait dengan fenomena \textit{ground resonance} helikopter.
 
-Untuk mencapai tujuan dalam tugas akhir ini, dilakukan beberapa tahap yang dimulai dengan memahami fenomena \textit{ground resonance} pada helikopter melalui studi pustaka serta teori pendukung. Berikutnya adalah melakukan perumusan terhadap permasalahan yang akan diselesaikan, dalam hal ini adalah terkait dengan fenomena \textit{ground resonance} helikopter modifikasi PTDI.
-
-Terdapat 3 pekerjaan yang dikerjaan secara paralel dan berurutan, yaitu pengukuran di tanah \textit{ground test} helikopter, perhitungan matematis secara teori dan komputasi Matlab serta simulasi menggunakan \textit{software} Femap. Sehingga bila direpresentasikan dalam bentuk alur pengerjaannya dapat dilihat pada gambar \ref{fig:TA_flow-Page-1.jpg} dan \ref{fig:TA_flow-Page-2.jpg}.
+Terdapat 3 pengerjaan yang dilakukan secara paralel dan berurutan, yaitu pengukuran di tanah \textit{ground test} helikopter, perhitungan matematis secara teori dan komputasi Matlab serta simulasi menggunakan \textit{software} Femap. Kemudian dilakukan validasi hasil perhitungan dan simulasi terhadap hasil pengukuran \textit{ground test}. Sehingga apabila direpresentasikan dalam bentuk alur pengerjaannya dapat dilihat pada gambar \ref{fig:TA_flow-Page-1.jpg} dan \ref{fig:TA_flow-Page-2.jpg}.
  
-\begin{figure}[H]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=1\linewidth]{gambar/TA_flow-Page-1.jpg}
+	\includegraphics[width=\textwidth]{gambar/TA_flow-Page-1.jpg}
 	\caption{Diagram alir pengerjaan Tugas Akhir bagian 1.}
 	\label{fig:TA_flow-Page-1.jpg}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.95\linewidth]{gambar/TA_flow-Page-2.jpg}
+	\includegraphics[width=0.95\textwidth]{gambar/TA_flow-Page-2.jpg}
 	\caption{Diagram alir pengerjaan Tugas Akhir bagian 2.}
 	\label{fig:TA_flow-Page-2.jpg}
 \end{figure}
@@ -35,6 +35,8 @@ Pengambilan data \textit{ground test} dilakukan dengan mengikuti mekanisme yang 
 Pengukuran yang didapatkan dari \textit{Flight Test Instrumentation System} (FTIS) merupakan pengukuran respon gerakan keseluruhan helikopter pada beberapa orientasi gerakan. Respon terhadap impuls lateral serta longitudinal oleh pilot digunakan untuk mengetahui redaman getaran pada struktur helikopter. Nilai \textit{logarithmic decrement} didapatkan dari hasil pengukuran oleh FTIS dengan melihat seberapa cepat amplitudo getaran helikopter teredam sepanjang waktu setelah diberi impuls oleh pilot, nilai ini nantinya akan digunakan untuk menghitung \textit{damping ratio} helikopter. FTIS terletak pada bagian pusat massa helikopter. Karena helikopter dianggap sebagai massa titik yang dapat bergerak pada orientasi 3 dimensi, baik secara getaran translasi ataupun getaran rotasi. Sehingga pada pengukuran ini, nantinya akan didapatkan \textit{output} getaran berupa \textit{roll, pitch, heading, rate of roll, rate of pitch, rate of yaw}, percepatan arah sumbu-x, y, dan z.
 
 \subsection{Pengukuran Data Vibrasi Akselerometer}
+\label{Pengukuran Data Vibrasi Akselerometer}
+
 Pengukuran vibrasi dengan menggunakan akselerometer dilakukan dibeberapa titik pada helikopter. Konfigurasi mengenai peletakan sensor akselerometer dapat dilihat pada gambar \ref{peletakan_sensor.png} dan tabel \ref{tb:lokasiakselero}.
 
 \begin{figure}[H]
@@ -64,26 +66,26 @@ Pengukuran vibrasi dengan menggunakan akselerometer dilakukan dibeberapa titik p
 	\hline
 \end{longtable}
 
-Kemudian berikut (gambar \ref{tampak_atas.png}, \ref{tampak_depan.png}, \ref{tampak_samping.png}) merupakan skema Helikopter AS 565 MBe Panther yang digunakan beserta keterangan dimensi dari beberapa arah skema.
+Kemudian berikut (gambar \ref{tampak_atas.png}, \ref{tampak_depan.png}, \ref{tampak_samping.png}) merupakan skema Helikopter AS565 MBe Panther yang digunakan beserta keterangan dimensi dari beberapa arah skema.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{gambar/tampak_samping.png}
-	\caption{Skema penempatan \textit{channel} sensor dan dimensi helikopter AS 565 MBe Panther (tampak samping).}
+	\caption{Skema penempatan \textit{channel} sensor dan dimensi helikopter AS565 MBe Panther (tampak samping).}
 	\label{tampak_samping.png}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{gambar/tampak_depan.png}
-	\caption{Skema penempatan \textit{channel} sensor dan dimensi helikopter AS 565 MBe Panther (tampak depan).}
+	\caption{Skema penempatan \textit{channel} sensor dan dimensi helikopter AS565 MBe Panther (tampak depan).}
 	\label{tampak_depan.png}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.75\linewidth]{gambar/tampak_atas.png}
-	\caption{Skema penempatan \textit{channel} sensor dan dimensi helikopter AS 565 MBe Panther (tampak atas).}
+	\caption{Skema penempatan \textit{channel} sensor dan dimensi helikopter AS565 MBe Panther (tampak atas).}
 	\label{tampak_atas.png}
 \end{figure}
 
@@ -161,13 +163,13 @@ Tabel \ref{tb:variasilanding} merupakan variasi pada \textit{landing gear absorb
 	}
 \end{table}
 
-Semua data yang didapatkan pada hasil pengukuran \textit{damping ratio} dan vibrasi oleh akselerometer selanjutnya akan diolah dan dianalisis apakah helikopter AS 565 MBe Panther hasil modifikasi tersebut berpotensi mengalami fenomena \textit{ground resonance}. Sehingga helikopter dapat dikatakan aman untuk dapat digunakan sebagaimana kegunaannya setelah dimodifikasi. Kemudian, data vibrasi pada akselerometer akan dimasukkan pada batas siklus osilasi sesuai dengan acuan yang terdapat di standar MIL-STD-810H-Method-514.8 (vibrasi). Informasi dari standar tersebut dapat dilihat pada tabel \ref{tb:MIL-STD}.
+Semua data yang didapatkan pada hasil pengukuran \textit{damping ratio} dan vibrasi oleh akselerometer selanjutnya akan diolah dan dianalisis apakah helikopter AS565 MBe Panther hasil modifikasi tersebut berpotensi mengalami fenomena \textit{ground resonance} menggunakan acuan yang terdapat pada tabel \ref{tb:MIL-STD} sehingga didapatkan batas siklus osilasi seperti pada gambar \ref{fig:batas_siklus}. Selanjutnya, data respon frekuensi berupa frekuensi dominan seperti gambar \ref{fig:fft_config2_FILO} akan dimasukkan pada batas siklus osilasi tersebut, yaitu pada gambar \ref{fig:batas_siklus}.
 
 \begin{table}[]
 	\centering
 	\caption{Tabel acuan MIL-STD-810H-Method-514.8 untuk menghitung batas osilasi yang dimiliki oleh helikopter.}
 	\label{tb:MIL-STD}
-	\resizebox{\textwidth}{!}{%
+	\resizebox{0.8\textwidth}{!}{%
 		\begin{tabular}{|cccc|}
 			\hline
 			\multicolumn{1}{|c|}{Materiel} & \multicolumn{1}{c|}{Random Levels} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Source Frequency ($f_x$)\\ Range (Hz)\end{tabular}} & \begin{tabular}[c]{@{}c@{}}Peak Acceleration ($A_x$) \\ at $f_x$ (Gravity Units (g))\end{tabular} \\ \hline
@@ -185,10 +187,27 @@ Semua data yang didapatkan pada hasil pengukuran \textit{damping ratio} dan vibr
 	}
 \end{table}
 
-\section{Pemodelan pada Femap}
-	\label{sec:femap}
+\section{Perhitungan Matematis}
+
+Pada bagian awal, akan dimasukkan nilai besaran propertis helikopter untuk melengkapi variabel masukan pada persamaan \ref{eq:matriks} menggunakan pendekatan material pada Aluminum 7075-T6. Sehingga didapatkan nilai propertisnya seperti yang terdapat pada tabel \ref{tb:propertis}. Setelah propertis mekanik diberikan, selanjutnya adalah identifikasi melalui grafik seperti yang ditampilkan pada gambar \ref{fig:southwell_coupled_diagram}. Sehingga apabila terdapat solusi dari bagian riil pada nilai eigen yang bernilai positif, maka pada rentang tersebut merupakan frekuensi rotasi rotor yang dapat menyebabkan terjadi \textit{ground resonance}.
+
+\subsection{Validasi Matematis}
+
+Validasi matematis didasarkan pada grafik solusi yang didapatkan dari matriks pada persamaan \ref{eq:EOM}. Aspek validasi menggunakan perpindahan pusat massa pada rotor helikopter pada sumbu-x terhadap data hasil pengukuran helikopter menggunakan akselerometer pada sumbu-x. Sehingga akan didapatkan 2 grafik yang kemudian akan dihitung besarnya perbedaan antara keduanya melalui perhitungan error frekuensi dominan dan \textit{root mean square error} (RMSE). Validasi matematis akan dilakukan terlebih dahulu sebelum analisis perhitungan selanjutnya, agar didapatkan seberapa jauh error yang dimiliki hasil perhitungan matematis terhadap hasil data pengukuran yang didapatkan pada akselerometer (sub bagian \ref{Pengukuran Data Vibrasi Akselerometer}).
+
+\subsection{Perhitungan Matematis Ketidakstabilan kondisi Normal}
+
+Kondisi normal merupakan kondisi saat belum dilakukan modifikasi pada helikopter, atau dengan kata lain belum terdapat penambahan massa pada helikopter. Sehingga pada bagian grafik yang didapatkan dari persamaan \ref{eq:EOM} akan langsung dianalisis rentang frekuensinya. Kemudian akan dilakukan plot grafik saat kondisi frekuensi rotor helikopter berada pada keadaan \textit{ground resonance} dan diluar keadaan \textit{ground resonance}. Sehingga akan didapatkan solusi dalam bentuk grafik yang merepresentasikan kondisi terjadinya \textit{ground resonance} pada komponen helikopter seperti pada gambar \ref{fig:sol_plot_3} dan grafik perpindahan pusat massa rotor pada gambar \ref{fig:xy_3}.
+
+\subsection{Perhitungan Matematis Ketidakstabilan kondisi Modifikasi}
+
+Pada analisis ketidakstabilan hasil modifikasi, besaran massa yang dimasukkan di matriks \textbf{A} pada persamaan \ref{eq:state-space} akan diberikan nilai tambahan massa dengan pertambahan 300 kg, 1000 kg dan 2000 kg sehingga menjadi persamaan \ref{eq:modified} untuk selanjutnya dapat dibandingkan perubahan yang terjadi dari kondisi normal secara matematis untuk kemudian dapat dianalisis pergeseran rentang frekuensi pada helikopter seperti yang dapat dilihat pada gambar \ref{fig:real(modified)_1}.
+
+\section{Pemodelan Simulasi pada Femap}
+\label{sec:femap}
+
 \subsection{Skema Pemodelan}
-Dalam mencari solusi yang secara tepat merepresentasikan batas siklus osilasi pada perhitungan matematis. Berdasarkan referensi yang telah didapatkan, diperlukan langkah awal membuat skema pemodelan sederhana yang selanjutnya akan membantu untuk mendefinisikan posisi pusat massa dari masing-masing rotor pada helikopter. Skema pemodelan ini berdasarkan pada gambar \ref{tampak_atas.png} untuk menggambar bagian helikopter pada bagian tampak atas. Sedangkan gambar \ref{tampak_samping.png}. Skema gambar menggunakan bantuan \textit{software} desain Inkscape untuk memberikan bentuk \textit{node} pada kerangka yang helikopter yang akan digambar. Gambar \ref{fig:skema_model} ini merupakan skema kerangka helikopter untuk memodelkan helikopter dengan bentuk yang sederhana agar nantinya dapat diolah menggunakan prinsip elemen hingga (\textit{finite element}) pada \textit{software} FEMAP.
+Dalam mencari solusi yang secara tepat merepresentasikan batas siklus osilasi pada perhitungan matematis. Berdasarkan referensi yang telah didapatkan, diperlukan langkah awal membuat skema pemodelan sederhana yang selanjutnya akan membantu untuk mendefinisikan posisi pusat massa dari masing-masing rotor pada helikopter. Skema pemodelan ini berdasarkan pada gambar \ref{tampak_atas.png} untuk menggambar bagian helikopter pada bagian tampak atas. Sedangkan gambar \ref{tampak_samping.png}. Skema gambar menggunakan bantuan \textit{software} desain Inkscape untuk memberikan bentuk \textit{node} pada kerangka yang helikopter yang akan digambar. Gambar \ref{fig:skema_model} ini merupakan skema kerangka helikopter untuk memodelkan helikopter dengan bentuk yang sederhana agar nantinya dapat diolah menggunakan prinsip elemen hingga (\textit{finite element}) pada \textit{software} Femap.
 
 \begin{figure}[H]
 	\centering
@@ -197,7 +216,7 @@ Dalam mencari solusi yang secara tepat merepresentasikan batas siklus osilasi pa
 	\label{fig:skema_model}
 \end{figure}
 
-Koordinat pada helikopter didapatkan dengan menggunakan dimensi yang mendekati ukuran sebenarnya dari helikopter. Oleh karena itu pada gambar \ref{fig:skema_model} digunakan bayangan kerangka helikopter yang sebenarnya dari AS 565 MBe Panther. Rasio yang dimiliki pada skema gambar tersebut adalah 0.0778m/mm, yang artinya dalam setiap panjang 1mm pada gambar, mewakili 0.0778 meter pada dimensi helikopter yang sebenarnya.
+Koordinat pada helikopter didapatkan dengan menggunakan dimensi yang mendekati ukuran sebenarnya dari helikopter. Oleh karena itu pada gambar \ref{fig:skema_model} digunakan bayangan kerangka helikopter yang sebenarnya dari AS565 MBe Panther. Rasio yang dimiliki pada skema gambar tersebut adalah 0.0778m/mm, yang artinya dalam setiap panjang 1mm pada gambar, mewakili 0.0778 meter pada dimensi helikopter yang sebenarnya. Titik 1s', 1s, 3s' dan 3s pada gambar \ref{fig:skema_model} akan dimodelkan dalam kondisi \textit{constraint} (diam) pada arah sumbu-x, sebagai representasi keberadaan ban pada helikopter. 
 
 \subsection{Penentuan Koordinat}
 
@@ -237,4 +256,4 @@ Selanjutnya, pada gambar \ref{fig:skema_model} akan didefinisikan titik-titik ya
 	}
 \end{table}
 
-Tabel \ref{tb:koordinat} merupakan koordinat yang didefinisikan dengan titik acuan berada pada 1s, sehingga titik 1s didefinsikan dengan koordinat x,y, dan z beruturut-turut, 0, 0, dan 0. Setelah koordinat ditentukan, maka pada tahap selanjutnya adalah melakukan pemodelan pada FEMAP untuk selanjutnya nanti akan dilakukan analisis menggunakan nilai eigen untuk mencari \textit{mode shape} pada helikopter. Informasi mengenai \textit{mode shape} ini nantinya akan digunakan untuk memberikan gambaran bahwa helikopter akan memiliki respon sedemikian rupa untuk dapat menjelaskan fenomena \textit{ground resonance} yang berpotensi terjadi pada helikopter.
+Tabel \ref{tb:koordinat} merupakan koordinat yang didefinisikan dengan titik acuan berada pada 1s, sehingga titik 1s didefinsikan dengan koordinat x,y, dan z beruturut-turut, 0, 0, dan 0. Setelah koordinat ditentukan, maka pada tahap selanjutnya adalah melakukan pemodelan pada Femap untuk selanjutnya nanti akan dilakukan analisis menggunakan nilai eigen untuk mencari \textit{mode shape} pada helikopter (gambar \ref{fig:modeshape1} hingga \ref{fig:modeshape10}). Informasi mengenai \textit{mode shape} ini nantinya akan digunakan untuk memberikan gambaran bahwa helikopter akan memiliki respon sedemikian rupa untuk dapat menjelaskan fenomena \textit{ground resonance} yang berpotensi terjadi pada helikopter.

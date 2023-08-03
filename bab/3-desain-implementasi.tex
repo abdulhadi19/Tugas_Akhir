@@ -70,7 +70,7 @@ Kemudian berikut (gambar \ref{tampak_atas.png}, \ref{tampak_depan.png}, \ref{tam
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{gambar/tampak_samping.png}
+	\includegraphics[width=0.65\linewidth]{gambar/tampak_samping.png}
 	\caption{Skema penempatan \textit{channel} sensor dan dimensi helikopter AS565 MBe Panther (tampak samping).}
 	\label{tampak_samping.png}
 \end{figure}
@@ -84,21 +84,21 @@ Kemudian berikut (gambar \ref{tampak_atas.png}, \ref{tampak_depan.png}, \ref{tam
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.75\linewidth]{gambar/tampak_atas.png}
+	\includegraphics[width=0.7\linewidth]{gambar/tampak_atas.png}
 	\caption{Skema penempatan \textit{channel} sensor dan dimensi helikopter AS565 MBe Panther (tampak atas).}
 	\label{tampak_atas.png}
 \end{figure}
 
-Tabel \ref{tb:variasilanding} merupakan variasi pada \textit{landing gear absorbers}. Variasi tersebut dilakukan pada bagian ban dan oleo helikopter. Propertis mengenai variasi \textit{landing gear absorbers} ditampilkan pada tabel \ref{tb:propertiskuantitatif}. Selanjutnya pada tabel \ref{tb:variasi_input} memberikan informasi yang berkaitan dengan variasi \textit{input} pada \textit{ground test}. Secara teknis, dalam 1 kondisi pengujian terdapat 12 variasi \textit{input} yang diberikan kepada helikopter.
+Tabel \ref{tb:variasilanding} merupakan variasi kondisi pengujian pada \textit{landing gear absorbers}. Variasi tersebut dilakukan pada bagian ban dan oleo helikopter. Kuantifikasi variasi spesifik kondisi \textit{landing gear absorbers} pada tabel \ref{tb:variasilanding} diberikan pada tabel \ref{tb:propertiskuantitatif}. Sedangkan variasi \textit{nput} yang diberikan pada helikopter dapat dilihat pada tabel \ref{tb:variasi_input}. Sehingga secara teknis, dalam 1 kondisi pengujian terdapat 12 variasi \textit{input} yang diberikan kepada helikopter untuk kemudian selanjutnya akan diperhitungkan pada BAB \ref{chap:hasil dan pembahasan}.
 
 \begin{table}[H]
 	\centering
-	\caption{Variasi \textit{Landing gear absorbers.}}
+	\caption{Variasi Kondisi Pengukuran menggunakan FTIS.}
 	\label{tb:variasilanding}
 	\resizebox{0.7\textwidth}{!}{%
 		\begin{tabular}{|c|ccccc|}
 			\hline
-			\multirow{3}{*}{No} & \multicolumn{5}{c|}{Kondisi pengujian Oleo/Tyre} \\ \cline{2-6} 
+			\multirow{3}{*}{Kondisi ke-} & \multicolumn{5}{c|}{Kondisi pengujian Oleo/Tyre} \\ \cline{2-6} 
 			& \multicolumn{1}{c|}{Bagian Depan} & \multicolumn{2}{c|}{Bagian Kiri} & \multicolumn{2}{c|}{Bagian Kanan} \\ \cline{2-6} 
 			& \multicolumn{1}{c|}{Oleo/Tyre} & \multicolumn{1}{c|}{Oleo} & \multicolumn{1}{c|}{Tyre} & \multicolumn{1}{c|}{Oleo} & Tyre \\ \hline
 			1 & \multicolumn{1}{c|}{Nominal/Nominal} & \multicolumn{1}{c|}{Nominal} & \multicolumn{1}{c|}{Nominal} & \multicolumn{1}{c|}{Nominal} & Nominal \\ \hline
@@ -141,7 +141,7 @@ Tabel \ref{tb:variasilanding} merupakan variasi pada \textit{landing gear absorb
 
 \begin{table}[h]
 	\centering
-	\caption{Variasi \textit{input} pada ground test Helikopter.}
+	\caption{Variasi \textit{input} pada \textit{ground test} Helikopter.}
 	\label{tb:variasi_input}
 	\resizebox{0.75\textwidth}{!}{%
 		\begin{tabular}{|c|c|c|c|c|}
@@ -207,7 +207,12 @@ Pada analisis ketidakstabilan hasil modifikasi, besaran massa yang dimasukkan di
 \label{sec:femap}
 
 \subsection{Skema Pemodelan}
+
+
+
 Dalam mencari solusi yang secara tepat merepresentasikan batas siklus osilasi pada perhitungan matematis. Berdasarkan referensi yang telah didapatkan, diperlukan langkah awal membuat skema pemodelan sederhana yang selanjutnya akan membantu untuk mendefinisikan posisi pusat massa dari masing-masing rotor pada helikopter. Skema pemodelan ini berdasarkan pada gambar \ref{tampak_atas.png} untuk menggambar bagian helikopter pada bagian tampak atas. Sedangkan gambar \ref{tampak_samping.png}. Skema gambar menggunakan bantuan \textit{software} desain Inkscape untuk memberikan bentuk \textit{node} pada kerangka yang helikopter yang akan digambar. Gambar \ref{fig:skema_model} ini merupakan skema kerangka helikopter untuk memodelkan helikopter dengan bentuk yang sederhana agar nantinya dapat diolah menggunakan prinsip elemen hingga (\textit{finite element}) pada \textit{software} Femap.
+
+Koordinat pada helikopter didapatkan dengan menggunakan dimensi yang mendekati ukuran sebenarnya dari helikopter. Oleh karena itu pada gambar \ref{fig:skema_model} digunakan bayangan kerangka helikopter yang sebenarnya dari AS565 MBe Panther. Rasio yang dimiliki pada skema gambar tersebut adalah 0.0778m/mm, yang artinya dalam setiap panjang 1mm pada gambar, mewakili 0.0778 meter pada dimensi helikopter yang sebenarnya. Titik 1s', 1s, 3s' dan 3s pada gambar \ref{fig:skema_model} akan dimodelkan dalam kondisi \textit{constraint} (diam) pada arah sumbu-x, sebagai representasi keberadaan ban pada helikopter. 
 
 \begin{figure}[H]
 	\centering
@@ -216,14 +221,13 @@ Dalam mencari solusi yang secara tepat merepresentasikan batas siklus osilasi pa
 	\label{fig:skema_model}
 \end{figure}
 
-Koordinat pada helikopter didapatkan dengan menggunakan dimensi yang mendekati ukuran sebenarnya dari helikopter. Oleh karena itu pada gambar \ref{fig:skema_model} digunakan bayangan kerangka helikopter yang sebenarnya dari AS565 MBe Panther. Rasio yang dimiliki pada skema gambar tersebut adalah 0.0778m/mm, yang artinya dalam setiap panjang 1mm pada gambar, mewakili 0.0778 meter pada dimensi helikopter yang sebenarnya. Titik 1s', 1s, 3s' dan 3s pada gambar \ref{fig:skema_model} akan dimodelkan dalam kondisi \textit{constraint} (diam) pada arah sumbu-x, sebagai representasi keberadaan ban pada helikopter. 
-
 \subsection{Penentuan Koordinat}
 
 Selanjutnya, pada gambar \ref{fig:skema_model} akan didefinisikan titik-titik yang nantinya akan menjadi \textit{node} pada kerangka helikopter. Titik-titik tersebut akan didefinisikan dalam koordinat kartesian dalam sumbu-x,y, dan z. Titik 2s', 2s dan 3s' akan menjadi titik diberikannya gaya luar untuk simulasi pada FEMAP. Hal ini dikarenakan pada titik tersebut terdapat sensor akselerometer.
 
+Tabel \ref{tb:koordinat} merupakan koordinat yang didefinisikan dengan titik acuan berada pada 1s, sehingga titik 1s didefinsikan dengan koordinat x,y, dan z beruturut-turut, 0, 0, dan 0. Setelah koordinat ditentukan, maka pada tahap selanjutnya adalah melakukan pemodelan pada Femap untuk selanjutnya nanti akan dilakukan analisis menggunakan nilai eigen untuk mencari \textit{mode shape} pada helikopter (gambar \ref{fig:modeshape1} hingga \ref{fig:modeshape10}). Informasi mengenai \textit{mode shape} ini nantinya akan digunakan untuk memberikan gambaran bahwa helikopter akan memiliki respon sedemikian rupa untuk dapat menjelaskan fenomena \textit{ground resonance} yang berpotensi terjadi pada helikopter.
 
-\begin{table}[h]
+\begin{table}[H]
 	\centering
 	\caption{Koordinat masing-masing tanda pada titik dalam 3 dimensi.}
 	\label{tb:koordinat}
@@ -255,5 +259,3 @@ Selanjutnya, pada gambar \ref{fig:skema_model} akan didefinisikan titik-titik ya
 		\end{tabular}%
 	}
 \end{table}
-
-Tabel \ref{tb:koordinat} merupakan koordinat yang didefinisikan dengan titik acuan berada pada 1s, sehingga titik 1s didefinsikan dengan koordinat x,y, dan z beruturut-turut, 0, 0, dan 0. Setelah koordinat ditentukan, maka pada tahap selanjutnya adalah melakukan pemodelan pada Femap untuk selanjutnya nanti akan dilakukan analisis menggunakan nilai eigen untuk mencari \textit{mode shape} pada helikopter (gambar \ref{fig:modeshape1} hingga \ref{fig:modeshape10}). Informasi mengenai \textit{mode shape} ini nantinya akan digunakan untuk memberikan gambaran bahwa helikopter akan memiliki respon sedemikian rupa untuk dapat menjelaskan fenomena \textit{ground resonance} yang berpotensi terjadi pada helikopter.

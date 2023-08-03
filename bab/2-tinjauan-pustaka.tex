@@ -14,22 +14,22 @@ Helikopter memiliki banyak komponen (gambar \ref{fig:komponenheli}), dimulai dar
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{gambar/komponenheli.png}
+	\includegraphics[width=0.65\linewidth]{gambar/komponenheli.png}
 	\caption{Komponen helikopter secara umum \cite{handbook}.}
 	\label{fig:komponenheli}
 \end{figure}
 
-Pada gambar \ref{fig:komponenheli}, \textit{fuselage} merupakan badan helikopter yang menampung kabin berisi kru, penumpang, dan kargo. Kabin helikopter memiliki susunan tempat duduk yang berbeda-beda. Selain itu, badan helikopter juga berfungsi untuk memberikan ruang pada mesin, transmisi, avionik, kontrol penerbangan sumber power pada helikopter. Untuk sistem transmisi helikopter, mesin pada gigi rotor utama akan membuat poros rotor berputar. Ketika rotor berputar pada rpm mesin, kecepatan ujung rotor akan lebih cepat daripada kecepatan suara, kekuatan pada rotor harus ditingkatkan dan kelembaman dari giroskop akan menjadi sangat ekstrim. Terdapat bagian yang dinamakan \textit{clutch} (kopling) (gambar \ref{fig:clutch}) yaitu bagian yang terintegrasi dengan sistem transmisi. Bagian ini memungkinkan pilot untuk dapat mengatur kontak antara mesin dan poros penggerak \cite{wagtendonk2006principles}.
+Pada gambar \ref{fig:komponenheli}, \textit{fuselage} merupakan badan helikopter yang menampung kabin berisi kru, penum\hyp{}pang, dan kargo. Kabin helikopter memiliki susunan tempat duduk yang berbeda-beda. Selain itu, badan helikopter juga berfungsi untuk memberikan ruang pada mesin, transmisi, avionik, kontrol penerbangan sumber power pada helikopter. Untuk sistem transmisi helikopter, mesin pada gigi rotor utama akan membuat poros rotor berputar. Ketika rotor berputar pada rpm mesin, kecepatan ujung rotor akan lebih cepat daripada kecepatan suara, kekuatan pada rotor harus ditingkatkan dan kelembaman dari giroskop akan menjadi sangat ekstrim. Terdapat bagian yang dinamakan \textit{clutch} (kopling) (gambar \ref{fig:clutch}) yaitu bagian yang terintegrasi dengan sistem transmisi. Bagian ini memungkinkan pilot untuk dapat mengatur kontak antara mesin dan poros penggerak \cite{wagtendonk2006principles}.
 
 \begin{figure}[H]
-	\begin{subfigure}{0.3\textwidth}
+	\begin{subfigure}{0.35\textwidth}
 	\centering
 	\includegraphics[width=\linewidth]{gambar/belt-driven_clutch.png}
 	\caption{}
 	\label{fig:belt-driven_clutch}
 	\end{subfigure}
 \centering
-	\begin{subfigure}{0.3\textwidth}
+	\begin{subfigure}{0.35\textwidth}
 	\centering
 	\includegraphics[width=\linewidth]{gambar/centrifugal_clutch.png}
 	\caption{}
@@ -70,7 +70,7 @@ Sistem \textit{fully articulated rotor} mempunyai kemampuan pada rotornya untuk 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.65\linewidth]{gambar/roll-pitch-yaw.png}
+	\includegraphics[width=0.55\linewidth]{gambar/roll-pitch-yaw.png}
 	\caption{Orientasi arah helikopter \cite{Jhwang}.}
 	\label{fig:orientasiheli}
 \end{figure}
@@ -127,7 +127,7 @@ Pada gambar \ref{fig:gr} menunjukkan situasi saat gerakan stabil \textit{lead/la
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{gambar/southwell_diagram.png}
-	\caption{Diagram frekuensi \textit{chassis} dan rotor pada sistem \textit{fully articulated rotor} dengan sistem \textit{uncoupled}\cite{bramwell2001bramwell}.}
+	\caption{Diagram frekuensi \textit{chassis} dan rotor pada sistem \textit{fully articulated rotor} dengan sistem \textit{uncoupled} \cite{bramwell2001bramwell}.}
 	\label{fig:southwell_diagram}
 \end{figure}
 
@@ -140,7 +140,7 @@ Seiring dengan bertambahnya kecepatan pada rotor, frekuensi pada bilah rotor dan
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.75\linewidth]{gambar/southwell_coupled_diagram.png}
-	\caption{Diagram frekuensi \textit{chassis} dan rotor pada sistem \textit{fully articulated rotor} dengan sistem \textit{coupled}\cite{bramwell2001bramwell}.}
+	\caption{Diagram frekuensi \textit{chassis} dan rotor pada sistem \textit{fully articulated rotor} dengan sistem \textit{coupled} \cite{bramwell2001bramwell}.}
 	\label{fig:southwell_coupled_diagram}
 \end{figure}
 
@@ -159,7 +159,7 @@ Untuk dapat melakukan pendekatan secara analitik seperti yang telah diteliti ole
 		\label{fig:rotorfuselage}
 	\end{subfigure}
 	\centering
-	\begin{subfigure}{0.35\textwidth}
+	\begin{subfigure}{0.4\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{gambar/rotor_fuselage_topview.png}
 		\caption{}
@@ -364,7 +364,7 @@ Penurunan secara logaritmik atau \textit{logarithmic decrement} merupakan pareme
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{gambar/underdamped.png}
-	\caption{Grafik \textit{underdamped}.}
+	\caption{Grafik \textit{underdamped} \cite{rao2004mechanical}.}
 	\label{fig:underdamped}
 \end{figure}
 
@@ -379,6 +379,7 @@ Kemudian dari formulasi pada \ref{eq:logdec} dapat diformulasikan \textit{dampin
 
 \begin{align}
 	\zeta=\frac{\delta}{\sqrt{\left( 2\pi \right)^2+\delta^2}}
+	\label{eq:damp_ratio}
 \end{align}
 
 Perhitungan \textit{logarithmic decrement} dan \textit{damping ratio} selanjutnya akan digunakan pada BAB \ref{chap:hasil dan pembahasan} untuk mencari kecenderungan getaran yang terjadi pada masing-masing orientasi pada helikopter.
@@ -392,7 +393,7 @@ Beberapa percobaan menggunakan analisis \textit{finite element} bertujuan untuk 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.65\linewidth]{gambar/ex_finite_element.png}
+	\includegraphics[width=0.6\linewidth]{gambar/ex_finite_element.png}
 	\caption{Salah satu contoh luaran pada \cite{Gorecki2013} untuk mencari deformasi dari simulasi pemodelan \textit{finite element}.}
 	\label{fig:ex_finite_element}
 \end{figure}
@@ -437,14 +438,14 @@ Prosedur serupa pada dasarnya menjadi acuan pengukuran untuk pengambilan data pa
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.6\linewidth]{gambar/AS565pic.png}
+	\includegraphics[width=0.55\linewidth]{gambar/AS565pic.png}
 	\caption{Potret AS565 MBe Panther saat mengudara.}
 	\label{fig:AS565pic}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.85\linewidth]{gambar/Propertis_AS565MBe.png}
+	\includegraphics[width=0.7\linewidth]{gambar/Propertis_AS565MBe.png}
 	\caption{\textit{Profile} helikopter AS565 MBe Panther.}
 	\label{fig:AS565MBe}
 \end{figure}
@@ -457,21 +458,21 @@ AS565 MBe Panther seperti pada gambar \ref{fig:AS565pic} adalah versi militer da
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{gambar/as565_samping.png}
+	\includegraphics[width=0.7\linewidth]{gambar/as565_samping.png}
 	\caption{Dimensi Helikopter AS565 MBe Panther tampak samping.}
 	\label{fig:as565mbe_samping}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{gambar/as565_atas.png}
+	\includegraphics[width=0.65\linewidth]{gambar/as565_atas.png}
 	\caption{Dimensi Helikopter AS565 MBe Panther tampak atas.}
 	\label{fig:as565mbe_atas}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{gambar/as565_depan.png}
+	\includegraphics[width=0.6\linewidth]{gambar/as565_depan.png}
 	\caption{Dimensi Helikopter AS565 MBe Panther tampak depan.}
 	\label{fig:as565mbe_depan}
 \end{figure}

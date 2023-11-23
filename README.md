@@ -1,4 +1,4 @@
-# Template LaTeX Buku Tugas Akhir ITS
+# STUDI BATAS SIKLUS OSILASI GROUND RESONANCE HELIKOPTER AS565 MBe PANTHER MELALUI PENDEKATAN MATEMATIS DAN SIMULASI PADA GROUND VIBRATION TEST
 
 [![latest version](https://img.shields.io/github/v/release/b201lab/template-buku-ta-its)](https://github.com/b201lab/template-buku-ta-its/releases/)
 [![commits since latest version](https://img.shields.io/github/commits-since/b201lab/template-buku-ta-its/latest)](https://github.com/b201lab/template-buku-ta-its/commits/master)
